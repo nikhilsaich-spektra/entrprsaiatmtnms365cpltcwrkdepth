@@ -2,7 +2,7 @@
 
 |  |  |
 |----|----|
-| **Estimated Time** | 20 minutes |
+| **Estimated Time** | 30 minutes |
 | **Objective** | Orientate yourself to every part of the Cowork interface and run your first tasks -- so all later labs start from a confident baseline. |
 | **You will need** | Lab account credentials and access to m365.cloud.microsoft or your org's M365 entry point |
 
