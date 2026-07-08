@@ -1,4 +1,4 @@
-# LAB 7:Building a Personal Work Dashboard with Microsoft Copilot Cowork
+# Lab 7: Building a Personal Work Dashboard with Microsoft Copilot Cowork
 
 **Duration:** Approximately 40 minutes
 
