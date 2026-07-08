@@ -95,7 +95,7 @@ YYYY-MM-DD\_\<Topic\>\_\<DocType\> based on each file's content and
 metadata. Show me the full old-name → new-name mapping before renaming
 anything.*
 
-## Step 1 — Open Copilot Cowork and enter the prompt
+### Step 1 — Open Copilot Cowork and enter the prompt
 
 1.  Open your browser and navigate to m365.cloud.microsoft. Sign in with
     your lab account.
@@ -117,7 +117,7 @@ anything.*
 *Screenshot 1 — Classification prompt typed and ready to send in Copilot
 Cowork*
 
-## Step 2 — Cowork discovers the Lab Files folder and begins content analysis
+### Step 2 — Cowork discovers the Lab Files folder and begins content analysis
 
 No action needed — Cowork begins executing immediately. Watch the
 Workspace panel on the right side of the screen open.
