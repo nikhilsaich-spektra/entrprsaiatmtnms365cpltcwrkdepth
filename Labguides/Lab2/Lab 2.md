@@ -2,7 +2,7 @@
 
 | Item | Details |
 |------|---------|
-| **Estimated Time** | 15 minutes |
+| **Estimated Time** | 20 minutes |
 | **What You Build** | A personalized morning briefing that reads your calendar, summarizes important emails, and extracts tasks and follow-ups automatically. |
 | **Skills Introduced** | Daily Briefing, Calendar Management, Email Triage, Task Extraction |
 
