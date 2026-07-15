@@ -1,43 +1,26 @@
 # Lab 5 – Intelligent File Organizer
 
-| Item | Details |
-|------|---------|
-| **Duration** | 30 minutes |
-| **Difficulty** | Intermediate |
-| **Apps** | Copilot Cowork, OneDrive, SharePoint, Excel, Microsoft Teams |
+## Estimated Duration: 30 Minutes
 
-By the end of this lab, you will be able to:
+## Overview
 
-- Classify and rename enterprise files using AI-generated naming
-  conventions
+In this hands-on lab, you will act as a Power User or IT Administrator at Contoso Electronics, overseeing a shared OneDrive environment containing mixed Project Orion files across Sales, Finance, Procurement, Operations, and executive collaboration folders. File naming is inconsistent, governance is weak, and a compliance review is approaching. You will use Microsoft 365 Copilot Cowork — an agentic AI layer that orchestrates OneDrive, SharePoint, Excel, and Teams — to classify and rename files using an AI-generated naming convention, run a full governance audit covering duplicates, staleness, sharing risks, and ownership gaps, generate an Excel governance tracker and post a summary to Teams, and reorganise Project Orion documents into department-aware subfolders. Every bulk file operation requires your explicit approval before it executes.
 
-- Apply the YYYY-MM-DD_Topic_DocType rename convention across an entire
-  OneDrive folder
 
-- Execute a full governance audit covering duplicates, staleness,
-  sharing risks, and ownership gaps
+>**Disclaimer:** Copilot Cowork is AI-powered, so generated outputs may differ across users and sessions. The results you see in this lab may not exactly match the examples shown here. Follow the workflow and expected outcome in the guide rather than expecting identical content.
 
-- Use human-in-the-loop approval gates before every bulk file operation
 
-- Generate an Excel governance tracker and post a Teams summary from a
-  single instruction
 
-- Reorganise healthcare documents into clinical category subfolders with
-  a department-aware naming scheme
+## Objectives
 
-- Apply responsible AI principles — understanding which governance
-  actions require human approval
+In this lab, you will perform the following:
 
-You are a Power User or IT Administrator at Contoso Operations,
-overseeing a shared OneDrive environment containing 28 mixed files
-across retail, healthcare, finance, and project folders. File naming is
-inconsistent, governance is weak, and a compliance review is
-approaching.
 
-You will use Microsoft 365 Copilot Cowork — an agentic AI layer that
-orchestrates OneDrive, SharePoint, Excel, and Teams — to classify,
-rename, audit, report on, and reorganise these files. Every bulk action
-requires your explicit approval before it executes.
+- Task 1: Automated File Classification and Renaming
+- Task 2: OneDrive and SharePoint Governance Audit
+- Task 3: AI-Generated Excel Tracking and Teams Reporting
+- Task 4: Project Orion Documents Reorganisation
+- Task 5: Reorganize the Project Orion Folder into Department-Based Subfolders
 
 # Lab Prerequisites
 
@@ -58,11 +41,14 @@ Complete the following setup steps before starting the lab (estimated:
 
 ## Required OneDrive Folder Structure
 
-Create a Lab Files folder in OneDrive with these four subfolders:
+Create a Lab Files folder in OneDrive with these subfolders:
 
-- Lab Files / Healthcare — upload provided clinical document samples
+- Lab Files / Sales — upload provided sales and customer-facing documents
 
-- Lab Files / Retail — upload provided retail document samples
+- Lab Files / Finance — upload budgeting and financial analysis documents
+
+- Lab Files / Project Orion — upload Project Orion requirements, minutes,
+  and evaluation documents
 
 - Lab Files / Shared Files — configure 'Anyone with the link' sharing on
   at least 3 files
@@ -76,7 +62,7 @@ Create a Lab Files folder in OneDrive with these four subfolders:
 
 - Channel: General (Standard) — target for Exercise 3 Teams post
 
-# Exercise 1 – Automated File Classification and Renaming
+Automated File Classification and Renaming
 
 Duration: 8 minutes | Difficulty: Beginner–Intermediate
 
@@ -87,257 +73,215 @@ subfolders.
 
 ## Task 1: Open Copilot Cowork and Submit Classification Prompt
 
-Enter the following classification prompt:
+1. Open a browser and navigate to `m365.cloud.microsoft.com`.
 
-*Analyze the files in my OneDrive "Lab Files" folder. Classify each by
-type and topic, then propose a renaming scheme of the form
-YYYY-MM-DD\_\<Topic\>\_\<DocType\> based on each file's content and
-metadata. Show me the full old-name → new-name mapping before renaming
-anything.*
+1. Sign in using the provided lab credentials.
 
-### Step 1 — Open Copilot Cowork and enter the prompt
+1. Select Cowork from the left navigation pane.
 
-1.  Open your browser and navigate to m365.cloud.microsoft. Sign in with
-    your lab account.
+1. Enter the following classification prompt:
 
-2.  Click the Microsoft 365 Copilot app from the launcher. Click the
-    'Cowork' tab at the top of the left sidebar — NOT the 'Chat' tab.
+    ```
+    Analyze the files in my OneDrive "Lab Files" folder. Classify each by
+    type and topic, then propose a renaming scheme of the form
+    YYYY-MM-DD\_\<Topic\>\_\<DocType\> based on each file's content and
+    metadata for the Project Orion business documents and trackers. Show me
+    the full old-name → new-name mapping before renaming anything.
+    ```
 
-- You see 'What can I do for you?' in the centre. Click inside the large
-  prompt bar.
+1. Click Send.
 
-- Type the full classification prompt shown above, then click the blue ↑
-  send arrow on the right side of the box.
+    ![](./media/m5e1t1s1.png)
 
-- The 'Needs your input' and 'Try these next' cards at the bottom are
-  from previous sessions — do not click them.
 
-![](./media/image1.png)
+    >Note: Cowork discovers the Lab Files folder and begins content analysis
 
-*Screenshot 1 — Classification prompt typed and ready to send in Copilot
-Cowork*
+1. After submitting the prompt, wait for Copilot Cowork to start processing the request automatically.
 
-### Step 2 — Cowork discovers the Lab Files folder and begins content analysis
+1. In the **Workspace** pane, verify that **Locate Lab Files folder** is displayed 
 
-No action needed — Cowork begins executing immediately. Watch the
-Workspace panel on the right side of the screen open.
+    ![](./media/m5e1t1s2.png)
 
-3.  Workspace shows Step 1 'Finding your Lab Files folder' with a
-    spinning circle (in progress).
+     Copilot Cowork begins locating the Lab Files folder.
 
-4.  In the main chat, read: 'I'll start by locating your Lab Files
-    folder in OneDrive.' A 'Thought process \>' link appears — click it
-    to expand Cowork's reasoning.
+1. In the conversation window, review the message indicating that Copilot Cowork is searching OneDrive for the **Lab Files** folder.
 
-5.  Watch the Workspace counter advance from '0/3' to '1/3' once the
-    folder is found.
+1. Expand **Thought process** to review the actions being performed by Copilot Cowork.
 
-6.  Cowork then lists all subfolders simultaneously — you will see
-    'Executing tasks...' with multiple folder scans running in parallel.
+    ![](./media/m5e1t1s3.png)
 
-![](./media/image2.png)
+     Lab Files folder located and subfolder discovery initiated.
 
-*Screenshot 2 — OneDrive discovery begins: Workspace shows Steps and
-Calendar Management skill activating*
+1. Monitor the Workspace pane and verify the progress advances as the folder is successfully identified.
 
-![](./media/image3.png)
+1. Wait for Copilot Cowork to enumerate all subfolders and begin processing files.
 
-*Screenshot 3 — Lab Files found: parallel subfolder listing begins
-(Retail and Healthcare simultaneously)*
+    ![](./media/m5e1t1s4.png)
 
-![](./media/image4.png)
+     File content extraction begins across all discovered folders.
 
-*Screenshot 4 — Step 2 active: content extraction from all 28 files
-starts*
+    >Note:Review Rename Recommendations and Approve Changes
 
-![](./media/image5.png)
+1. After the analysis completes, verify the **Workspace** pane shows **3/3** completed steps.
 
-*Screenshot 5 — Adaptive extraction: empty spreadsheets detected, PDF
-fallback strategy applied*
+    ![](./media/m5e1t2s1.png)
 
-## Task 2: Review the Rename Mapping and Approve
+1. Review the **Lab Files – Analysis & Proposed Renaming** report generated by Copilot Cowork.
 
-After content analysis, Cowork produces the full old-name → new-name
-mapping table and stops — it will not rename anything until you approve.
+    ![](./media/m5e1t2s2.png)
 
-7.  Cowork has completed all 3 steps. Workspace shows '3/3' with all
-    steps ✓. READ the output: 'Lab Files — Analysis & Proposed Renaming'
-    with one row per file.
+    Rename mapping report displayed with Human-in-the-Loop approval gate.
 
-- READ the date basis legend at the top: \[c\] = date in file content;
-  \[p\] = period from filename (e.g. Q1→Jan 1); \[m\] = modified date;
-  \[s\] = inferred season.
+1. Review the proposed file naming convention and verify the recommended file names before proceeding.
 
-- IMPORTANT: the message input box has returned to 'Message Cowork' —
-  Cowork has STOPPED. NO changes have been made in OneDrive yet. This is
-  the Human-in-the-Loop preview gate.
+1. Review the **Project Orion** section and validate the proposed file names and classifications.
 
-8.  Scroll through all sections (Shared Files, Archive, Retail,
-    Healthcare). Note any name you want to adjust.
+    ![](./media/m5e1t2s3.png)
 
-9.  In the message box, type: 'proceed with suggesting renaming and
-    create new folder for all latest renamed files' then press ↑.
+    Project Orion file recommendations and approval prompt.
 
-![](./media/image6.png)
+1. Verify the message box is available and displays **Message Cowork**, indicating that Copilot Cowork is waiting for approval before making changes.
 
-*Screenshot 6 — All 3 steps complete: rename mapping table displayed,
-HITL approval gate open*
+1. In the message box, enter the following prompt:
 
-![](./media/image7.png)
+    ```text
+    Proceed with suggesting renaming and create new folder for all latest renamed files
+    ```
 
-*Screenshot 7 — Rename table: Shared Files and Archive Candidates
-sections*
+1. Click **Submit** to approve the proposed rename operation and continue to the next step.
 
-![](./media/image8.png)
+    ![](./media/m5e1t2s4.png)
 
-*Screenshot 8 — Rename table: Retail section showing season inference
-\[s\] and duplicate flagging*
+    >Note: Approve Folder Creation and Execute Batch Rename
 
-![](./media/image9.png)
+1. After submitting the approval prompt, verify the **Workspace** pane expands from **3/3** to **5/5** steps.
 
-*Screenshot 9 — Healthcare section + 'Things worth knowing' disclosure +
-approval prompt*
+    ![](./media/m5e1t3s1.png)
 
-## Task 3: Approve Folder Creation and Execute Batch Rename
+1. Review the newly added steps:
 
-10. After you send the approval message, watch the Workspace panel
-    expand from '3/3' to '3/5': two new steps appear — 'Create new
-    consolidated folder' and 'Rename and move all 28 files'.
+    - Create new folder for renamed files
+    - Rename and move all files
 
-![](./media/image10.png)
+        ![](./media/m5e1t3s2.png)
 
-*Screenshot 10 — Workspace expands to 5 steps: 'Create folder?' dialog
-appears*
+        Workspace expanded to 5 steps and folder creation workflow initiated.
 
-![](./media/image11.png)
+1. Verify Copilot Cowork begins executing the approved rename plan.
 
-*Screenshot 11 — Approval message sent: execution mode begins*
+    ![](./media/m5e1t3s2.0.png)
+   
+    Rename execution process initiated.
 
-![](./media/image12.png)
+1. Review the **Create folder** approval dialog.
 
-11. A 'Create folder?' dialog appears: Name: 'Renamed Files 2026-06-19'.
-    Review the folder name — it uses today's date for audit
-    traceability.
+1. Verify the folder name generated by Copilot Cowork before proceeding.
 
-12. Click the dark 'Create' button to approve folder creation. DO NOT
-    type in the message box while this dialog is open.
+    ![](./media/m5e1t3s3.png)
 
-*Screenshot 12 — Create folder dialog: full 5-step plan visible in
-Workspace*
+    Folder creation approval dialog displayed.
 
-![](./media/image13.png)
+1. Wait for Copilot Cowork to create the folder and begin validation.
 
-*Screenshot 13 — Cursor on Create button: about to approve folder
-creation*
+1. When prompted, review the **Use Microsoft Graph** approval request for the first file rename operation.
 
-![](./media/image14.png)
+    ![](./media/m5e1t3s4.png)
 
-13. A 'Use Microsoft Graph?' approval dialog will appear for the first
-    file rename. Click the ▼ dropdown next to Approve and select 'Always
-    allow Call graph' to grant batch permission.
+    Microsoft Graph approval request for the first rename operation.
 
-14. If a 'Failed 1 action' error appears (locked file), note it and
-    continue — Cowork will retry later. Watch for '5/5 ✓' in the
-    Workspace when all renames complete.
+1. Approve the initial rename operation and verify the validation completes successfully.
 
-*Screenshot 14 — Folder created: file ID retrieval begins, test-first
-validation announced*
+1. Open the dropdown beside **Approve** and select **Always allow Call graph** to grant approval for the remaining rename operations.
 
-![](./media/image15.png)
+1. Monitor the Workspace pane while the remaining files are renamed and moved.
 
-*Screenshot 15 — 'Use Microsoft Graph?' first rename+move approval for
-test file*
+1. Wait for all rename and move operations to complete.
 
-![](./media/image16.png)
+1. Verify the **Workspace** pane shows **5/5** completed steps.
 
-*Screenshot 16 — Test file approved: all 27 remaining files queued for
-batch processing*
+    ![](./media/m5e1t3s5.png)
 
-![](./media/image17.png)
+   Rename and move operations completed successfully.
 
-*Screenshot 17 — Test success confirmed: 'Always allow Call graph'
-option presented*
+    >Note: Create Topic Subfolders and Verify in OneDrive
 
-![](./media/image18.png)
+1. In the **Message Cowork** box, enter the following prompt:
 
-*Screenshot 18 — 'Always allow Call graph' option: session-scoped batch
-permission granted*
+    ```text
+    Create subfolders by topic and move files accordingly
+    ```
 
-![](./media/image19.png)
+1. Click **Send** to submit the request.
 
-*Screenshot 19 — 'Failed 1 action': locked file isolated, batch
-continues for remaining files*
+    ![](./media/m5e1t4s1.png)
 
-![](./media/image20.png)
+    Topic subfolder creation request submitted.
 
-*Screenshot 20 — Exercise 1 complete: structured completion report with
-'Still pending' section*
+1. Verify the **Workspace** pane displays the following activities:
 
-## Task 4: Create Topic Subfolders and Verify in OneDrive
+    - Creating topic subfolders
+    - Moving files into topic subfolders
 
-15. In the message box type: 'Create subfolders by topic and move files
-    accordingly' then press ↑.
+        ![](./media/m5e1t4s2.png)
 
-16. Watch the Workspace panel grow from '5/5' to '5/7': two new steps
-    appended — 'Creating topic subfolders' and 'Move files into topic
-    subfolders'.
+1. When prompted, review the folder creation request.
 
-17. A 'Create folder?' dialog appears for each subfolder (Retail,
-    Healthcare, Finance, Project Planning, Archive). Select 'Always
-    allow Create folder' in the dropdown.
+1. Open the dropdown beside **Approve** and select **Always allow Call graph**.
 
-![](./media/image21.png)
+1. Click **Approve** to allow Copilot Cowork to create the required topic folders.
 
-*Screenshot 21 — 'Create subfolders by topic' instruction typed:
-Workspace about to grow to 7 steps*
+    ![](./media/m5e1t4s3.png)
 
-![](./media/image22.png)
+    Folder creation approval request for topic subfolders.
 
-*Screenshot 22 — 'Create folder?' for first topic subfolder: 'Always
-allow Create folder' option*
+1. Wait for Copilot Cowork to create the topic-based folders.
 
-![](./media/image23.png)
+    ![](./media/m5e1t4s4.png)
 
-*Screenshot 23 — All 5 topic subfolders created: Step 7 file move
-operations begin*
+   Topic subfolders created and file move operations started.
 
-![](./media/image24.png)
+1. Monitor the Workspace pane and verify files are moved into the appropriate topic folders.
 
-*Screenshot 24 — 🟢 Complete: all 28 files renamed and sorted by topic*
+1. Wait for all file move operations to complete.
 
-![](./media/image25.png)
+    ![](./media/m5e1t4s5.png)
 
-*Screenshot 25 — Exercise 1 → 2 transition: Exercise 2 governance audit
-prompt typed and ready*
+    Topic-based organization completed successfully.
 
-18. When complete, open OneDrive in a new tab: My files → Lab Files →
-    Renamed Files 2026-06-19. Verify 5 topic subfolders exist with
-    correct file counts.
+1. Verify the completion summary generated by Copilot Cowork.
 
-19. Verify all folders show 'Private' in the Sharing column — Cowork did
-    NOT alter any sharing settings.
+    ![](./media/m5e1t4s6.png)
 
-![](./media/image26.png)
+    Exercise 1 completed and governance audit prompt ready.
 
-*Screenshot 26 — OneDrive verification: all 5 topic subfolders confirmed
-in Renamed Files 2026-06-19*
+1. Open a new browser tab and navigate to:
 
-![](./media/image27.png)
+    ```text
+    OneDrive → My Files → Lab Files → Renamed Files <Date>
+    ```
 
-*Screenshot 27 — Archive subfolder: 3 correctly identified legacy files
-confirmed*
+    ![](./media/m5e1t4s7.png)
 
-![](./media/image28.png)
+1. Verify all topic folders were created successfully.
 
-*Screenshot 28 — Finance subfolder: VendorPricing correctly classified
-under Finance not Retail*
+    ![](./media/m5e1t4s8.png)
 
-![](./media/image29.png)
+    Topic subfolders verified in OneDrive.
 
-*Screenshot 29 — Healthcare subfolder: 10 renamed clinical files
-consolidated*
+1. Confirm the **Archive** folder contains the expected legacy files.
 
-# Exercise 2 – OneDrive and SharePoint Governance Audit
+    ![](./media/m5e1t4s9.png)
+
+
+1. Open the **Project Orion** folder and verify the renamed files have been consolidated successfully.
+
+    ![](./media/m5e1t4s10.png)
+
+1. Verify all folders display **Private** under the **Sharing** column, confirming no sharing permissions were modified during the organization process.
+
+    ![](./media/m5e1t4s11.png)
+
+## Task 2 – OneDrive and SharePoint Governance Audit
 
 Duration: 6 minutes | Difficulty: Intermediate
 
@@ -346,151 +290,153 @@ stale content, external sharing risks, and ownership gaps. Produce a
 structured audit report with recommendations, then execute one approved
 governance action.
 
-## Task 1: Submit the Governance Audit Prompt
+Submit the Governance Audit Prompt
 
-Enter the following prompt:
+1. Return to the existing **Copilot Cowork** session used in Exercise 1.
 
-*Audit my 'Lab Files' folder for governance issues: duplicate files,
-files not modified in over 6 months, files shared externally or with
-'anyone' links, and files with no clear owner or topic. Recommend an
-action per finding (archive, delete, restrict sharing) but take no
-action yet.*
+1. In the **Message Cowork** box, enter the following prompt:
 
-- Return to Cowork. In the same session from Exercise 1, type the
-  governance audit prompt above and press ↑.
+    ```text
+    Audit my 'Lab Files' folder for governance issues: duplicate files, files not modified in over 6 months, files shared externally or with 'anyone' links, and files with no clear owner or topic. Focus on the Project Orion content set and recommend an action per finding (archive, delete, restrict sharing) but take no action yet.
+    ```
 
-- Watch the Workspace panel expand: 3 new governance steps are appended
-  to the existing 7 steps (Checking sharing/permissions, Analyze
-  duplicates/staleness/ownership, Produce audit report).
+1. Click **Send** to submit the governance audit request.
 
-20. Cowork confirms: 'I already have the inventory, hashes, and metadata
-    from our earlier work' — no re-scanning needed.
+    ![](./media/m5e2t1s1.png)
 
-21. The sharing permission checks run using read-only Graph API calls —
-    no files are modified during the audit.
+    Governance audit prompt entered and ready to submit.
 
-22. When complete, the full 4-section governance audit report appears.
-    READ each section carefully before proceeding.
+1. Verify the **Workspace** pane expands and adds the following governance activities:
 
-![](./media/image30.png)
+    - Checking sharing and permissions
+    - Compile governance audit report
 
-*Screenshot 30 — Exercise 1→2 transition: governance prompt queued in
-message box*
+        ![](./media/m5e2t1s2.png)
 
-![](./media/image31.png)
+        Governance audit initiated and additional audit steps added to the Workspace.
 
-*Screenshot 31 — Exercise 2 prompt submitted: 3 governance steps
-appended to existing plan*
+1. Review the response from Copilot Cowork and verify that previously collected file inventory, metadata, and hash information are reused for the audit process.
 
-![](./media/image32.png)
+1. Monitor the Workspace pane while sharing and permission analysis is performed.
 
-*Screenshot 32 — Workspace at 7/10: sharing permission checks running
-with read-only tools*
+    ![](./media/m5e2t1s3.png)
 
-![](./media/image33.png)
+    Sharing and permission analysis in progress.
 
-*Screenshot 33 — Parallel sharing checks: incremental audit building
-underway*
+1. Wait for the governance audit activities to continue processing.
 
-![](./media/image34.png)
+    ![](./media/m5e2t1s4.png)
 
-*Screenshot 34 — Sharing scan complete: all 28 files confirmed
-owner-only*
+   Governance audit analysis running and audit report being generated.
 
-## Task 2: Review the Audit Report
+1. Verify the sharing analysis completes successfully and confirm that no files are modified during the audit process.
 
-- READ Section 1 — Duplicate files 🔴 (biggest issue): 3 exact
-  duplicates identified by byte-identical content hash and 2 versioned
-  near-duplicate pairs.
+    ![](./media/m5e2t1s5.png)
 
-- READ Section 2 — Stale files ⭕: files identified as archive
-  candidates based on filename-embedded dates (metadata dates were
-  updated by the Exercise 1 renames).
+    Sharing audit completed and file permissions verified.
 
-- READ Section 3 — External shares ✅: all 28 files show owner-only
-  permissions (CLEAN — no action needed).
+    >Note: Review the Governance Audit Report
 
-- READ Section 4 — No clear owner 🟡: LegacyPolicy and all 13 empty
-  .xlsx placeholder files flagged.
+1. Review the **Duplicate Files** section of the governance audit report.
 
-- READ the 'Suggested next steps (on your go-ahead)' numbered action
-  menu at the bottom.
+1. Verify the report identifies exact duplicate files and near-duplicate file versions across the Lab Files repository.
 
-![](./media/image35.png)
+    ![](./media/m5e2t2s1.png)
 
-*Screenshot 35 — Governance audit: Section 1 Duplicate files 🔴 with
-exact and near-duplicate findings*
+    Duplicate file analysis showing exact and near-duplicate file findings.
 
-![](./media/image36.png)
+1. Review the **Stale Files** section of the report.
 
-*Screenshot 36 — Governance audit: Section 2 Stale files with honest
-metadata date disclosure*
+1. Verify the files identified as archive candidates and review the recommended actions.
 
-![](./media/image37.png)
+1. Review the **External Sharing** findings and verify the sharing status of the analyzed files.
 
-*Screenshot 37 — Sections 2 continued, 3 (sharing ✅ clean), 4
-(ownership 🟡 weak cases)*
+1. Review the **Ownership Analysis** section and identify files that do not have a clearly defined owner.
 
-![](./media/image38.png)
+    ![](./media/m5e2t2s3.png)
 
-*Screenshot 38 — 5 recommended actions: numbered menu with deletion
-staging disclosure*
+    Sharing and ownership analysis results.
 
-## Task 3: Execute One Governance Recommendation
+1. Review the **Suggested Next Steps** section at the bottom of the report.
 
-23. In the message box, type: '2' (to approve action \#2: archive the
-    2024/2025/legacy items) and press ↑.
+1. Verify the recommended governance actions available for execution.
 
-24. Cowork executes ONLY action \#2. Actions \#1, \#3, \#4, and \#5
-    remain pending — approval of one does not authorise all.
+   ![](./media/m5e2t2s4.png)
 
-25. When complete, verify in OneDrive that the Archive subfolder now
-    contains 7 items (3 pre-existing + 4 newly moved).
+    Recommended governance actions available for approval.
 
-26. Ask the Responsible AI question: 'which of these governance actions
-    should an agent ever take WITHOUT human approval?' and read Cowork's
-    response.
+1. Review all findings and recommendations before proceeding to the remediation task.
 
-27. Note Cowork's autonomy boundary: 'Safe without approval' = read-only
-    analysis only. 'Needs human approval' = any action that changes
-    state.
+    >Note: Execute a Governance Recommendation
 
-![](./media/image39.png)
+1. Review the recommended governance actions displayed in the audit report.
 
-*Screenshot 39 — '2' sent: action \#2 only being executed, others remain
-pending*
+1. In the **Message Cowork** box, enter the following value:
 
-![](./media/image40.png)
+    ```text
+    2
+    ```
 
-*Screenshot 40 — Archive action complete: 7 legacy items now in Archive
-subfolder*
+1. Click **Send** to approve governance action **#2**.
 
-![](./media/image41.png)
+    ![](./media/m5e2t3s1.png)
 
-*Screenshot 41 — OneDrive Archive folder: all 7 items confirmed with
-timestamps*
+    ![](./media/m5e2t3s2.png)
 
-![](./media/image42.png)
+    Governance action #2 approved for execution.
 
-*Screenshot 42 — Responsible AI question typed: proactive remaining work
-surfacing*
+1. Verify Copilot Cowork executes only the selected governance action and leaves the remaining recommendations pending.
 
-![](./media/image43.png)
+1. Wait for the archive operation to complete.
 
-*Screenshot 43 — Responsible AI question submitted: 'Thinking...'
-reasoning mode active*
+    ![](./media/m5e2t3s3.png)
 
-![](./media/image44.png)
+    Archive operation completed successfully.
 
-*Screenshot 44 — Responsible AI framework: 'Safe without approval' vs
-'Needs human approval'*
+1. Open OneDrive and navigate to the **Archive** folder.
 
-![](./media/image45.png)
+1. Verify the archive location contains the previously archived files along with the newly archived legacy items.
 
-*Screenshot 45 — Responsible AI framework complete: Exercise 3 prompt
-visible in message box*
+    ![](./media/m5e2t3s4.png)
+    
+    Archive folder verified in OneDrive.
 
-# Exercise 3 – AI-Generated Excel Tracking and Teams Reporting
+1. Return to the Copilot Cowork session.
+
+1. In the **Message Cowork** box, enter the following prompt:
+
+    ```text
+    which of these governance actions should an agent ever take WITHOUT human approval?
+    ```
+
+1. Submit the prompt.
+
+    ![](./media/m5e2t3s5.png)
+
+    Responsible AI question entered.
+
+1. Wait for Copilot Cowork to analyze the request.
+
+    ![](./media/m5e2t3s6.png)
+
+    Responsible AI response generation in progress.
+
+1. Review the response and identify the governance actions that require human approval.
+
+    ![](./media/m5e2t3s7.png)
+
+    Responsible AI approval boundary explanation.
+
+1. Verify the response distinguishes between:
+
+    - Read-only analysis activities
+    - Actions that modify files, folders, permissions, or data
+
+1. Review the completed Responsible AI guidance before proceeding to the next exercise.
+
+    ![](./media/m5e2t3s8.png)
+
+## Task 3 – AI-Generated Excel Tracking and Teams Reporting
 
 Duration: 6 minutes | Difficulty: Intermediate
 
@@ -499,299 +445,296 @@ Generate an Excel governance tracker with one row per file, then post a
 Excel → Teams cross-app workflow orchestration from a single
 instruction.
 
-## Task 1: Submit the Excel and Teams Prompt
+Generate an Excel Governance Tracker and Teams Summary
 
-Enter the following prompt:
+1. In the existing **Copilot Cowork** session, enter the following prompt:
 
-*Create an Excel workbook 'File Governance Tracker.xlsx' in Lab Files
-with one row per file: name, type, topic, last modified, sharing status,
-action taken. Then post a 3-line summary of today's cleanup to my Teams
-channel with a link to the workbook.*
+    ```text
+    Create an Excel workbook 'Project Orion File Governance Tracker.xlsx' in Lab Files with one row per file: name, type, topic, last modified, sharing status, action taken. Then post a 3-line summary of today's cleanup to my Teams channel with a link to the workbook.
+    ```
 
-28. In the same Cowork session, type the Excel and Teams prompt above
-    and press ↑.
+1. Click **Send** to submit the request.
 
-29. Watch the Workspace 'Skills & Plugins' section activate the Excel
-    plugin alongside the existing Microsoft Graph permission.
+    ![](./media/m5e3t1s1.png)
 
-30. Cowork prepares the Excel workbook while simultaneously identifying
-    the target Teams channel ('List teams') — both tasks run in
-    parallel.
+1. Monitor the **Workspace** pane and verify the Excel plugin is activated along with the previously approved Microsoft Graph permissions.
 
-31. A 'Post to channel?' dialog appears — READ the 3-paragraph Teams
-    message carefully before clicking Send.
+1. Verify Copilot Cowork begins creating the workbook and identifying the destination Teams channel simultaneously.
 
-32. Verify the 'Sent by Copilot Cowork' footer is included — this
-    attribution is mandatory for all AI-generated Teams posts.
+    ![](./media/m5e3t1s2.png)
 
-![](./media/image46.png)
+    Excel workbook generation and Teams channel discovery initiated.
 
-*Screenshot 46 — Exercise 3 begins: Excel plugin activates, Teams
-discovery runs in parallel*
+1. Wait for the workbook creation process to complete.
 
-![](./media/image47.png)
+1. Review the output generated by Copilot Cowork and verify the governance workbook has been created successfully.
 
-*Screenshot 47 — Workbook generated: Teams post beginning, 'Post to
-channel?' dialog about to appear*
+    ![](./media/m5e3t1s3.png)
 
-![](./media/image48.png)
+    Governance workbook created and Teams post preparation started.
 
-*Screenshot 48 — 'Post to channel?' dialog: 3-paragraph Teams message
-with AI attribution*
+1. Review the **Post to channel** dialog before submitting the message.
 
-## Task 2: Verify the Workbook and Teams Post
+1. Verify the Teams message contains a summary of the governance activities and includes a link to the workbook.
 
-33. Open the File Governance Tracker.xlsx from the Workspace Output
-    panel link. Verify: 28 rows (one per file), 6 columns (File Name,
-    Type, Topic, Last Modified, Sharing Status, Action Taken).
+1. Confirm the message includes the **Sent by Copilot Cowork** attribution.
 
-34. Confirm yellow-highlighted rows identify duplicate/flagged files —
-    these carry forward from the Exercise 2 duplicate analysis.
+    ![](./media/m5e3t1s4.png)
 
-35. Navigate to Teams → General channel → verify the governance post is
-    live with 3 paragraphs and the 'Sent by Copilot Cowork' footer.
+    Teams post review dialog displaying governance summary and AI attribution.
 
-36. Click the 'Lab Files folder' hyperlink in the Teams post to confirm
-    it opens the correct OneDrive location.
+1. Click **Send** to publish the governance summary to the selected Teams channel.
 
-37. Workspace should show '12/12' — all Exercise 3 steps complete.
+    ![](./media/m5e3t1s5.png)
 
-![](./media/image49.png)
+    >Note: Verify the Workbook and Teams Post
 
-*Screenshot 49 — File Governance Tracker.xlsx: open and verify all 28
-rows*
+1. In the **Output** section of the Workspace pane, open **Project Orion File Governance Tracker.xlsx**.
 
-![](./media/image50.png)
+1. Review the workbook and verify it contains one row per file with the following columns:
 
-*Screenshot 50 — 'Post to channel?' full dialog: Workspace shows
-Output + Skills + Always allowed*
+    - File Name
+    - Type
+    - Topic
+    - Last Modified
+    - Sharing Status
+    - Action Taken
 
-![](./media/image51.png)
+        ![](./media/m5e3t2s1.png)
 
-*Screenshot 51 — 'Both done': Workspace 12/12, workbook and Teams post
-confirmed*
+        Project Orion File Governance Tracker workbook opened for verification.
 
-![](./media/image52.png)
+1. Review the workbook contents and verify any flagged or duplicate files are highlighted appropriately.
 
-*Screenshot 52 — Teams General channel: governance post live with 'Sent
-by Copilot Cowork'*
+1. Review the Teams posting workflow and verify the workbook output is available.
 
-![](./media/image53.png)
+    ![](./media/m5e3t2s2.png)
 
-*Screenshot 53 — Teams post full view: 3 paragraphs with accurate
-governance data*
+   Teams posting workflow and workbook output available in the Workspace.
 
-![](./media/image54.png)
+1. Verify the workbook generation process and Teams posting activity have completed successfully.
 
-*Screenshot 54 — Teams post permanent record: 'Reply in thread' visible*
+1. Open Microsoft Teams and navigate to the target **Team** and **General** channel.
 
-![](./media/image55.png)
+1. Verify the governance summary has been posted to the channel.
 
-*Screenshot 55 — Teams channel with compose box: channel ready for human
-replies*
+    ![](./media/m5e3t2s3.png)
 
-# Exercise 4 – Healthcare Documents Reorganisation
+    Governance summary posted to the Teams channel.
+
+1. Review the published post and verify the governance summary content is displayed correctly.
+
+    ![](./media/m5e3t2s4.png)
+
+    Governance summary details displayed in Teams.
+
+1. Verify the Teams post is available as a permanent conversation record.
+
+    ![](./media/m5e3t2s5.png)
+
+    Governance post available for follow-up discussion.
+
+1. Select the workbook or Lab Files hyperlink contained in the Teams post and verify it opens the appropriate location.
+
+1. Confirm the channel remains available for additional user interaction and collaboration.
+
+    ![](./media/m5e3t2s6.png)
+
+   Teams channel available for user responses and collaboration.
+
+## Task 4 – Project Orion Documents Reorganisation
 
 Duration: 8 minutes | Difficulty: Intermediate–Advanced
 
-Classify healthcare files by clinical business function, reorganise the
-Healthcare folder into 5 clinical category subfolders using a
-department-aware naming convention, and update the governance tracker
+Classify Project Orion files by business function, reorganise the
+Project Orion folder into 5 department-aware subfolders using a
+project-aware naming convention, and update the governance tracker
 workbook.
 
-## Task 1: Review the Healthcare Folder and Submit the Classification Prompt
+Review the Project Orion Folder and Submit the Classification Prompt
 
-38. Open OneDrive → My files → Lab Files → Renamed Files 2026-06-19 →
-    Healthcare. Verify 8 active clinical files are present (the 2
-    compliance/HIPAA files archived in Exercise 2 should not be here).
+1. Open OneDrive and navigate to:
 
-39. Return to Cowork and enter the healthcare classification prompt
-    below.
+    ```text
+    My Files → Lab Files → Renamed Files <Date> → Project Orion
+    ```
 
-40. READ the classification table Cowork produces — it uses real
-    healthcare business function taxonomy (HIM, Clinical Policy, Revenue
-    Cycle, Quality/Safety, Clinical Engineering).
+1. Verify the active Project Orion files are present and confirm that previously archived files are not included in the folder.
 
-41. When asked to choose between subfolder reorganisation or adding a
-    Business Function column to the tracker, type: 'add a Business
-    Function column to the File Governance Tracker workbook'.
+   ![](./media/m5e4t1s1.png)
 
-42. Watch Cowork regenerate the workbook as v2 with the new 7-column
-    layout. Verify both v1 and v2 appear in the Workspace Output panel.
+    Project Orion folder verified before reorganization.
 
-Enter the following healthcare classification prompt:
+1. Return to the existing **Copilot Cowork** session.
 
-*Analyze all files in my Healthcare Documents folder. Categorize
-documents into Patient Care, Insurance Claims, Compliance, Medical
-Equipment, and Administration. Rename files using the format
-YYYY-MM-DD_Department_DocumentType and create subfolders for each
-category. Show the proposed changes before making any modifications.*
+1. In the **Message Cowork** box, enter the following prompt:
 
-![](./media/image56.png)
+    ```text
+    Analyze all files in my Project Orion Documents folder. Categorize documents into Sales, Finance, Procurement, Security, and Executive. Rename files using the format YYYY-MM-DD_Department_DocumentType and create subfolders for each category. Show the proposed changes before making any modifications.
+    ```
 
-*Screenshot 56 — Healthcare folder: 8 active files confirmed before
-Exercise 4*
+1. Review the prompt and click **Send**.
 
-![](./media/image57.png)
+     ![](./media/m5e4t1s2.png)
 
-*Screenshot 57 — Exercise 3→4 transition: healthcare classification
-prompt queued*
+    Project Orion classification prompt entered and ready to submit.
 
-![](./media/image58.png)
+1. Wait for Copilot Cowork to analyze the Project Orion documents and generate a classification report.
 
-*Screenshot 58 — Healthcare classification table: standard clinical
-business function taxonomy*
+1. Review the classification results and verify files are categorized into business functions such as:
 
-![](./media/image59.png)
+    - Sales
+    - Finance
+    - Procurement
+    - Security
+    - Executive
 
-*Screenshot 59 — Classification table continued: PHI awareness noted,
-user choice offered*
+        ![](./media/m5e4t1s3.png)
 
-![](./media/image60.png)
+        Business function classification results generated for Project Orion files.
 
-*Screenshot 60 — 'Add a Business Function column' instruction typed*
+1. Continue reviewing the classification recommendations and proposed file organization plan.
 
-![](./media/image61.png)
+    ![](./media/m5e4t1s4.png)
 
-*Screenshot 61 — Instruction sent: workbook regeneration begins*
+    ![](./media/m5e4t1s5.png)
 
-![](./media/image62.png)
+    ![](./media/m5e4t1s6.png)
 
-*Screenshot 62 — Workbook regeneration: 3-step parallel validation
-running*
+    Additional classification details and user options displayed.
 
-![](./media/image63.png)
+1. When prompted, enter the following instruction:
 
-*Screenshot 63 — Workbook v2 complete: cross-domain business function
-taxonomy applied to all 28 files*
+    ```text
+    add a Business Function column to the File Governance Tracker workbook
+    ```
 
-![](./media/image64.png)
+1. Click **Send** to update the governance workbook.
 
-*Screenshot 64 — File Governance Tracker v2 open in Excel: 7-column
-layout*
+   ![](./media/m5e4t1s7.png)
 
-![](./media/image65.png)
+    Workbook update request submitted.
 
-*Screenshot 65 — v2 completion summary: version management transparency
-and follow-up options*
+1. Monitor the Workspace pane while Copilot Cowork regenerates the workbook.
 
-![](./media/image66.png)
+1. Wait for the workbook update process to complete.
 
-*Screenshot 66 — v2 workbook summary with microphone paused indicator*
+1. Verify the updated workbook has been generated successfully.
 
-![](./media/image67.png)
+    ![](./media/m5e4t1s8.png)
 
-*Screenshot 67 — File Governance Tracker v2 full workbook view: all 28
-rows*
+    ![](./media/m5e4t1s9.png)
 
-## Task 2: Reorganise the Healthcare Folder into 5 Clinical Subfolders
+   File Governance Tracker v2 generated successfully.
 
-43. Enter the full Exercise 4 healthcare reorganisation prompt (shown
-    below) and press ↑.
+1. Open the updated workbook from the Workspace output section.
 
-44. Cowork finds your Healthcare folder and presents the full proposed
-    plan — nothing has been changed yet. READ all proposed renames
-    carefully.
+1. Verify the workbook includes the additional **Business Function** column.
 
-45. Note: '(still an exact duplicate)' appears next to
-    InsuranceClaims_Cl...-v2.xlsx — the duplicate flag from Exercise 2
-    is carried forward.
+    ![](./media/m5e4t1s10.png)
 
-46. When ready, type 'proceed' in the message box and press ↑. This
-    triggers a new 2-step plan: create 5 subfolders, then rename and
-    move 8 files.
+    File Governance Tracker v2 opened for verification.
 
-47. When the 🏁 completion banner appears, open OneDrive → Healthcare to
-    verify 5 category subfolders exist with correct files in each.
+1. Review the workbook update summary generated by Copilot Cowork.
 
-![](./media/image68.png)
+    ![](./media/m5e4t1s11.png)
 
-*Screenshot 68 — Exercise 4 reorganisation prompt:
-YYYY-MM-DD_Department_DocumentType format*
+   Workbook v2 completion summary displayed.
 
-![](./media/image69.png)
+1. Review the workbook version details and follow-up recommendations.
 
-*Screenshot 69 — Cowork searching for Healthcare Documents folder*
+1. Verify the updated workbook displays all Project Orion records with the new business function classification.
 
-![](./media/image70.png)
+    ![](./media/m5e4t1s12.png)
 
-*Screenshot 70 — Healthcare folder found: proposed categorisation plan
-with duplicate folder disambiguation*
+    File Governance Tracker v2 displaying all document records.
 
-![](./media/image71.png)
+1. Verify both workbook versions are available in the Workspace output before proceeding to the next task.
 
-*Screenshot 71 — Proposed plan: Patient Care and Insurance Claims
-sections*
+## Task 5 - Reorganize the Project Orion Folder into Department-Based Subfolders
 
-![](./media/image72.png)
+1. In the existing **Copilot Cowork** session, enter the Project Orion reorganization prompt.
 
-*Screenshot 72 — Proposed plan: Medical Equipment, Administration, and
-'Three things to confirm'*
+    ```text
+    Analyze all files in my Project Orion Documents folder. Categorize documents into Sales, Procurement, Security, and Executive. Rename files using the format YYYY-MM-DD_Department_DocumentType and create subfolders for each category. Show the proposed changes before making any modifications.
+    ```
 
-![](./media/image73.png)
+1. Review the prompt and click **Send**.
 
-*Screenshot 73 — 'proceed' typed: single-word approval triggers 3-phase
-execution*
+    ![](./media/m5e4t2s1.png)
 
-![](./media/image74.png)
+    Project Orion reorganization prompt using the YYYY-MM-DD_Department_DocumentType naming convention.
 
-*Screenshot 74 — New 2-step plan (0/2): subfolder creation begins*
+1. Wait for Copilot Cowork to locate the Project Orion folder.
 
-![](./media/image75.png)
+1. Monitor the Workspace pane while the folder discovery process is running.
 
-*Screenshot 75 — Step 1/2 complete: all 5 subfolders created, parallel
-rename batch begins*
+    ![](./media/m5e4t2s2.png)
 
-![](./media/image76.png)
+    Project Orion folder discovery in progress.
 
-*Screenshot 76 — Rename batch continuing: drive alias workaround applied
-systematically*
+1. Review the proposed file categorization and rename plan generated by Copilot Cowork.
 
-![](./media/image77.png)
+1. Verify the files are mapped to the appropriate department categories.
 
-*Screenshot 77 — Workspace 1/2: subfolders done, rename batch visible
-with progress indicators*
+    ![](./media/m5e4t2s3.png)
 
-![](./media/image78.png)
+    Proposed Project Orion categorization and rename plan.
 
-*Screenshot 78 — 2/2 complete: all 8 healthcare files renamed and
-sorted, open items noted*
+1. After reviewing the proposed changes, enter the following approval:
 
-![](./media/image79.png)
+    ```text
+    proceed
+    ```
 
-*Screenshot 79 — 🏁 Healthcare folder reorganized: Exercise 4 complete*
+1. Submit the approval request.
 
-# Lab Summary
+    ![](./media/m5e4t2s4.png)
 
-In this lab, you used Microsoft 365 Copilot Cowork to execute a complete
-enterprise file governance workflow from natural language prompts. You
-applied AI-powered file classification with an explicit
-preview-before-action safety gate, ran a full governance audit across 28
-files using cross-exercise session memory, and orchestrated a cross-app
-reporting workflow spanning OneDrive, Excel, and Microsoft Teams.
+    ![](./media/m5e4t2s5.png)
 
-Key Cowork capabilities demonstrated throughout:
+    Reorganization approval submitted.
 
-- Multi-Step Workflow Decomposition — natural language prompt →
-  structured multi-step plan in the Workspace panel
+1. Wait for all rename and move operations to complete.
 
-- Human-in-the-Loop Preview Gates — mandatory approval dialogs before
-  every bulk file operation
+    ![](./media/m5e4t2s6.png)
 
-- Progressive Batch Permission (Always allow Call graph) —
-  session-scoped consent for repeated Graph API calls
+    Project Orion files successfully reorganized and renamed.
 
-- Cross-Exercise Context Retention — Exercise 1 content hashes and
-  metadata reused directly in Exercise 2 and 4
+1. Open OneDrive and navigate to the Project Orion folder.
 
-- Graceful Failure Isolation — locked files flagged and retried
-  automatically without aborting the batch
+1. Verify the following department folders have been created:
 
-- Responsible AI Self-Articulation — Cowork accurately describes its own
-  'Safe without approval' vs 'Needs human approval' boundary
+    - Sales
+    - Procurement
+    - Security
+    - Executive
 
-- Cross-App Workflow Orchestration — OneDrive file data → Excel
-  governance tracker → Teams stakeholder communication
+1. Confirm the files have been renamed using the following naming convention:
 
-- Healthcare Domain Classification — PHI awareness, clinical business
-  function taxonomy, duplicate persistence across exercises
+    ```text
+    YYYY-MM-DD_Department_DocumentType
+    ```
+
+1. Verify the files have been placed in the appropriate department folders before completing the lab.
+
+
+## Review
+
+In this lab, you completed the following:
+
+
+Classified and renamed enterprise files using an AI-generated YYYY-MM-DD_Topic_DocType naming convention, previewed the full old-name → new-name mapping, and approved the batch rename into topic-organised subfolders
+Executed a full governance audit covering duplicate files, stale content, external sharing risks, and ownership gaps, and approved a single governance action while leaving the remaining recommendations pending
+Asked Copilot Cowork which governance actions an agent should take without human approval, and reviewed how it distinguishes read-only analysis from actions that modify files, folders, permissions, or data
+Generated an Excel governance tracker with one row per file and posted a 3-line cleanup summary with a workbook link to a Microsoft Teams channel
+Classified Project Orion documents by business function and added a Business Function column to the governance tracker workbook
+Reorganised the Project Orion folder into department-aware subfolders (Sales, Procurement, Security, Executive) using a project-aware renaming convention
+Applied human-in-the-loop approval gates before every bulk file, folder, and sharing operation throughout the lab
+
+
+## You have successfully completed the Lab!
+
+Now, click on **Next >>** from the lower right corner to move on to the next page.
+
+ ![](./media/nxtim.png)
