@@ -1,6 +1,6 @@
 # Lab 4 – Executive Meeting Coordinator
 
-## Estimated Duration: 45 minutes
+### Estimated Duration: 45 minutes
 
 ## Overview
 

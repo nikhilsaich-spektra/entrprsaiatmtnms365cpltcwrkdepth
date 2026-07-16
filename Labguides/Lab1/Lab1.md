@@ -1,6 +1,6 @@
 # Lab 1: Getting Started with Copilot Cowork
 
-## Estimated Duration: 75 Minutes
+### Estimated Duration: 75 Minutes
 
 ## Overview
 In this hands-on lab, you will get oriented to Copilot Cowork, the agentic workspace inside Microsoft 365 Copilot. Unlike traditional Copilot Chat, where you ask a single question and receive a single answer, Cowork can plan and carry out multi-step tasks on your behalf — reading your emails, checking your calendar, working with files, and delivering a finished result, all in one go. You will sign in to Microsoft 365, tour the Cowork home screen, generate sample emails and calendar events in Outlook, upload sample files to OneDrive, create a team in Microsoft Teams, and run your first tasks using starter tiles, typed prompts, and voice commands. You will also learn how to add context to a task, review task history and scheduled tasks, and explore the Customize area where Cowork's capabilities can be extended with plugins and skills.
@@ -18,8 +18,6 @@ In this lab, you will perform the following:
 - Task 6: Use the + Menu to Add Context to a Task
 - Task 7: Explore Task History, Scheduled Tasks, and Task Ideas
 - Task 8: Explore the Customize Area
-
----
 
 ## Task 1: Sign In and Explore the Cowork Home Screen
 
