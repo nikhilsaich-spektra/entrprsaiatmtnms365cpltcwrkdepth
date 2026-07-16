@@ -1,15 +1,10 @@
 # Lab 4 – Executive Meeting Coordinator
 
-## Estimated Duration: 45 minutes
+### Estimated Duration: 45 minutes
 
 ## Overview
 
 In this hands-on lab, you will use Copilot Cowork to automate the full lifecycle of an executive meeting — from preparation through to post-meeting follow-up — grounded entirely in real Microsoft 365 data. You will generate a one-page meeting prep brief as a Word document by having Cowork pull attendee history, agenda details, related emails and files, and open action items in parallel from Outlook, OneDrive/SharePoint, and Teams. You will refine that document with a human-approved Risks section, move the updated file into a governed OneDrive folder using a Microsoft Graph approval gate, and verify version control along the way. You will then assemble a cross-app "Meeting Pack" with a hyperlinked index document, and finally test Cowork's responsible AI grounding behavior by asking it to generate post-meeting deliverables from a transcript that does not exist — confirming that it refuses to fabricate content and instead offers constructive alternatives.
-
-
->**Disclaimer:** Copilot Cowork is AI-powered, so generated outputs may differ across users and sessions. The results you see in this lab may not exactly match the examples shown here. Follow the workflow and expected outcome in the guide rather than expecting identical content.
-
-
 
 ## Objectives
 

@@ -1,6 +1,6 @@
 # Lab 2: Daily Workday Assistant
 
-## Estimated Duration: 45 Minutes
+### Estimated Duration: 45 Minutes
 
 ## Overview
 In this hands-on lab, you will use Copilot Cowork to build a personalized daily workday assistant that reads your calendar, summarizes important emails, and extracts tasks and follow-ups automatically - all from a single prompt. Copilot Cowork is the agentic workspace inside Microsoft 365 Copilot: instead of one question and one answer, it takes multi-step actions across your apps, reading your Outlook calendar, searching your inbox, scanning Teams messages, and creating tasks in Microsoft To Do within a single conversation. As you work through this lab, watch the Workspace panel on the right, where Cowork lists the Steps it is completing and the Skills it activates for each task - Daily Briefing, Calendar Management, Email Triage, and Task Extraction. This lab builds on the sample emails and calendar events created in Lab 1.
@@ -13,8 +13,6 @@ In this lab, you will perform the following:
 - Task 3: Summarize Important Emails and Pending Actions
 - Task 4: Extract Tasks and Follow-up Items
 - Task 5: Draft and Refine an Email Reply (Optional)
-
----
 
 ## Task 1: Prepare a Personalized Workday Briefing
 

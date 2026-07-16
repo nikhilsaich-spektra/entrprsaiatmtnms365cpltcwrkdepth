@@ -1,6 +1,6 @@
 # Lab 6 – Building Custom Cowork Skills
 
-## Estimated Duration: 90 minutes
+### Estimated Duration: 90 minutes
 
 ## Overview
 
@@ -19,15 +19,6 @@ In this lab, you will perform the following:
 - Task 7: Run the Project Status Brief and Post to a Teams Channel
 - Task 8: Post the Project Status Brief to a Teams Channel
 - Task 9: Inspect, Edit, Download, and Delete Skills
-
-# Before You Start: What Is a Custom Skill?
-
-A Custom Skill is a saved workflow Cowork follows whenever you call it
-by name. You describe what you want once, Cowork builds and saves it,
-and from then on one sentence triggers the full workflow automatically.
-
-> [!NOTE]
-> The **Skill Builder** is fully conversational. Instead of filling out forms or writing code, simply describe the skill you want to create. Copilot Cowork asks follow-up questions, gathers the required information, and generates the skill automatically.
 
 ## Task 1: Design Your Skill on Paper First
 

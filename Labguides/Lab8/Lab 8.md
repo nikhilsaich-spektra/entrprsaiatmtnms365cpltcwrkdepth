@@ -1,6 +1,6 @@
 # Lab 8: Build and Publish a Custom Microsoft 365 Copilot Cowork Plugin
 
-**Estimated Duration:** 60 minutes
+### Estimated Duration: 60 minutes
 
 ## Overview
 Organizations can extend Microsoft 365 Copilot beyond its built-in capabilities by developing custom plugins that integrate enterprise knowledge, business processes, and external services. Using Copilot Cowork Plugins and the Model Context Protocol (MCP), developers can securely connect Microsoft 365 Copilot to external data sources, enabling users to retrieve live information and perform specialized tasks through natural language.
@@ -19,8 +19,6 @@ After completing this lab, you will be able to:
 - Test the plugin by executing natural-language financial research queries powered by the SEC EDGAR Remote MCP Server.
 
 ## Task 1 - Review Plugins and Skills in Cowork
-
-### **Objective**
 
 Verify that Microsoft 365 Copilot and Copilot Cowork are available and
 ready for plugin development.
