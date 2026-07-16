@@ -267,7 +267,6 @@ subfolders.
 
     ![](./media/m5e1t4s9.png)
 
-
 1. Open the **Project Orion** folder and verify the renamed files have been consolidated successfully.
 
     ![](./media/m5e1t4s10.png)
