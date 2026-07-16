@@ -1,6 +1,6 @@
 # Lab 7: Building a Personal Work Dashboard with Microsoft Copilot Cowork
 
-## Estimated Duration: 40 Minutes
+**Estimated Duration:** 60 minutes
 
 ## Overview
 Modern knowledge workers spend a significant amount of time switching between Outlook, Teams, Calendar, and OneDrive to identify priorities and track ongoing work. Microsoft Copilot Cowork enables users to automate these repetitive activities by orchestrating Microsoft Graph data, generating personalized outputs, and scheduling recurring tasks that continuously refresh with the latest information.
