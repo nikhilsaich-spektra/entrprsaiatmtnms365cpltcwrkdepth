@@ -5,8 +5,6 @@
 ## Overview
 In this hands-on lab, you will get oriented to Copilot Cowork, the agentic workspace inside Microsoft 365 Copilot. Unlike traditional Copilot Chat, where you ask a single question and receive a single answer, Cowork can plan and carry out multi-step tasks on your behalf — reading your emails, checking your calendar, working with files, and delivering a finished result, all in one go. You will sign in to Microsoft 365, tour the Cowork home screen, generate sample emails and calendar events in Outlook, upload sample files to OneDrive, create a team in Microsoft Teams, and run your first tasks using starter tiles, typed prompts, and voice commands. You will also learn how to add context to a task, review task history and scheduled tasks, and explore the Customize area where Cowork's capabilities can be extended with plugins and skills.
 
->**Disclaimer:** Copilot Cowork is AI-powered, so generated outputs may differ across users and sessions. The results you see in this lab may not exactly match the examples shown here. Follow the workflow and expected outcome in the guide rather than expecting identical content.
-
 ## Objectives
 In this lab, you will perform the following:
 
