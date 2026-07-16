@@ -1,15 +1,10 @@
 # Lab 5 – Intelligent File Organizer
 
-## Estimated Duration: 30 Minutes
+## Estimated Duration: 45 Minutes
 
 ## Overview
 
 In this hands-on lab, you will act as a Power User or IT Administrator at Contoso Electronics, overseeing a shared OneDrive environment containing mixed Project Orion files across Sales, Finance, Procurement, Operations, and executive collaboration folders. File naming is inconsistent, governance is weak, and a compliance review is approaching. You will use Microsoft 365 Copilot Cowork — an agentic AI layer that orchestrates OneDrive, SharePoint, Excel, and Teams — to classify and rename files using an AI-generated naming convention, run a full governance audit covering duplicates, staleness, sharing risks, and ownership gaps, generate an Excel governance tracker and post a summary to Teams, and reorganise Project Orion documents into department-aware subfolders. Every bulk file operation requires your explicit approval before it executes.
-
-
->**Disclaimer:** Copilot Cowork is AI-powered, so generated outputs may differ across users and sessions. The results you see in this lab may not exactly match the examples shown here. Follow the workflow and expected outcome in the guide rather than expecting identical content.
-
-
 
 ## Objectives
 
@@ -92,7 +87,6 @@ subfolders.
 1. Click Send.
 
     ![](./media/m5e1t1s1.png)
-
 
     >Note: Cowork discovers the Lab Files folder and begins content analysis
 
@@ -271,7 +265,6 @@ subfolders.
 1. Confirm the **Archive** folder contains the expected legacy files.
 
     ![](./media/m5e1t4s9.png)
-
 
 1. Open the **Project Orion** folder and verify the renamed files have been consolidated successfully.
 
