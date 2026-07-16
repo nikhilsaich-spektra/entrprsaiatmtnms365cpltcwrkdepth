@@ -1,0 +1,44 @@
+[
+    {
+        "Name": "Enterprise AI Automation with Microsoft 365 Copilot Cowork",
+        "Language": "English",
+        "Files": [
+          {
+            "RawFilePath": "https:////docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/entrprsaiatmtnms365cpltcwrkdepth/refs/heads/main/Labguides/Getting-Started-Page/00-getting-started.md",
+            "Order": 1      
+          },           
+          {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/entrprsaiatmtnms365cpltcwrkdepth/refs/heads/main/Labguides/Lab1/Lab1.md",
+            "Order": 2      
+          },  
+          {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/entrprsaiatmtnms365cpltcwrkdepth/refs/heads/main/Labguides/Lab2/Lab%202.md",
+            "Order": 3      
+          }, 
+          {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/entrprsaiatmtnms365cpltcwrkdepth/refs/heads/main/Labguides/Lab3/Lab%203.md",
+            "Order": 4      
+          },  
+          {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/entrprsaiatmtnms365cpltcwrkdepth/refs/heads/main/Labguides/Lab4/Lab4.md",
+            "Order": 5      
+          }, 
+          {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/entrprsaiatmtnms365cpltcwrkdepth/refs/heads/main/Labguides/Lab5/Lab5.md",
+            "Order": 6      
+          },
+          {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/entrprsaiatmtnms365cpltcwrkdepth/refs/heads/main/Labguides/Lab6/Lab%206.md",
+            "Order": 7
+          },
+          {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/entrprsaiatmtnms365cpltcwrkdepth/refs/heads/main/Labguides/Lab7/Lab%207.md",
+            "Order": 8   
+          },    
+          {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/entrprsaiatmtnms365cpltcwrkdepth/refs/heads/main/Labguides/Lab8/Lab%208.md",
+            "Order": 9 
+          }                                                     
+        ]
+    }
+]

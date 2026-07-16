@@ -1,827 +1,546 @@
-# Lab 1 - Getting Started with Copilot Cowork
-
-|  |  |
-|----|----|
-| **Estimated Time** | 30 minutes |
-| **Objective** | Orientate yourself to every part of the Cowork interface and run your first tasks -- so all later labs start from a confident baseline. |
-| **You will need** | Lab account credentials and access to m365.cloud.microsoft or your org's M365 entry point |
-
-## What Is Copilot Cowork?
-
-Copilot Cowork is the agentic workspace inside Microsoft 365 Copilot.
-Unlike regular Copilot chat -- where you ask one question and get one
-answer -- Cowork can carry out multi-step tasks on your behalf: reading
-your emails, checking your calendar, working with files, and delivering
-a finished result, all in one go.
-
-|                          |                                                |
-|:------------------------:|:----------------------------------------------:|
-|     **Copilot Chat**     |               **Copilot Cowork**               |
-| One question, one answer | **Multi-step tasks from a single instruction** |
-|   You guide each step    | **Cowork plans and executes the steps itself** |
-| Great for quick lookups  |  **Great for complex, repeatable workflows**   |
-|     No task history      |     **All tasks are saved and searchable**     |
-
-|                                                         |
-|---------------------------------------------------------|
-
-## Exercise 1: Open Cowork and Explore the Home Screen 
-
-The first thing to learn is what the Cowork home screen shows you and
-how each panel is organised. Do not run any tasks yet -- just look and
-navigate.
-
-### Step 1 -- Sign in and switch to the Cowork
-
-1.  **Open your browser and go to**
-    [m365.cloud.microsoft](https://m365.cloud.microsoft/) (or your
-    organisation's M365 entry point). Sign in with your lab account.
-
-2.  **At the top of the left panel, find the two tabs:** Chat and
-    Cowork. Click the Cowork tab.
-
-<img src="./media/image1.png" style="width:7in;height:4.63542in" />
-
-<img src="./media/image2.png" style="width:7in;height:4.66667in" />
-
-- The Cowork tab is now highlighted.
-
-- The main area shows "What can I do for you?" -- your home screen.
-
-- On the left you see the four navigation items: New task, Search,
-  Scheduled, Customize.
-
-- Below the nav, a list of previous tasks appears (e.g. Audit Lab Files
-  for Governance Issues, Inbox Triage by Priority Ranking).
-
-- At the very bottom-left is your account name (ODL_User 2270231) and
-  the M365 Copilot label with a "..." icon beside it.
-
-### Step 2 -- Identify every element on the home screen
-
-Before clicking anything, read through this map of what you can see.
-Each element is referenced to its screenshot.
-
-<table style="width:93%;">
-<colgroup>
-<col style="width: 23%" />
-<col style="width: 69%" />
-</colgroup>
-<tbody>
-<tr>
-<td colspan="2"><strong>What you see on screen</strong></td>
-</tr>
-<tr>
-<td><strong>Chat / Cowork tabs</strong></td>
-<td>Top of the left panel. Chat for single-turn Q&amp;A; Cowork for
-multi-step tasks. You are on Cowork now.</td>
-</tr>
-<tr>
-<td><strong>Two-panel icon (top-left)</strong></td>
-<td>The grid/panel icon at the very top-left corner. Click it to
-collapse or expand the left navigation panel.</td>
-</tr>
-<tr>
-<td><strong>App launcher (9-dots)</strong></td>
-<td>The 3x3 grid icon at the top of the left bar. Opens the full
-Microsoft 365 app launcher.</td>
-</tr>
-<tr>
-<td><strong>New task (left nav)</strong></td>
-<td>Highlighted in blue -- the home screen you are on now. Always
-returns you to this starting point.</td>
-</tr>
-<tr>
-<td><strong>Search (left nav)</strong></td>
-<td>Opens your full task history with a search bar and Filter
-button.</td>
-</tr>
-<tr>
-<td><strong>Scheduled (left nav)</strong></td>
-<td>Shows recurring/automated tasks and their run history.</td>
-</tr>
-<tr>
-<td><strong>Customize (left nav)</strong></td>
-<td>Manages Plugins (external connections) and Skills (built-in and
-custom).</td>
-</tr>
-<tr>
-<td><strong>Task history list</strong></td>
-<td>The list of past tasks below the nav items, e.g. "Audit Lab Files
-for Governance Issues". Click any to reopen it.</td>
-</tr>
-<tr>
-<td><strong>Auto dropdown (top bar)</strong></td>
-<td>The model selector. Shows the AI model currently in use.</td>
-</tr>
-<tr>
-<td><strong>Shield icon (top-right)</strong></td>
-<td>Responsible AI / privacy settings.</td>
-</tr>
-<tr>
-<td><strong>Bell icon (top-right)</strong></td>
-<td>Notifications about your tasks.</td>
-</tr>
-<tr>
-<td><strong>... icon (top-right)</strong></td>
-<td>Menu for Keyboard shortcuts, Send feedback, Get support.</td>
-</tr>
-<tr>
-<td><strong>"What can I do for you?"</strong></td>
-<td>The welcome prompt on your first visit. After your first task it
-changes to "What are we working on?"</td>
-</tr>
-<tr>
-<td><strong>Task bar</strong></td>
-<td>The input field: "Start a task...". This is where you type or speak
-your instructions.</td>
-</tr>
-<tr>
-<td><strong>+ button (task bar left)</strong></td>
-<td>Opens the context menu for attaching files, work context, or going
-to Customize.</td>
-</tr>
-<tr>
-<td><strong>Prompt tip (below task bar)</strong></td>
-<td>A greyed hint line. On first load: "While editing a prompt, press Up
-to recall your previous prompts."</td>
-</tr>
-<tr>
-<td><strong>Up next section</strong></td>
-<td>Cowork's suggestions based on your recent activity. Shows task names
-and any file badges attached.</td>
-</tr>
-<tr>
-<td><strong>Show more (Up next)</strong></td>
-<td>Expands the full list of recent tasks beyond the three shown.</td>
-</tr>
-<tr>
-<td><strong>Try these next</strong></td>
-<td>Three one-click starter workflow tiles: Organize my inbox, Arrange
-my week, Prep for a meeting.</td>
-</tr>
-<tr>
-<td><strong>Show more (Try these next)</strong></td>
-<td>Opens the full Task Ideas panel with categorised workflow
-templates.</td>
-</tr>
-<tr>
-<td><strong>Account area (bottom-left)</strong></td>
-<td>Your profile picture, display name, and M365 Copilot plan label. The
-"..." opens account options.</td>
-</tr>
-</tbody>
-</table>
-
-> **Tip:** The left panel can be collapsed by clicking the two-panel
-> icon (top-left). This gives you more space when actually running a
-> task.
->
-> **Note:** The task list on the left is your permanent history. Tasks
-> are never deleted unless you delete them manually. This is what makes
-> Cowork a genuine workflow tool, not just a chat window.
-                                               
-## Exercise 2: Learn the Top Toolbar Controls 
-
-Three icons in the top-right corner and the model selector dropdown are
-used throughout every lab. Take 5 minutes now to click each one so there
-are no surprises later.
-
-### Step 1 -- Explore the model selector (Auto dropdown)
-
-3.  **Click the** "Auto" dropdown at the very top of the right panel
-    (above the task bar). A menu appears with four options.
-
-<img src="./media/image3.png" style="width:7in;height:2.90625in" />
-
-The dropdown shows:
-
-- Auto (Best model for the task -- checked as currently selected),
-
-- Claude Sonnet 4.6 (Efficient for everyday tasks),
-
-- Claude Opus 4.8 (For complex, high-stakes work),
-
-- GPT 5.5 (Versatile across task types).
-
-<table style="width:93%;">
-<colgroup>
-<col style="width: 23%" />
-<col style="width: 69%" />
-</colgroup>
-<tbody>
-<tr>
-<td colspan="2">What you see on screen</td>
-</tr>
-<tr>
-<td>Auto (default)</td>
-<td>Cowork picks the best model for your specific task. Leave this
-selected for all beginner labs.</td>
-</tr>
-<tr>
-<td>Claude Sonnet 4.6</td>
-<td>Fast and efficient. Good for everyday tasks like email summaries and
-calendar reviews.</td>
-</tr>
-<tr>
-<td>Claude Opus 4.8</td>
-<td>More powerful reasoning. Use for complex multi-source analysis or
-high-stakes outputs.</td>
-</tr>
-<tr>
-<td>GPT 5.5</td>
-<td>An alternative model. Versatile across task types.</td>
-</tr>
-</tbody>
-</table>
-
-> **Note:** Leave the model set to Auto for this entire lab. Auto almost
-> always picks the right model and saves you from having to decide.
-
-4.  Click anywhere outside the dropdown to close it without changing the
-    selection.
-
-### Step 2 -- Check Notifications (bell icon)
-
-5.  **Click the** bell icon (top-right). A Notifications panel slides
-    out.
-
-<img src="./media/image4.png" style="width:7in;height:2.04167in" />
-
-- The Notifications panel appears with an X to close it. On a new lab
-  account it shows "No new notifications" with a muted bell graphic.
-
-6.  Read the panel -- it will say "No new notifications" on a fresh lab
-    account. As you run tasks in later labs, completed task alerts will
-    appear here.
-
-<img src="./media/image5.png" style="width:7in;height:1.79167in" />
-
-7.  **Click the X** on the notifications panel to close it.
-
-<img src="./media/image6.png" style="width:7in;height:2in" />
-
-### Step 3 -- Open the three-dot menu (...)
-
-8.  **Click the** "..." icon at the far top-right. A small dropdown menu
-    appears.
-
-- The three-dot menu shows three options: Keyboard shortcuts (with a
-  keyboard icon), Send feedback (with a feedback icon), Get support
-  (with a question-mark icon).
-
-<img src="./media/image7.png" style="width:7in;height:1.875in" />
-
-<table style="width:93%;">
-<colgroup>
-<col style="width: 23%" />
-<col style="width: 69%" />
-</colgroup>
-<tbody>
-<tr>
-<td colspan="2"><strong>What you see on screen</strong></td>
-</tr>
-<tr>
-<td><strong>Keyboard shortcuts</strong></td>
-<td>Opens a reference card of all keyboard shortcuts for Cowork. Worth
-bookmarking.</td>
-</tr>
-<tr>
-<td><strong>Send feedback</strong></td>
-<td>Submit feedback to Microsoft about your Cowork experience.</td>
-</tr>
-<tr>
-<td><strong>Get support</strong></td>
-<td>Opens Microsoft support documentation for Copilot Cowork.</td>
-</tr>
-</tbody>
-</table>
-
-9.  Click "Keyboard shortcuts" and scan the list -- you do not need to
-    memorise anything, just know where this reference lives.
-
-<img src="./media/image8.png" style="width:7in;height:4.26042in" />
-
-10. Close the menu by clicking anywhere outside it.
-
-|                                      |
-|--------------------------------------|
-
-## Exercise 3:** Run Your First Tasks 
-
-Now that you know the layout, it is time to actually run something. This
-exercise covers the three ways to give Cowork an instruction: starter
-tiles, typing, and voice.
-
-### Step 1 -- Run a task from a starter tile**
-
-11. **On the home screen, click** "Prep for a meeting" (one of the three
-    Try these next tiles).
-
-<img src="./media/image9.png" style="width:7in;height:4.64583in" />
-
-12. Cowork opens a new task and pre-fills a detailed prompt in the task
-    bar. Read it -- notice how specific it is: it asks for meeting
-    title, time, duration, location, virtual link, organizer, attendee
-    list, agenda, attachments, and whether you have accepted or
-    declined.
-
-<img src="./media/image10.png" style="width:7in;height:4.57292in" />
-
-- The task bar shows the pre-filled "Prep for a meeting" prompt with a
-  bulleted list covering: Meeting title, time, duration and location or
-  virtual link -- Who organized it and the full attendee list -- Any
-  agenda, attachments, or notes included in the invite -- Whether you've
-  accepted, declined, or not yet responded. The blue send arrow is
-  visible at the right of the task bar, ready to submit.
-
-13. **Click the blue send arrow** (or press Enter) to run the task.
-
-- Watch Cowork work step by step. It will read your calendar, identify
-  your next meeting, and return a structured briefing.
-
-<img src="./media/image11.png" style="width:7in;height:4.61458in" /><img src="./media/image12.png" style="width:7in;height:4.58333in" />
-
-14. Read the output. This is a live result from your real calendar data.
-
-<img src="./media/image13.png" style="width:7in;height:4.66667in" />
-
-**Step 2 -- Start a task by typing from scratch**
-
-15. **Click** New task in the left panel to return to the home screen.
-
-<img src="./media/image14.png" style="width:7in;height:4.5625in" />
-
-16. **Click inside the task bar** and type:
-
-Summarize my last 5 unread emails and list any action items I need to
-respond to.
-
-<img src="./media/image15.png" style="width:7in;height:4.53125in" />
-
-17. **Press Enter to run the prompt.**
-
-**Step 3 -- Try voice input**
-
-18. **Click** New task to return to the home screen.
-
-19. **Find the** microphone icon on the right side of the task bar (it
-    looks like a small microphone). Click it once.
-
-<img src="./media/image16.png" style="width:7in;height:2.03125in" />
-
-20. Speak a simple instruction: "Show me my meetings for tomorrow."
-
-21. Cowork transcribes your words into the task bar. Review the text,
-    then press Enter to run it.
-
-Note: If your browser asks for microphone permission, click Allow. If
-you prefer not to use voice, you may type the instruction instead.
-
-> **Note:** The microphone button toggles between active (listening) and
-> paused. If your speech is not transcribing, click the microphone icon
-> once more to re-activate it.
-                                                
-## Exercise 4: Use the + Menu to Add Context to a Task 
-
-The "+" button opens a context menu that lets you tell Cowork exactly
-what to read. This is one of the most important skills in Cowork --
-adding the right context gets you far better results than typing alone.
-
-### Step 1 -- Open the + menu and read the four options**
-
-22. **Click** New task, then click the "+" button at the left of the
-    task bar.
-
-<img src="./media/image17.png" style="width:7in;height:4.47917in" />
-
-The + menu opens with four items:
-
-- Add work context -- Files, people, meetings
-
-- Upload images and files -- PDF, Word, Excel, images
-
-- Attach cloud files -- OneDrive, SharePoint, Teams
-
-- Customize -- Manage skills and plugins
-
-<table style="width:93%;">
-<colgroup>
-<col style="width: 23%" />
-<col style="width: 69%" />
-</colgroup>
-<tbody>
-<tr>
-<td colspan="2"><strong>What you see on screen</strong></td>
-</tr>
-<tr>
-<td><strong>Add work context</strong></td>
-<td>Search across your M365 environment -- people, files, meetings,
-emails, chats, channels, and sites. Filtered by tab.</td>
-</tr>
-<tr>
-<td><strong>Upload images and files</strong></td>
-<td>Open your computer's file browser to attach a local file (PDF, Word,
-Excel, image).</td>
-</tr>
-<tr>
-<td><strong>Attach cloud files</strong></td>
-<td>Open a OneDrive/SharePoint file picker to attach a file already
-stored in the cloud.</td>
-</tr>
-<tr>
-<td><strong>Customize</strong></td>
-<td>Shortcut to the Customize area (Plugins and Skills) directly from
-the task bar.</td>
-</tr>
-</tbody>
-</table>
-
-### Step 2 -- Explore Add work context and all nine search tabs**
-
-23. **Click "+" then** "Add work context". A search panel opens over the
-    task bar.
-
-<img src="./media/image18.png" style="width:7in;height:4.625in" />
-
-- The Add work context panel shows a Search bar at the top, followed by
-  a row of filter tabs: All, Skills, People, Files, Meetings, Emails,
-  Chats, Channels, Sites.
-
-- The All tab is active by default, showing: the user's own account
-  (ODL_User 2270231), recent files (File Governance Tracker.xlsx, File
-  Governance Tracker v2.xlsx,
-  2026-06-19_StorePerformanceNorth_Spreadsheet.xlsx,
-  2026-04-01_Inventory_Report-Copy.xlsx), and navigation hints at the
-  bottom (Navigate items, Filter tabs, Select).
-
-- Click each tab now and note what it shows:
-
-|  |  |
-|----|----|
-| **Tab** | **What it shows in the lab account** |
-| **All** | Everything mixed together -- your account, files, meetings, emails, channels, and sites. |
-| **Skills** | Available custom and built-in skills prefixed with "/": /calendar-management, /stakeholder-comms, /daily-briefing, /xlsx, /goal (and more). Type "/" to browse. |
-| **People** | Organisation contacts. Shows ODL_User 2270231 (odl_user_2270231@gpssandboxlabs100124.onmicrosoft.com). |
-| **Files** | Recently opened files: File Governance Tracker.xlsx, File Governance Tracker v2.xlsx, 2026-06-19_StorePerformanceNorth_Spreadsheet.xlsx, 2026-04-01_Inventory_Report-Copy.xlsx -- each listed as "Opened by you Yesterday". |
-| **Meetings** | Recent calendar events. Shows: Project Planning Workshop -- Yesterday, 8:00 AM-12:00 PM, organised by ODL_User 2270231. |
-| **Emails** | Recent Outlook emails: "No subject" from Sadhana Mehta (6/19), "Zava Retail Partnership - Clarification on Payment Terms" (6/18), "Northwind Franchise - RFP Analysis & Deal Overview" from Microsoft Power Automate (6/18), "Here's how to manage your M365 subscription" from Microsoft 365 (6/16). |
-| **Chats** | Teams direct messages. Shows "No results found" on this lab account. |
-| **Channels** | Teams channels. Shows: Zava enterprise sales (under Zava retail team). |
-| **Sites** | SharePoint sites: General (gpssandboxlabs100124.sharepoint.com/sites/General), Zava retail (gpssandboxlabs100124.sharepoint.com/sites/Zavaretail), Communication site (gpssandboxlabs100124.sharepoint.com). |
-
-- Skills tab is selected, showing the available custom skills list:
-  /calendar-management (Full-spectrum calendar management with
-  purpose-aware classification, block defense, and tiered automation),
-  /stakeholder-comms (Audience-adaptive communications), /daily-briefing
-  (Aggregated morning brief from calendar, email, Teams), /xlsx (Read,
-  create, and manipulate Excel spreadsheets), /goal (partially visible).
-
-<img src="./media/image19.png" style="width:7in;height:5.80208in" />
-
-- People tab selected: shows ODL_User 2270231 with email address
-  odl_user_2270231@gpssandboxlabs100124.onmicrosoft.com.
-
-<img src="./media/image20.png" style="width:7in;height:4.625in" />
-
-- Files tab selected: shows File Governance Tracker.xlsx, File
-  Governance Tracker v2.xlsx,
-  2026-06-19_StorePerformanceNorth_Spreadsheet.xlsx,
-  2026-04-01_Inventory_Report-Copy.xlsx,
-  2026-06-19_VendorPricing_Spreadsheet.xlsx -- all listed as "Opened by
-  you Yesterday".
-
-<img src="./media/image21.png" style="width:7in;height:4.51042in" />
-
-- Meetings tab selected: shows Project Planning Workshop, Yesterday,
-  8:00 AM - 12:00 PM, organised by ODL_User 2270231.
-
-<img src="./media/image22.png" style="width:7in;height:4.51042in" />
-
-- Emails tab selected: shows No subject (Sadhana Mehta, 6/19/2026), Zava
-  Retail Partnership - Clarification on Payment Terms (ODL_User 2270231,
-  6/18/2026), Northwind Franchise - RFP Analysis & Deal Overview
-  (Microsoft Power Automate, 6/18/2026), Here's how to manage your
-  Microsoft 365 subscription (Microsoft 365, 6/16/2026), Fabrikam
-  Hospitality Solutions - RFP Analysis & Deal Overvie.docx (partially
-  visible).
-
-<img src="./media/image23.png" style="width:7in;height:4.57292in" />
-
-- Chats tab selected: shows "No results found".
-
-<img src="./media/image24.png" style="width:7in;height:4.5in" />
-
-- Channels tab selected: shows Zava enterprise sales under Zava retail.
-
-<img src="./media/image25.png" style="width:7in;height:4.41667in" />
-
-- Sites tab selected: shows General
-  (https://gpssandboxlabs100124.sharepoint.com/sites/General), Zava
-  retail (https://gpssandboxlabs100124.sharepoint.com/sites/Zavaretail),
-  Communication site (https://gpssandboxlabs100124.sharepoint.com).
+# Lab 1: Getting Started with Copilot Cowork
 
-<img src="./media/image26.png" style="width:7in;height:4.27083in" />
+## Estimated Duration: 30 Minutes
 
-24. **From the Files tab, click** one of the Excel files (e.g. File
-    Governance Tracker.xlsx) to attach it.
+## Overview
+In this hands-on lab, you will get oriented to Copilot Cowork, the agentic workspace inside Microsoft 365 Copilot. Unlike traditional Copilot Chat, where you ask a single question and receive a single answer, Cowork can plan and carry out multi-step tasks on your behalf — reading your emails, checking your calendar, working with files, and delivering a finished result, all in one go. You will sign in to Microsoft 365, tour the Cowork home screen, generate sample emails and calendar events in Outlook, upload sample files to OneDrive, create a team in Microsoft Teams, and run your first tasks using starter tiles, typed prompts, and voice commands. You will also learn how to add context to a task, review task history and scheduled tasks, and explore the Customize area where Cowork's capabilities can be extended with plugins and skills.
 
-<img src="./media/image27.png" style="width:7in;height:4.3125in" />
+>**Disclaimer:** Copilot Cowork is AI-powered, so generated outputs may differ across users and sessions. The results you see in this lab may not exactly match the examples shown here. Follow the workflow and expected outcome in the guide rather than expecting identical content.
 
-25. Type in the task bar: "What does this file contain?" and press
-    Enter.
+## Objectives
+In this lab, you will perform the following:
 
-<img src="./media/image28.png" style="width:7in;height:4.5625in" />
+- Task 1: Sign In and Explore the Cowork Home Screen
+- Task 2: Generate Sample Emails in Outlook
+- Task 3: Generate Sample Calendar Events in Outlook
+- Task 4: Upload Sample Files to OneDrive and Create a Team in Microsoft Teams
+- Task 5: Run Your First Tasks with Cowork
+- Task 6: Use the + Menu to Add Context to a Task
+- Task 7: Explore Task History, Scheduled Tasks, and Task Ideas
+- Task 8: Explore the Customize Area
 
-26. Cowork reads the attached file and responds.
+---
 
-> **Tip:** You can combine multiple items from different tabs -- attach
-> a file, a meeting, and a colleague's name all at once. Cowork uses all
-> of them as context together.
+## Task 1: Sign In and Explore the Cowork Home Screen
 
-### Step 3 -- Upload a file from your computer
+In this task, you will sign in to Microsoft 365, review how Copilot Cowork differs from Copilot Chat, and explore the layout of the Cowork home screen.
 
-27. **Click** New task, then click "+" and select "Upload images and
-    files".
+1. Review how Copilot Cowork compares to Copilot Chat.
 
-<img src="./media/image29.png" style="width:7in;height:4.47917in" />
+    |     **Copilot Chat**     |               **Copilot Cowork**           |
+    |:-------------------------|--------------------------------------------|
+    | One question, one answer | Multi-step tasks from a single instruction |
+    |   You guide each step    | Cowork plans and executes the steps itself |
+    | Great for quick lookups  |  Great for complex, repeatable workflows   |
+    |     No task history      |     All tasks are saved and searchable     |
 
-- The + menu is open with "Upload images and files" highlighted, showing
-  the sub-label "PDF, Word, Excel, images".
+2. Open the Edge browser and navigate to the Microsoft 365 portal with the below link and click on **Sign in**:
 
-28. Your computer's file browser (Windows Explorer) opens.
+   ```
+   www.office.com
+   ```
 
-<img src="./media/image30.png" style="width:7in;height:5.08333in" />
+   ![Sign in to Microsoft 365](media/1.png)
 
-- The Windows Open dialog shows the Downloads folder. Under "Last week
-  (4)" are: OldInventoryReport_2024 (1).xlsx, ProjectPlan_2024,
-  Copilot_Cowork_Lab_Files (1) folder, Copilot_Cowork_Lab_Files folder.
-  Under "Earlier this month (3)": MSTeamsSetupx64, overview, download.
-  The dialog has a file name field, All files filter, Open and Cancel
-  buttons, and an "Upload from mobile" button.
+3. On the sign-in page, enter the provided email address and click **Next (2)**.
+   - **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
 
+       ![Enter email address](media/2.png)
 
-## Exercise 5: Search History, Scheduled Tasks, and Task Ideas 
+4. Enter the provided Temporary Access Pass and click **Sign in (2)**.
+   - **Temporary Access Pass**: <inject key="AzureAdUserPassword"></inject> **(1)**
 
-### Step 1 -- Find a past task in Search
+       ![Enter temporary access pass](media/3.png)
 
-29. **Click** Search in the left panel.
+5. When prompted, select **No** on the Stay signed in? dialog.
 
-<img src="./media/image31.png" style="width:7in;height:4.4375in" /><img src="./media/image32.png" style="width:7in;height:4.61458in" />
+   ![Stay signed in prompt](media/4.png)
 
-- The Search view shows a "Search your tasks" bar with a Filter button.
+6. At the top of the left panel, click on the **Cowork** tab.
 
-- All completed tasks are listed with their names in bold, "Completed
-  \[date\]" in grey, and file badges where applicable.
+    ![](media/5.png)
 
-30. **Type** "email" in the search bar. The list filters in real time to
-    tasks containing that word.
+7. Click the **Auto** dropdown at the top and review the models available.
 
-<img src="./media/image33.png" style="width:7in;height:4.4375in" />
+    ![](media/6.png)
 
-- Click any task to re-open it and see its full output.
+    >**Note**: Leave the model set to Auto for this entire lab. Auto automatically selects the best available model for each task, so you do not need to choose one manually.
 
-31. Click the "..." icon on any task row -- it gives options to re-run,
-    rename, or delete the task.
+8. Click the **"..." (1)** icon at the top-right corner, select **Keyboard shortcuts (2)**, and review the list.
 
-<img src="./media/image34.png" style="width:7in;height:3.76042in" />
+    ![](media/7.png)
 
-### Step 2 -- Explore the Scheduled panel
+    ![](media/8.png)
 
-32. **Click** Scheduled in the left panel.
+## Task 2: Generate Sample Emails in Outlook
 
-- The Scheduled page shows the heading "Scheduled" with a blue Create
-  button top-right. Two tabs below: Runs (currently selected) and Manage
-  schedules. A filter icon is also visible. The main area shows a file
-  icon with the message "No scheduled runs" -- because no automations
-  have been set up yet.
+In this task, you will use Cowork to generate and send 20 sample training emails to your own Outlook inbox for use in later labs.
 
-<img src="./media/image35.png" style="width:7in;height:4.4375in" />
+1. In the Cowork pane, enter the below prompt **(1)** and click the **send (2)** button:
 
-- Swittvh to Manage schedule tab to view, edit, delete, run and pause
-  all scheduled tasks
+     ```
+     I need you to seed my Outlook inbox with 20 sample training emails for a Copilot Cowork demo environment (Contoso Electronics / Project Orion ERP modernization scenario). Send each one individually to my own email address so it lands as a received message in my Inbox. You have my approval to send all 20 without pausing for individual confirmation — just send them one after another and give me a final summary list when done.
 
-<img src="./media/image36.png" style="width:7in;height:4.28125in" />
+     For every email: write a proper business email (greeting, 2–4 short paragraphs or bullet points as noted, professional sign-off with the sender name and title/company given below). Prefix each Subject line with the source tag shown in brackets. Do not literally attach files — if an email references an attachment, just mention it in the body text as an attachment would be described in real reply threads.
 
-- Click on ... icon to view all the options
+     Send these 20, in this order:
 
-<img src="./media/image37.png" style="width:7in;height:3.92708in" />
+     ## Customer & Sales
 
-33. **Click the** Create button and scan the form fields. Do not fill it
-    in -- just note what options are there.
+     1. **[Northwind Retail]** Subject: *"Final Contract Review – Payment Milestone Clarification."* From: Priya Desai, Procurement Lead, Northwind Retail. She's reviewing the ERP contract and needs clarification on the payment milestone schedule before she can sign. Polite, slightly urgent — she wants this resolved this week.
 
-<img src="./media/image38.png" style="width:7in;height:3.65625in" />
+     2. **[Fabrikam Industries]** Subject: *"Feature Request – Barcode Scanning & Warehouse Integration."* From: Marcus Webb, IT Director, Fabrikam Industries. Requests that barcode scanning and warehouse-management integration be added to the ERP build, explains it's needed for their distribution centers.
 
-<img src="./media/image39.png" style="width:7in;height:4.54167in" />
+     3. **[Adventure Works]** Subject: *"Go-Live Schedule Confirmed – Training Schedule Needed."* From: Elena Torres, Operations Manager, Adventure Works. Confirms she's fine with the proposed go-live date, but asks when end-user training sessions will be scheduled.
 
-- Select the listed task you want to schedule, click Next.
+     4. **[Tailspin Toys]** Subject: *"URGENT: Production Issue Affecting Order Processing."* From: David Chen, IT Support Lead, Tailspin Toys. Urgent tone — a production issue is blocking order processing right now, needs immediate attention, asks for a callback ASAP.
 
-<img src="./media/image40.png" style="width:7in;height:4.59375in" />
+     5. **[Fourth Coffee]** Subject: *"Invitation – Quarterly Business Review."* From: the Fourth Coffee Account Team. Invites the recipient to a QBR next week, mentions an agenda and a presentation deck are attached, asks to confirm attendance.
 
-- Select the Frequency and click Next
+     ## Internal Project
 
-<img src="./media/image41.png" style="width:7in;height:4.61458in" />
+     6. **[Project Orion – PMO]** Subject: *"Weekly Status Update – Project Orion."* From: Rajesh Kumar, Project Manager. Structured with four short sections: Completed This Week, Delays, Upcoming Milestones, Risks. Include 2–3 concrete action items with owners.
 
-- Select the Run time and click Submit
+     7. **[Architecture Team]** Subject: *"Architecture Review Outcomes."* From: Sandra Liu, Technical Architect. Documents 3 design decisions made in a recent architecture review (e.g., integration pattern, data model choice, API approach) and the reasoning for each.
 
-<img src="./media/image42.png" style="width:6.75in;height:4.47917in" />
+     8. **[QA Team]** Subject: *"Testing Completion Report – Sprint Review."* From: Amit Verma, QA Lead. Reports number of tests passed/failed, lists 2–3 open bugs with severity, and gives a clear release recommendation (go / no-go / go-with-conditions).
 
-<img src="./media/image43.png" style="width:7in;height:4.60417in" />
+     9. **[Security Team]** Subject: *"Security Assessment Findings – Action Required."* From the Infosec team. Reports a number of high-risk vulnerabilities and medium findings found during assessment, and lists required remediation steps with an owner and deadline.
 
-- Select Day and click Next
+     10. **[Infrastructure Team]** Subject: *"Deployment Readiness Checklist – Status Confirmed."* From the Infrastructure team. Confirms status (ready/pending) across servers, backup, disaster recovery, and monitoring ahead of go-live.
 
-<img src="./media/image44.png" style="width:7in;height:4.47917in" />
+     ## Executive Communications
 
-- Select Source and click Next
+     11. **[Office of the CIO]** Subject: *"CIO Monthly Update – AI Adoption & Priorities."* Company-wide tone, covers progress on AI adoption initiatives and strategic priorities for the quarter.
 
-<img src="./media/image45.png" style="width:7in;height:4.69792in" />
+     12. **[Office of the CEO]** Subject: *"Town Hall Announcement – Organizational Updates."* Announces an upcoming town hall, references organizational changes and quarterly goals to be discussed, invites all staff to attend.
 
-- Select Delivery and click Submit
+     13. **[Finance Department]** Subject: *"Budget Approved – Project Orion Additional Funding."* From the Finance Director. Confirms additional budget has been approved for Project Orion, states it requires an acknowledgement reply from the recipient.
 
-<img src="./media/image46.png" style="width:7in;height:4.59375in" />
+     14. **[HR / Learning & Development]** Subject: *"Action Required – Register for Copilot Training."* Announces mandatory Copilot training sessions, gives a registration deadline, states attendance is mandatory for all employees.
 
-- Approve the weekly email schedule activity
+     ## Vendor Communications
 
-<img src="./media/image47.png" style="width:7in;height:4.57292in" />
+     15. **[Licensing Account Team]** Subject: *"Reminder – Microsoft 365 License Renewal."* Renewal reminder for Microsoft 365 licenses, references a pricing summary, gives a renewal deadline.
 
-<img src="./media/image48.png" style="width:7in;height:4.30208in" />
+     16. **[Dell Hardware Logistics]** Subject: *"Shipment Delay Notice – Hardware Order."* Notifies that a hardware shipment is delayed by one week, gives a revised delivery date, notes the impact on the deployment timeline.
 
-- View the scheduled activity under managed schedules tab
+     17. **[Network Services Provider]** Subject: *"Scheduled Maintenance Notice – This Weekend."* Notifies of a weekend maintenance window with a potential service interruption, no action needed from the recipient.
 
-<img src="./media/image49.png" style="width:7in;height:4.52083in" />
+     ## Meeting-Related
 
-34. Close or cancel the form.
+     18. **[PMO]** Subject: *"Invitation – Steering Committee Meeting."* Includes a short agenda (3–4 bullet points), a list of expected attendees (roles, not real people), a placeholder Teams link, and a note that a deck is attached.
 
-### Step 3 -- Browse Task Ideas
+     19. **[PMO – Risk Management]** Subject: *"Risk Review Meeting – Follow-Up Notes."* Summarizes 3 decisions made in a recent risk review, each with an owner name and a due date.
 
-35. **Click** New task to return to the home screen.
+     20. **[Executive Sponsor]** Subject: *"Go-Live Readiness Review – Executive Meeting Invite."* Summarizes overall project health, references the deployment readiness checklist, and lists 2–3 approval items needed from executives before go-live.
 
-<img src="./media/image50.png" style="width:7in;height:4.54167in" />
+     Once all 20 are sent, give me a confirmation list showing each subject line and the time it was sent.
+     ```
 
-36. **Click** "Show more" next to the "Try these next" section.
+     ![](media/8(1).png)
 
-- The Task Ideas panel opens as an overlay. On the left are categories:
-  Suggested for you (selected), with a Search task ideas field, and
-  topics: Triage, Research, Create, Meetings, Automate.
+2. After submitting the prompt, you can see that Cowork has started **processing** the request.
 
-- The right panel shows Suggested for you results: OOO handover pack
-  (Build an OOO handover pack with delegation and a return plan),
-  Newsletter brief (Turn this week's newsletters into one executive
-  brief), Catch up and reply (Find unanswered questions across Teams and
-  email, then reply), Calendar audit (Audit your calendar for meetings
-  to decline, shorten, or protect), Unread email triage (Sort your
-  unread inbox into action buckets with drafted replies), Stakeholder
-  check-in (Spot key relationships going cold and draft check-ins),
-  Morning briefing (Get today's calendar, top emails, and mentions in
-  one brief), End of day wrap-up (Recap what you finished today and plan
-  tomorrow's
-  to-dos).<img src="./media/image51.png" style="width:7in;height:4.52083in" />
+   ![](media/9.png)
 
-<img src="./media/image52.png" style="width:7in;height:4.5625in" />
+3. Review the email generated by Cowork and click on **Send** to approve it.
 
-37. Click through several categories: Triage, Research, Create,
-    Meetings, Automate. Each shows a different set of task templates.
+   ![](media/10.png)
 
-<img src="./media/image53.png" style="width:7in;height:4.51042in" />
+4. Review the second email generated by Cowork and click on **Send** to approve it.
 
-<img src="./media/image54.png" style="width:7in;height:4.60417in" />
+   ![](media/11.png)
 
-<img src="./media/image55.png" style="width:7in;height:4.5625in" />
+   >**Note**: Repeat the same steps and approve all the remaining 18 emails generated by Cowork.
 
-38. Click "Morning briefing" to pre-fill it in the task bar. Read the
-    prompt, then press Escape or clear the task bar without running it.
+5. Review the output generated with all 20 email details listed.
 
-> **Tip:** Task Ideas is the fastest way to discover everything Cowork
-> can do. Browse it for a few minutes and you will have a clear picture
-> of the scope of automation possible.
+   ![](media/12.png)
 
-<img src="./media/image56.png" style="width:7in;height:4.45833in" />
+6. To verify the emails were generated, click on the **Microsoft 365 app launcher (1)** and select **Outlook (2)**.
 
-<img src="./media/image57.png" style="width:7in;height:4.60417in" />
+   ![](media/13.png)
 
-|                                            |
-|--------------------------------------------|
+7. If the **Your privacy matters** popup appears, click on **Continue**.
 
-## Exercise 6: Explore the Customize Area 
+   ![](media/14.png)
 
-The Customize area is where Cowork's capabilities can be extended. It
-has two tabs: Plugins (for external services) and Skills (for
-task-specific capabilities). You will work with both in depth in later
-labs.
+8. Go to **Inbox (1)** and confirm that all the **sample emails (2)** are present.
 
-### Step 1 -- Open Customize and explore Plugins
+    ![](media/15.png)
 
-39. **Click** Customize in the left panel (or click "+" in the task bar,
-    then Customize).
+## Task 3: Generate Sample Calendar Events in Outlook
 
-<img src="./media/image58.png" style="width:7in;height:4.53125in" />
+In this task, you will use Cowork to create 10 sample calendar events in Outlook to build out a realistic project calendar.
 
-- The Customize page shows the heading "Customize" with two tabs:
-  Plugins (selected, shown in dark) and Skills. Below the tabs: "Plugins
-  help Cowork extend its capabilities by connecting to external tools,
-  services, and bundled skills."
+1. Go back to Microsoft 365 Copilot portal and in the Cowork pane, enter the below prompt **(1)** and click the **send (2)** button:
 
-- A Discover section has a search icon and filter icon. Six plugin tiles
-  are visible in a 2x3 grid: AI Meeting Notes TeamsMaestro (Free AI note
-  taker for Microsoft Teams, powered by ChatGPT and Claude), Box
-  (Streamline how users share, find, and leverage Box content to
-  boost...), Canva (Canva is the easy to use, collaborative design
-  platform where teams create...), Dynamics 365 Customer Service (Route
-  cases, draft replies, escalate issues, and surface knowledge articles.
-  Connec...), Dynamics 365 ERP apps (The Dynamics 365 ERP apps plugin
-  connects Copilot Cowork to ERP data a...), Dynamics 365 Sales
-  (Accelerate your sales pipeline with deal insights, opportunity
-  tracking, and...).
+    ```
+    I need you to create 10 sample calendar events on my Outlook calendar for a Copilot Cowork demo environment (Contoso Electronics / Project Orion ERP modernization scenario). Create all 10 without pausing for individual confirmation, then give me a summary table at the end (event title, date, time) once done.
 
-- A "Show more" button appears at the bottom
+    ## Rules for every event
 
-<img src="./media/image59.png" style="width:7in;height:4.58333in" />
+    - I am the only attendee/organizer — do NOT invite or add any other person's email address to any of these events, even if a name or company is mentioned. Any attendee names or companies mentioned below should appear as plain text inside the event description only.
+    - Add a Microsoft Teams meeting link to each event (standard "Teams meeting" toggle).
+    - Schedule them on 10 consecutive business days starting tomorrow (skip weekends), one event per business day, in the exact order listed below, at the specific time given.
+    - If any of these times conflict with something already on my calendar, shift only that one event by 30 minutes and note it in your summary — don't skip it.
+    - Two of these events should have NO description/agenda at all (marked below) — leave them as bare title + time. Every other event should get the short agenda text given.
 
-<img src="./media/image60.png" style="width:7in;height:4.55208in" />
+    ## The 10 events
 
-40. Read the description at the top of the page. Note the names of the
-    plugins visible in the Discover gallery.
+    **Business day 1 — 9:30–9:45 AM**
+    Title: Weekly Project Stand-up
+    Description: (leave blank — no agenda)
 
-41. **Click** "Show more" to see additional plugins available. Do not
-    install or enable anything at this stage.
+    **Business day 2 — 2:00–3:00 PM**
+    Title: Steering Committee Review
+    Description: Agenda: review of Project Orion milestones, budget status, and go/no-go checkpoints. Attendees (for reference only, do not invite): Steering Committee members, Project Sponsor, PMO.
 
-> **Tip:** Each plugin tile shows a logo, name, and one-line
-> description. Plugins connect Cowork to services outside Microsoft 365.
-> You will register a custom plugin in Lab 3.2.
+    **Business day 3 — 11:00 AM–12:00 PM**
+    Title: Architecture Review
+    Description: Agenda: review of integration pattern, data model, and API design decisions from the recent architecture review. Attendees (reference only): Technical Architect, Lead Developers, Solution Architect.
 
-### Step 2 -- Switch to the Skills tab
+    **Business day 4 — 10:00–11:00 AM**
+    Title: Security Assessment Meeting
+    Description: Agenda: review of vulnerability assessment findings (high-risk and medium findings) and required remediation plan. Attendees (reference only): Security Team, Compliance Officer, IT Director.
 
-42. **Click the** Skills tab at the top of the Customize page.
+    **Business day 5 — 3:00–3:45 PM**
+    Title: Customer Demo – Northwind
+    Description: Agenda: live demo of ERP sales and procurement modules for Northwind Retail stakeholders. Attendees (reference only): Northwind Retail Procurement Team, Sales Engineer, Account Manager.
 
-<img src="./media/image61.png" style="width:7in;height:4.57292in" />
+    **Business day 6 — 1:00–2:00 PM**
+    Title: Executive Budget Review
+    Description: Agenda: review of Project Orion budget utilization and approval of additional funding request. Attendees (reference only): CFO, Finance Director, Project Sponsor.
 
-- The Customize page with Skills tab selected.
+    **Business day 7 — 4:00–4:30 PM**
+    Title: Vendor Status Call
+    Description: (leave blank — no agenda)
 
-- The description reads "Skills teach Cowork how to perform a specific
-  task." Two sections: "Your skills" ("Cowork will reference enabled
-  skills for relevant tasks. You haven't added any skills yet.") and
-  "Built-in" ("Skills included with Cowork. These skills cannot be
-  disabled."): PDF (Read, create, and manipulate PDF documents), Word
-  (Read, create, and edit Word documents), Excel (Read, create, and
-  manipulate Excel spreadsheets). A "Show more" dropdown is at the
-  bottom.
+    **Business day 8 — 10:00–11:30 AM**
+    Title: Go-Live Readiness Review
+    Description: Agenda: walkthrough of the deployment readiness checklist (servers, backup, disaster recovery, monitoring), outstanding approval items, and the go-live decision. Attendees (reference only): Executive Sponsor, Infrastructure Lead, PMO, QA Lead.
 
-43. **Click** the PDF tile. A detail panel opens describing exactly what
-    the PDF skill can do. Read it, then close.
+    **Business day 9 — 2:00–3:00 PM**
+    Title: Quarterly Business Review
+    Description: Agenda: review of quarterly sales performance, regional analysis, and recommendations for next quarter. Attendees (reference only): Sales Leadership, Regional Managers, Executive Sponsor.
 
-<img src="./media/image62.png" style="width:7in;height:4.63542in" />
+    **Business day 10 — 1:00–3:00 PM**
+    Title: AI Adoption Workshop
+    Description: Agenda: hands-on workshop covering the company's AI adoption strategy and Copilot training rollout. Attendees (reference only): All Staff, HR L&D Team, CIO Office.
 
-<img src="./media/image63.png" style="width:7in;height:3.59375in" />
+    Once all 10 are created, confirm each one's final date/time (noting any that were shifted due to conflicts) in a clean summary table.
+    ```
 
-44. **Click** "Filter tab" to see additional built-in skills beyond the
-    three visible.
+    ![](media/16.png)
 
-<img src="./media/image64.png" style="width:7in;height:4.44792in" />
+2. After submitting the prompt, you can see that Cowork has started **processing** the request.
 
-> **Note:** Built-in skills are always on -- you never need to enable
-> them. Whenever you ask Cowork to work with a PDF, Word document, or
-> Excel file, these activate automatically in the background.
+   ![](media/17.png)
 
-- Click on Add dropdown and view the two options: Create new to create a
-  new skill, and Upload skill option to upload the skill.
+3. Review the event generated by Cowork and click on **Send** to approve it.
 
-<img src="./media/image65.png" style="width:7in;height:4.58333in" />
+   ![](media/18.png)
 
-### Step 3 -- Access Customize from the + menu shortcut
+   >**Note**: Repeat the same steps and approve the remaining 9 events generated by Cowork.
 
-45. **Click** New task to return to the home screen.
+4. Review the output generated with all 10 event details listed.
 
-- **Click the "+" button** in the task bar. In the menu, click
-  "Customize" (the fourth option, labelled "Manage skills and plugins").
+   ![](media/19.png)
 
-<img src="./media/image66.png" style="width:7in;height:4.54167in" />
+5. Navigate back to Outlook and select the **Calendar icon (1)** from the left. Go to **Month (2)** at the top and review all **ten events (3)** listed.
 
-- The + menu is open with "Customize" highlighted -- showing the
-  sub-label "Manage skills and plugins". Behind the menu, the Customize
-  page with the Plugins tab and gallery is already visible, confirming
-  this shortcut goes directly to the same Customize area.
+   ![](media/20.png)
 
-<img src="./media/image67.png" style="width:7in;height:4.57292in" />
+   ![](media/21.png)
 
-- Confirm this takes you to exactly the same Customize page you visited
-  in Step 1. This shortcut exists so you can reach Customize without
-  leaving the task context.
+## Task 4: Upload Sample Files to OneDrive and Create a Team in Microsoft Teams
 
-|  |
-|----|
-| **Validation Checkpoint** |
-| **\[ \]** You identified every element on the Cowork home screen and can name what each one does without looking at the guide. |
-| **\[ \]** You ran the model selector dropdown and can describe what each of the four models (Auto, Claude Sonnet 4.6, Claude Opus 4.8, GPT 5.5) is for. |
-| **\[ \]** You opened Notifications (bell) and the three-dot menu and found Keyboard shortcuts. |
-| **\[ \]** You ran a task from a starter tile ("Prep for a meeting") and can describe what the pre-filled prompt contained. |
-| **\[ \]** You noticed the "Format text" button and "What are we working on?" heading that appear after a task runs. |
-| **\[ \]** You ran a task by typing from scratch and a task using voice input. |
-| **\[ \]** You opened the "+" menu and visited all nine tabs in Add work context -- including Skills (/daily-briefing etc.), People, Files (the five xlsx files), Meetings (Project Planning Workshop), Emails (Zava Retail Partnership email etc.), Chats (No results), Channels (Zava enterprise sales), Sites (General, Zava retail, Communication site). |
-| **\[ \]** You used Upload images and files to attach a local file from the Copilot_Cowork_Lab_Files folder. |
-| **\[ \]** You used Attach cloud files to attach a file from the OneDrive picker. |
-| **\[ \]** You found past tasks in Search and can use the "..." menu on a task row. |
-| **\[ \]** You opened the Scheduled panel and found the Create button. |
-| **\[ \]** You browsed Task Ideas and can name at least three task templates and their categories. |
-| **\[ \]** You visited Customize \> Plugins and can name at least four plugins in the Discover gallery. |
-| **\[ \]** You visited Customize \> Skills and can describe the difference between "Your skills" and "Built-in" skills. |
-| **\[ \]** You used the "+" menu Customize shortcut and confirmed it leads to the same Customize page. |
+In this task, you will upload sample folders and files to OneDrive, then create a team and channel in Microsoft Teams for use in later labs.
+
+1. On the Microsoft 365 Copilot portal, open the **Microsoft 365 app launcher (1)** and select **OneDrive (2)**.
+
+   ![](media/22.png)
+
+2. If the **Work smarter with Copilot** popup appears, click on **Not now** and continue.
+
+   ![](media/23.png)
+
+3. On OneDrive, navigate to **My files**.
+
+   ![](media/24.png)
+
+4. Click on **Create or upload (1)** and select **Folder (2)** to create a new folder.
+
+   ![](media/25.png)
+
+5. Name the folder ```Lab Files``` **(1)** and click on **Create (2)**.
+
+   ![](media/26.png)
+
+6. Verify that the **Lab Files** folder is created and click on it to navigate inside.
+
+   ![](media/27.png)
+
+7. In **Lab Files**, click on **Create or upload (1)** and select **Folder upload (2)**.
+
+   ![](media/28.png)
+
+8. Navigate to the path ```C:\LabFiles\lab file``` **(1)**, select **ArchiveCandidates (2)**, and click **Upload (3)** to complete the upload.
+
+   ![](media/29.png)
+
+   >**Note**: Repeat this process and upload all the remaining folders into Lab Files except the **Project Orion Files** folder.
+
+9. Once done uploading, verify that all four folders are visible, then click on **Create or upload (1)** and select **Files upload (2)**.
+
+   ![](media/30.png)
+
+10. Navigate to the path ```C:\LabFiles\lab file``` **(1)**, select **all four files (2)**, and click **Open (3)** to complete the upload.
+
+    ![](media/31.png)
+
+11. Verify that all the folders and files are visible, then navigate back to **My files**.
+
+    ![](media/32.png)
+
+12. Click on **Create or upload (1)** and select **Folder upload (2)**.
+
+    ![](media/33.png)
+
+13. Navigate to the path ```C:\LabFiles\lab file``` **(1)**, select **Project Orion Files (2)**, and click **Upload (3)**.
+
+    ![](media/34.png)
+
+14. Verify that the **Project Orion Files** folder appears in the list.
+
+    ![](media/35.png)
+
+15. Go back to the Microsoft 365 Copilot portal, open the **Microsoft 365 app launcher (1)**, and select **Teams (2)**.
+
+    ![](media/36.png)
+
+16. In the Teams browser, click on **See all your teams (1)** and select **Create team (2)**.
+
+    ![](media/37.png)
+
+    ![](media/38.png)
+
+17. Add the team name as **Retail (1)**, the first channel name as **General (2)**, and click on **Create (3)**.
+
+    ![](media/39.png)
+
+18. Click on **Skip** on the **Add members to Retail** page.
+
+    ![](media/40.png)
+
+19. Verify that the team **Retail** and channel **General** have been created on the left.
+
+    ![](media/41.png)
+
+## Task 5: Run Your First Tasks with Cowork
+
+In this task you will learn the three ways to give Cowork an instruction: starter tiles, typing, and voice.
+
+1. Back on the Microsoft 365 Copilot portal, click on **Prep for a meeting (1)**.
+
+   ![](media/42.png)
+
+2. Review the **prompt (1)** and click on **Send (2)**.
+
+   ![](media/43.png)
+
+3. After submitting the prompt, you can see that Cowork has started **processing** the request.
+
+   ![](media/44.png)
+
+4. Review the recommendations provided by Cowork, select the **option (1)** of your choice, and click on **Next or Submit (2)**.
+
+   ![](media/45.png)
+
+   ![](media/46.png)
+
+   ![](media/47.png)
+
+   ![](media/48.png)
+
+   ![](media/49.png)
+
+   ![](media/50.png)
+
+   >**Note**: As Cowork uses AI to generate responses, the number and type of follow-up prompts may vary from the examples shown above.
+
+5. Review the output generated by Cowork that includes the **Prep Word document**.
+
+   ![](media/51.png)
+
+6. Enter the following prompt **(1)** and click the **send (2)** button:
+
+    ```
+    Summarize my last 5 unread emails and list any action items I need to respond to.
+    ```
+
+   ![](media/52.png)
+
+7. Review the output where Cowork has summarized the emails and listed the ones that need a response.
+
+   ![](media/53.png)
+
+8. Click the **microphone icon** on the right side of the task bar.
+
+   ![](media/54.png)
+
+9. Speak a simple instruction: ```Show me my meetings for tomorrow``` **(1)** and click **Send (2)**.
+
+   ![](media/55.png)
+
+10. Review the output generated and continue.
+
+    ![](media/56.png)
+
+## Task 6: Use the + Menu to Add Context to a Task
+
+In this task, you will use the + menu in Cowork to attach work context and files to a task, and review how Cowork uses that context to generate a response.
+
+1. Click on the **New task** from the left.
+
+   ![](media/57.png)
+
+2. Click the **"+" (1)** icon, review the options present, and select **Add work context (2)**.
+
+   ![](media/58.png)
+
+3. Navigate through each tab and review what it shows.
+
+   ![](media/59.png)
+
+4. Go to the **Files (1)** tab and select any of the **Excel file (2)**.
+
+   ![](media/60.png)
+
+5. In the task bar, enter ```What does this file contain?``` **(1)** and click **Send (2)**.
+
+   ![](media/61.png)
+
+6. Review the output generated by Cowork after reading the attached file.
+
+   ![](media/62.png)
+
+7. Click the **"+" (1)** icon, review the options present, and select **Upload images and files (2)**.
+
+   ![](media/63.png)
+
+8. Navigate to the path ```C:\LabFiles\lab file\Project Orion Files``` **(1)**, select **Information Security Policy (2)**, and click **Upload (3)**.
+
+   ![](media/64.png)
+
+9. In the task bar, enter ```What does this document contain?``` **(1)** and click **Send (2)**.
+
+   ![](media/65.png)
+
+10. Review the output generated by Cowork after reading the attached file.
+
+    ![](media/66.png)
+
+## Task 7: Explore Task History, Scheduled Tasks, and Task Ideas
+
+In this task, you will search your task history, schedule a recurring task, and explore suggested task ideas.
+
+1. Click on **My tasks (1)** from the left and type **email (2)** in the search bar. The list filters in real time to tasks containing that word.
+
+   ![](media/67.png)
+
+   ![](media/68.png)
+
+2. Click the **"..." (1)** icon on any task row to review the options available to rename or delete the task.
+
+   ![](media/69.png)
+
+3. Select **Scheduled (1)** in the left panel and click on **Create (2)**.
+
+   ![](media/70.png)
+
+4. After clicking on Create, you can see that Cowork has started **processing** the request.
+
+   ![](media/71.png)
+
+5. Review the recommendations provided by Cowork, select the **option (1)** that best aligns with your interest, and click **Next (2)**.
+
+   ![](media/72.png)
+
+   ![](media/73.png)
+
+6. Schedule the **time (1)** as per your need and click **Submit (2)**.
+
+   ![](media/74.png)
+
+7. Click on **Schedule** to approve the request for creating a scheduled task.
+
+   ![](media/75.png)
+
+8. Verify that Cowork has processed the request and generated the output.
+
+   ![](media/76.png)
+
+9. Click on **Scheduled (1)** and, under **Manage schedules**, verify that the **Weekday Morning Briefing (2)** task is scheduled.
+
+   ![](media/77.png)
+
+10. Click on **New task (1)** and select **Show more (2)** next to the "Try these next" section.
+
+    ![](media/78.png)
+
+11. Review all the topics presented one by one.
+
+    ![](media/78(1).png)
+
+12. Go to **Meetings (1)** and select **Meeting briefing (2)** to pre-fill it in the task bar.
+
+    ![](media/79.png)
+
+13. Read the prompt, then press Escape or clear the task bar without running it.
+
+    ![](media/80.png)
+
+## Task 8: Explore the Customize Area
+
+In this task, you will explore the Customize area, where Cowork's capabilities can be extended through Plugins and Skills.
+
+1. Click on **Customize** in the left panel.
+
+   ![](media/81.png)
+
+2. Click the **filter (1)** icon beside **Discover** and select **Collaboration (2)**.
+
+   ![](media/82.png)
+
+3. Review the plugins visible in the Discover gallery.
+
+   ![](media/83.png)
+
+   >**Note**: Each plugin tile shows a logo, name, and one-line description. Plugins connect Cowork to services outside Microsoft 365.
+
+4. Click the **Skills (1)** tab at the top of the Customize page and review all the **built-in skills (2)** included with Cowork.
+
+   ![](media/84.png)
+
+5. Click the **Add** dropdown to create or upload a new skill.
+
+   ![](media/85.png)
+
+## Review
+In this lab, you completed the following:
+
+- Signed in to Microsoft 365 and explored the Copilot Cowork home screen
+- Generated sample emails and calendar events in Outlook using Cowork
+- Uploaded sample files to OneDrive and created a team and channel in Microsoft Teams
+- Ran tasks using starter tiles, typed prompts, and voice commands
+- Added context to a task using the + menu and uploaded files
+- Explored task history, scheduled tasks, and suggested task ideas
+- Explored the Customize area to review available plugins and skills
+
+## You have successfully completed the Lab!
+
+Now, click on **Next >>** from the lower right corner to move on to the next page.
+
+![Image](./media/nxtd1.png)
