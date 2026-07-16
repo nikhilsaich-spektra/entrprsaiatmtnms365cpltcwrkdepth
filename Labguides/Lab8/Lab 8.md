@@ -1,176 +1,22 @@
 # Lab 8: Build and Publish a Custom Microsoft 365 Copilot Cowork Plugin
 
-Estimated Duration: 20 minutes
+## Estimated Duration: 30 Minutes
 
-## Lab Overview
+## Overview
+Organizations can extend Microsoft 365 Copilot beyond its built-in capabilities by developing custom plugins that integrate enterprise knowledge, business processes, and external services. Using Copilot Cowork Plugins and the Model Context Protocol (MCP), developers can securely connect Microsoft 365 Copilot to external data sources, enabling users to retrieve live information and perform specialized tasks through natural language.
 
-Microsoft 365 Copilot can be extended using Copilot Cowork Plugins,
-enabling organizations to integrate enterprise knowledge, business
-processes, and external services directly into Copilot experiences.
+In this lab, you will use Microsoft Copilot Cowork to generate a complete Financial Research plugin package using a structured AI prompt. The plugin extends Microsoft 365 Copilot with financial research capabilities by connecting to the SEC EDGAR public repository through a Remote MCP Server. You will review the generated plugin components, validate the deployment package, publish the plugin through the Microsoft 365 Admin Center, and test its functionality within Copilot Cowork using natural-language financial queries. By the end of the lab, you will understand the end-to-end process of building, deploying, and using custom Copilot Cowork plugins.
 
-In this lab you will build a Financial Research Plugin that extends
-Microsoft 365 Copilot with live financial research capabilities by
-connecting to the SEC EDGAR public repository through a Remote Model
-Context Protocol (MCP) Server.
-
-Instead of manually authoring the plugin, you will use a single
-structured AI prompt to generate a complete, deployment-ready plugin
-package. You will then review the generated assets, validate the
-package, publish it through the Microsoft 365 Admin Center, and test the
-plugin inside Copilot Cowork.
-
-The build prompt specifies the required Microsoft 365 Unified App
-Manifest structure, plugin skills, connector configuration, packaging
-rules, validation requirements, and deployment process — so the AI
-produces a package that is ready to upload without hand-editing.
-
-> [!NOTE]
-> **What is MCP?**
->
-> The **Model Context Protocol (MCP)** is an open standard that enables AI assistants to securely connect to external tools and data sources through a standardized interface.
->
-> In this lab, the plugin uses a **Remote MCP Server**, which hosts the required tools and retrieves live data from the **SEC EDGAR** service at runtime. This means the plugin does **not** store or bundle the data itself—it queries the remote service whenever a user makes a request, ensuring the information is current.
-
-## Learning Objectives
-
+## Objectives
 After completing this lab, you will be able to:
 
-- Launch Microsoft 365 Copilot and enable Copilot Cowork.
-
-- Generate a complete Copilot Cowork plugin package using a structured
-  AI prompt.
-
-- Understand the structure of a Microsoft 365 Copilot plugin (manifest,
-  skills, connector, icons).
-
-- Review the generated manifest, skills, and connector configuration.
-
-- Validate the plugin package against the devPreview schema before
-  deployment.
-
-- Publish the plugin through the Microsoft 365 Admin Center.
-
-- Test plugin functionality inside Microsoft 365 Copilot Cowork using
-  natural-language queries.
-
-## Lab Prerequisites
-
-- Microsoft 365 Copilot license (Premium).
-
-- Copilot Cowork enabled for your account.
-
-- Microsoft 365 Administrator (Global Admin or equivalent) permissions.
-
-- Internet access and a modern web browser (Microsoft Edge or Chrome
-  recommended).
-
-- Access to Microsoft 365 Copilot or Claude for AI-assisted plugin
-  generation.
-
-> [!IMPORTANT]
-> **Administrator permissions are required** to upload a custom app through the **Microsoft 365 Admin Center**.
->
-> If you are using a **training** or **ODL sandbox**, sign in with the **administrator account** provided for the lab—not your personal Microsoft account.
->
-> Without administrator permissions, you will **not** be able to complete **Exercises 5 and 6**.
-
-# **Solution Overview**
-
-## **What Are We Building?**
-
-You will build a Financial Research Plugin for Microsoft 365 Copilot
-Cowork. The plugin extends Copilot with specialized financial-research
-capabilities using publicly available SEC filing data.
-
-Rather than relying only on Copilot's built-in knowledge, the plugin
-connects to a Remote MCP Server that exposes SEC EDGAR data. When a user
-asks a financial question, Copilot selects the appropriate skill,
-retrieves the required information from the SEC EDGAR service, and
-returns a summarized, formatted response.
-
-## **Plugin Architecture**
-
-## Plugin Architecture
-
-```mermaid
-flowchart TD
-    A[Microsoft 365 Copilot] --> B[Financial Research Plugin]
-
-    B --> C[Skills]
-    B --> D[Plugin Manifest]
-    B --> E[MCP Connector]
-
-    E --> F[SEC EDGAR Public Server]
-    F --> G[Financial Filing Data]
-```
-
-## **Plugin Components**
-
-The generated plugin package consists of:
-
-- A Microsoft 365 Unified App Manifest (manifest.json).
-
-- Seven Copilot skills (one SKILL.md per skill folder).
-
-- A single Remote MCP Connector (SEC EDGAR public server).
-
-- Two plugin icons: color.png (192 × 192) and outline.png (32 × 32).
-
-- A single deployment package (ZIP) with manifest.json at the root.
-
-The package follows the Microsoft 365 Unified App Manifest (devPreview)
-schema and includes all assets required for deployment.
-
-## **Skills Included in the Plugin**
-
-The plugin contains seven specialized skills that map natural-language
-requests to financial-research tasks. Each skill uses the SEC EDGAR MCP
-connector to retrieve and summarize public-company information.
-
-## Available Skills
-
-| Skill | Description | Example Prompt |
-|-------|-------------|----------------|
-| **Company Snapshot** | Retrieves a company's profile, business overview, and key financial information. | `Give me a snapshot of Microsoft.` |
-| **Financial Trends** | Analyzes historical revenue, profit, and growth trends over time. | `Show Microsoft's five-year revenue trend.` |
-| **Peer Comparison** | Compares two or more public companies using key financial metrics. | `Compare Microsoft and Amazon.` |
-| **Risk Factor Analysis** | Reviews risk disclosures from SEC filings and summarizes key risks. | `What risks are listed in Microsoft's latest 10-K?` |
-| **Earnings Deep Dive** | Summarizes quarterly earnings reports and highlights business performance. | `Analyze Microsoft's latest earnings.` |
-| **Executive Research** | Retrieves executive leadership information and executive compensation details. | `Who is Microsoft's CEO?` |
-| **Filing Search** | Searches SEC filings using keywords, phrases, or topics. | `Find filings mentioning Artificial Intelligence.` |
-
-> [!NOTE]
-> **Common SEC Filing Types**
->
-> - **10-K** – Annual report containing audited financial statements, business overview, and risk factors.
-> - **10-Q** – Quarterly report providing financial updates between annual reports.
-> - **8-K** – Current report filed to disclose significant business events between regular reporting periods.
-> - **DEF 14A** – Proxy statement containing executive compensation, board information, and shareholder voting matters.
-
-## **Plugin Workflow**
-
-The following workflow shows how Microsoft 365 Copilot processes a
-financial-research request:
-
-## Request Processing Flow
-
-```mermaid
-flowchart TD
-    A[User submits a prompt]
-    B[Copilot identifies the appropriate skill]
-    C[Plugin invokes the skill]
-    D[Remote MCP Connector calls SEC EDGAR]
-    E[SEC EDGAR returns filing data]
-    F[Copilot summarizes and formats the response]
-    G[Response displayed to the user]
-
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-```
+- Explore the plugin and skills framework available in Microsoft Copilot Cowork.
+- Generate a complete Microsoft 365 Copilot Cowork plugin package using a structured AI prompt.
+- Review the generated plugin components, including the manifest, skills, connector configuration, and icons.
+- Validate the plugin package against the Microsoft 365 Unified App Manifest (devPreview) schema.
+- Publish a custom plugin through the Microsoft 365 Admin Center.
+- Enable the published plugin in Microsoft Copilot Cowork.
+- Test the plugin by executing natural-language financial research queries powered by the SEC EDGAR Remote MCP Server.
 
 ## Task 1 - Review Plugins and Skills in Cowork
 
@@ -536,20 +382,15 @@ ready for plugin development.
 
 
 # Lab Summary
+In this lab, you explored the plugin capabilities available in Microsoft Copilot Cowork and generated a complete Financial Research plugin package using a structured AI prompt. You reviewed the generated package, including the Microsoft 365 Unified App Manifest, seven specialized skills, Remote MCP connector configuration, plugin icons, and deployment ZIP file, ensuring that the package met the required validation standards.
 
-In this lab, you:
+You then published the plugin through the Microsoft 365 Admin Center, making it available to Microsoft 365 Copilot users across the organization. After enabling the plugin in Copilot Cowork, you validated its functionality by executing natural-language financial research queries that retrieved live information from the SEC EDGAR public repository through the Remote MCP Server. This demonstrated how custom plugins can extend Microsoft 365 Copilot with specialized capabilities while securely integrating external data sources.
 
-- Enabled Microsoft 365 Copilot Cowork.
+You have successfully built, validated, deployed, and tested a custom Microsoft 365 Copilot Cowork plugin, gaining practical experience in extending Microsoft 365 Copilot with enterprise-grade plugins powered by the Model Context Protocol (MCP).
 
-- Generated a complete Financial Research plugin package using a single
-  structured AI prompt.
+## You have successfully completed the Lab!
 
-- Reviewed the generated manifest, seven skills, connector, and icons.
+Now, click on **Next >>** from the lower right corner to move on to the next page.
 
-- Validated the package against the devPreview schema.
-
-- Published the plugin through the Microsoft 365 Admin Center.
-
-- Enabled and tested the plugin in Copilot Cowork using natural-language
-  financial queries backed by live SEC EDGAR data.
+![Image](./media/nxtd1.png)
 

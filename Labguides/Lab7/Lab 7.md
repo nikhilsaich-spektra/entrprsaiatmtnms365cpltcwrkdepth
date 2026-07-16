@@ -1,134 +1,22 @@
 # Lab 7: Building a Personal Work Dashboard with Microsoft Copilot Cowork
 
-**Duration:** Approximately 40 minutes
+## Estimated Duration: 40 Minutes
 
-**Prerequisites:** Microsoft 365 account · Copilot Cowork access ·
-Outlook, Teams, Calendar, and OneDrive enabled
+## Overview
+Modern knowledge workers spend a significant amount of time switching between Outlook, Teams, Calendar, and OneDrive to identify priorities and track ongoing work. Microsoft Copilot Cowork enables users to automate these repetitive activities by orchestrating Microsoft Graph data, generating personalized outputs, and scheduling recurring tasks that continuously refresh with the latest information.
 
-**What you build:** A self-refreshing HTML work dashboard emailed to
-your inbox every morning.
+In this lab, you will use Microsoft Copilot Cowork to build a personalized HTML work dashboard that consolidates important information from Microsoft 365 services into a single, interactive view. You will configure Cowork to gather data from Outlook, Teams, Calendar, OneDrive, and Microsoft Search, generate a visually rich dashboard with actionable insights, schedule automatic refreshes, and customize the dashboard to suit your preferences. By the end of the lab, you will have an automated work dashboard that provides a centralized view of your daily priorities while demonstrating how Copilot Cowork can streamline personal productivity workflows.
 
-# **1. Overview & What You Will Build**
+## Objectives
+After completing this lab, you will be able to:
 
-Modern workdays suffer from app-switching overload. You start in
-Outlook, jump to Teams, check your calendar, hop into OneDrive — and
-before long, an hour has passed without meaningful work.
-
-In this lab you will use Microsoft Copilot Cowork to build a single HTML
-page that answers one question every morning:
-
-***“What deserves my attention right now?”***
-
-## **What the Dashboard Includes**
-
-- **Header** — today's date, last-refresh timestamp, and a hint that
-  everything is clickable.
-
-- **KPI Strip** — six at-a-glance tiles: overdue actions, unread emails,
-  meetings tomorrow, Teams unread, active projects, and out-of-office
-  teammates.
-
-- **Urgent Banner** — red-bordered block surfacing items needing
-  attention today.
-
-- **Tomorrow's Schedule** — every event with time, response status, and
-  conflict markers.
-
-- **Prep Notes** — short crib sheets for meetings that need preparation.
-
-- **Top Projects** — your 5–8 active projects with an inferred 'Next'
-  action each.
-
-- **Week Calendar Load** — a pure CSS bar chart showing meeting density
-  per day.
-
-- **Time Allocation** — a CSS doughnut chart breaking the week by
-  category.
-
-- **Emails Needing a Reply** — filtered to only messages that need a
-  response.
-
-- **OOF Radar** — teammates out of office this week and next.
-
-- **Unread Teams Chats** — top chats with one-line previews.
-
-- **Recent Files in Flight** — most recently modified OneDrive folders.
-
-**ℹ NOTE** Every item on the dashboard is clickable and opens directly
-back into Outlook, Teams, or OneDrive — you never have to copy-paste a
-reference again.
-
-*Screenshot: Final dashboard open in a browser — full page view showing
-all sections.*
-
-# **2. Understanding the Tools**
-
-## **What Is Microsoft Copilot Cowork?**
-
-Copilot Cowork is a task-automation layer inside Microsoft Copilot that
-can:
-
-- Run multi-step, long-horizon tasks on your behalf.
-
-- Query Microsoft Graph (your calendar, inbox, Teams, OneDrive) in
-  parallel.
-
-- Write and save files to a built-in output/ folder.
-
-- Schedule recurring tasks — including sending emails with attachments.
-
-**ℹ NOTE** Cowork is different from a regular Copilot chat. In a regular
-chat, Copilot answers questions. In Cowork, Copilot executes multi-step
-jobs that can run automatically on a schedule.
-
-## **What Is Microsoft Graph?**
-
-Microsoft Graph is the unified API that gives Copilot Cowork secure,
-permission-gated access to your Microsoft 365 data. The dashboard uses
-these Graph endpoints:
-
-- **Calendar** — /me/calendarView fetches events, response status,
-  organizer, and webLink.
-
-- **Inbox** — /me/messages fetches unread, flagged, and high-importance
-  messages with webLink.
-
-- **Teams** — /me/chats fetches unread chat threads with last-message
-  previews and webUrl.
-
-- **OneDrive** — /me/drive/recent fetches recently modified folders and
-  files with webUrl.
-
-- **Search** — M365 search finds action-required emails (access
-  renewals, expense reminders, training).
-
-# **3. Prerequisites Checklist**
-
-Before starting the lab, confirm each item below. If any item is
-missing, contact your Microsoft 365 administrator.
-
-- **Microsoft 365 account** — you can sign in at microsoft365.com with
-  your work or school account.
-
-- **Copilot Cowork access** — you see a 'Cowork' option or tab when you
-  open Microsoft Copilot.
-
-- **Outlook enabled** — you can open Outlook and see your inbox.
-
-- **Calendar enabled** — you can open the M365 Calendar and see your
-  meetings.
-
-- **Teams enabled** — you can open Microsoft Teams and see your chats.
-
-- **OneDrive enabled** — you can access OneDrive and see recent files.
-
-- **At least 5 upcoming events** — you have meetings on your calendar so
-  the dashboard has real data to show.
-
-**⚠ WARNING** Cowork requires specific Microsoft 365 licensing. If you
-do not see the Cowork option inside Copilot, you may need an upgraded
-plan. Contact your IT administrator or visit microsoft.com/copilot for
-licensing details.
+- Access and navigate Microsoft Copilot Cowork.
+- Build a personalized HTML work dashboard using Microsoft Graph data.
+- Generate a dashboard that consolidates calendar events, emails, Teams chats, OneDrive activity, and actionable insights.
+- Schedule recurring dashboard refreshes and configure automated email delivery.
+- Verify scheduled task execution and monitor dashboard updates.
+- Customize the dashboard layout and appearance, including theme preferences and content sections.
+- Manage scheduled Cowork tasks by running, editing, pausing, or deleting automated workflows.
 
 ## Task 1 - Open Copilot Cowork
 
@@ -155,6 +43,7 @@ licensing details.
         ![](./media/n3.png)
 
 1. If **Action required** pop-up window appears, click on **Ask later**.
+
 1. If prompted to **stay signed in**, you can click **No**.
 
     ![](./media/n4.png)
@@ -384,4 +273,17 @@ licensing details.
 1. Confirm the schedule is now active, with **Manage schedules (1)** and click **... (2)** to review the **Edit**, **Run now**, **Pause**, and **Delete** options.
 
    ![](./media/n39.png)
+
+# Lab Summary
+In this lab, you used Microsoft Copilot Cowork to create a personalized HTML work dashboard that consolidated information from Outlook, Teams, Calendar, OneDrive, and Microsoft Search into a single interactive view. You verified that the generated dashboard displayed key productivity insights, including upcoming meetings, unread emails, active projects, Teams activity, recent files, and priority actions.
+
+You then automated the dashboard by creating a recurring scheduled task that refreshes the dashboard throughout the workday and delivers a daily email containing the updated dashboard at the designated time. After validating the scheduled task and confirming the dashboard refreshed successfully, you explored the generated dashboard, customized its appearance and content, and saved your preferred layout for future dashboards. Finally, you reviewed and managed the scheduled automation task, gaining experience with maintaining recurring Copilot Cowork workflows.
+
+You have successfully built, automated, customized, and managed a personal productivity dashboard using Microsoft Copilot Cowork, demonstrating how AI-powered workflows can simplify daily work management and provide timely, actionable insights across Microsoft 365.
+
+## You have successfully completed the Lab!
+
+Now, click on **Next >>** from the lower right corner to move on to the next page.
+
+![Image](./media/nxtd1.png)
 
