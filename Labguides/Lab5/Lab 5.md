@@ -1,6 +1,6 @@
 # Lab 5 – Intelligent File Organizer
 
-## Estimated Duration: 30 Minutes
+## Estimated Duration: 45 Minutes
 
 ## Overview
 
@@ -87,7 +87,6 @@ subfolders.
 1. Click Send.
 
     ![](./media/m5e1t1s1.png)
-
 
     >Note: Cowork discovers the Lab Files folder and begins content analysis
 

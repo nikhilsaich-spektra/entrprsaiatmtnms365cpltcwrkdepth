@@ -1,6 +1,6 @@
 # Lab 7: Building a Personal Work Dashboard with Microsoft Copilot Cowork
 
-**Duration:** Approximately 40 minutes
+**Estimated Duration:** 60 minutes
 
 **Prerequisites:** Microsoft 365 account · Copilot Cowork access ·
 Outlook, Teams, Calendar, and OneDrive enabled

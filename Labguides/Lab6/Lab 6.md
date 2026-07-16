@@ -1,6 +1,6 @@
 # Lab 6 – Building Custom Cowork Skills
 
-## Estimated Duration: 20 Minutes
+## Estimated Duration: 90 minutes
 
 ## Overview
 
