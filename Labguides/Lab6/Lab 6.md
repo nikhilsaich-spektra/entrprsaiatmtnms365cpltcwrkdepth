@@ -6,11 +6,6 @@
 
 In this hands-on lab, you will use Copilot Cowork's conversational AI Skill Builder to create two reusable custom skills. Rather than filling out forms or writing code, you will describe each skill in plain language and answer a series of follow-up questions while Cowork generates the skill automatically. You will plan a skill specification on paper, build a Leadership Update skill and test it against a sample input, build a second Project Status Brief skill with a full specification, download and review the generated skill definition file, invoke the skill using its trigger phrase, and publish its output directly to a Microsoft Teams channel with human approval at the write step. Finally, you will inspect a skill's details and review its management options, including Download, Edit Instructions, and Delete.
 
-
->**Disclaimer:** Copilot Cowork is AI-powered, so generated outputs may differ across users and sessions. The results you see in this lab may not exactly match the examples shown here. Follow the workflow and expected outcome in the guide rather than expecting identical content.
-
-
-
 ## Objectives
 
 In this lab, you will perform the following:
