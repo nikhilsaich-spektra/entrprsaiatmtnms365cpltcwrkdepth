@@ -29,10 +29,6 @@ and from then on one sentence triggers the full workflow automatically.
 
 ## Task 1: Design Your Skill on Paper First
 
-Before touching any tool, spend 5 minutes planning. A clear spec leads
-to a much better skill. Rushing straight to the builder is the most
-common reason skills turn out vague and unreliable.
-
 Open Microsoft 365 Copilot Cowork
 
 1. Open a web browser.
@@ -444,7 +440,7 @@ answers to Cowork’s questions change.
 
 1. Review the generated output files.
 
-1. In the **Output** sectionselect**skill-quality-report.html**.
+1. In the **Output** section select **skill-quality-report.html**.
 
 1. Review the generated quality report.
 

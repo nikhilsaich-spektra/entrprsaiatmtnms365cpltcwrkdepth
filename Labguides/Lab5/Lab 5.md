@@ -70,8 +70,6 @@ subfolders.
 
 1. Open a browser and navigate to `m365.cloud.microsoft.com`.
 
-1. Sign in using the provided lab credentials.
-
 1. Select Cowork from the left navigation pane.
 
 1. Enter the following classification prompt:
@@ -107,8 +105,6 @@ subfolders.
 1. Wait for Copilot Cowork to enumerate all subfolders and begin processing files.
 
     ![](./media/m5e1t1s4.png)
-
-     File content extraction begins across all discovered folders.
 
     >Note:Review Rename Recommendations and Approve Changes
 
@@ -156,8 +152,6 @@ subfolders.
 1. Verify Copilot Cowork begins executing the approved rename plan.
 
     ![](./media/m5e1t3s2.0.png)
-   
-    Rename execution process initiated.
 
 1. Review the **Create folder** approval dialog.
 
