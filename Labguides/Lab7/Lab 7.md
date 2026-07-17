@@ -1,6 +1,6 @@
 # Lab 7: Building a Personal Work Dashboard with Microsoft Copilot Cowork
 
-**Estimated Duration:** 60 minutes
+### Estimated Duration: 60 minutes
 
 ## Overview
 Modern knowledge workers spend a significant amount of time switching between Outlook, Teams, Calendar, and OneDrive to identify priorities and track ongoing work. Microsoft Copilot Cowork enables users to automate these repetitive activities by orchestrating Microsoft Graph data, generating personalized outputs, and scheduling recurring tasks that continuously refresh with the latest information.
@@ -19,6 +19,8 @@ After completing this lab, you will be able to:
 - Manage scheduled Cowork tasks by running, editing, pausing, or deleting automated workflows.
 
 ## Task 1 - Open Copilot Cowork
+
+In this task, you will sign in to Microsoft 365 Copilot and navigate to the Cowork experience, ensuring your environment is ready to build and automate AI-powered productivity workflows.
 
 1. Open your browser and navigate to **Microsoft 365 Copilot** using the URL
 
@@ -57,6 +59,8 @@ After completing this lab, you will be able to:
     ![](./media/n6.png)
 
 ## Task 2 - Building Dashboard using Cowork
+
+In this task, you will use Microsoft Copilot Cowork to generate a personalized HTML work dashboard by gathering information from Outlook, Teams, Calendar, OneDrive, and Microsoft Search. The dashboard will provide a centralized view of your meetings, emails, projects, and other important work items.
 
 1. In the task input box, enter the following prompt (1) and then click the **Submit (2)** icon.
 
@@ -177,6 +181,8 @@ After completing this lab, you will be able to:
 
 ## Task 3 - Schedule the Hourly Refresh
 
+In this task, you will configure a recurring Cowork task to automatically refresh your work dashboard throughout the day. You will also verify that the scheduled task executes successfully and updates the dashboard with the latest information.
+
 1. In the task input box, enter the following prompt (1) and then click the **Submit (2)** icon.
 
     ![](./media/n12.png)
@@ -230,6 +236,8 @@ After completing this lab, you will be able to:
 
 ## Task 4 - Explore and Customize the Dashboard
 
+In this task, you will review the generated dashboard, explore its interactive sections, customize its appearance and content, and save your preferred layout for future dashboard generations.
+
 1. Go through the **dashboard.html** file and review all the sections available, including **Overview**, **Needs your attention today**, **Tomorrow's Schedule**, **Prep Notes**.**Week Calendar Load** and **Time Allocation**.
 
    ![](./media/n22.png)
@@ -265,6 +273,8 @@ After completing this lab, you will be able to:
    ![](./media/n38.png)
 
 ## Task 5 - Manage Scheduled tasks
+
+In this task, you will review the scheduled dashboard automation, explore the available management options, and verify how recurring Cowork tasks can be monitored and maintained.
 
 1. Click the **Cowork (1)** tab and then select **Scheduled (2)**.
 
