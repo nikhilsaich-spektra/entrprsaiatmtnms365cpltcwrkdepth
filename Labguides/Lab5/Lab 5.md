@@ -1,6 +1,6 @@
 # Lab 5 – Intelligent File Organizer
 
-## Estimated Duration: 45 Minutes
+### Estimated Duration: 45 Minutes
 
 ## Overview
 
@@ -16,55 +16,6 @@ In this lab, you will perform the following:
 - Task 3: AI-Generated Excel Tracking and Teams Reporting
 - Task 4: Project Orion Documents Reorganisation
 - Task 5: Reorganize the Project Orion Folder into Department-Based Subfolders
-
-# Lab Prerequisites
-
-Complete the following setup steps before starting the lab (estimated:
-15–20 minutes):
-
-## Required Microsoft 365 Environment
-
-- Microsoft 365 Copilot with Copilot Cowork enabled
-
-- Microsoft Teams with permission to post to channels
-
-- OneDrive for Business and SharePoint Online
-
-- Microsoft Excel (Web or Desktop)
-
-- Microsoft Graph-connected M365 tenant
-
-## Required OneDrive Folder Structure
-
-Create a Lab Files folder in OneDrive with these subfolders:
-
-- Lab Files / Sales — upload provided sales and customer-facing documents
-
-- Lab Files / Finance — upload budgeting and financial analysis documents
-
-- Lab Files / Project Orion — upload Project Orion requirements, minutes,
-  and evaluation documents
-
-- Lab Files / Shared Files — configure 'Anyone with the link' sharing on
-  at least 3 files
-
-- Lab Files / Archive Candidates — optional pre-populated stale
-  documents
-
-## Required Teams Environment
-
-- Team: Contoso Operations (or equivalent)
-
-- Channel: General (Standard) — target for Exercise 3 Teams post
-
-Automated File Classification and Renaming
-
-Duration: 8 minutes | Difficulty: Beginner–Intermediate
-
-Use AI to classify all files in your OneDrive Lab Files folder, propose
-a YYYY-MM-DD_Topic_DocType renaming scheme, preview the full mapping,
-then approve and execute the batch rename into topic-organised
-subfolders.
 
 ## Task 1: Open Copilot Cowork and Submit Classification Prompt
 
