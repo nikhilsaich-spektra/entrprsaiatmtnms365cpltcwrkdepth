@@ -25,13 +25,11 @@ OneDrive/SharePoint, and Teams in parallel.
 
     ![](media/m4e1s1.png)
 
-2.  In the prompt bar, type the Exercise 1 prompt and press Enter:
+2.  In the prompt bar, type the prompt and press Enter:
 
     ```
     "Prepare me for my Steering Committee Review meeting. Build a one-page prep brief containing: attendee list with my last interaction with each, the stated agenda and purpose, related email threads and files, open action items from the Risk Review Meeting Follow-up, and 3 questions I should ask. Save it as a Word document in my 'Project Orion Files' folder named 'Prep – Steering Committee Review – [meeting date]'."
     ```
-
-    **Prompt submitted — Cowork begins processing**
 
     ![](media/m4e1s2.png)
 
@@ -250,10 +248,6 @@ selecting the updated file over the original.
 
     ![](media/m4e1s25.png)
 
-    Cowork provides a clear ✅/❌ status table: v2 (updated
-    with Risks) is the correct file; the original is outdated. Click the v2
-    link.
-
 1. Word Online — RISKS / BLOCKERS section visible in
     final document
 
@@ -269,7 +263,7 @@ Goal: Gather all content related to the Project Sync meeting and
 organise it into a “Meeting Pack” folder in OneDrive with a hyperlinked
 index document.
 
-1. Send the Exercise 2 prompt: 
+1. Send the prompt: 
     ```
     "For the Steering Committee Review meeting for Project Orion, gather
         everything related: files in OneDrive/SharePoint, email threads,
@@ -366,7 +360,7 @@ Goal: Generate a meeting summary, action items, follow-up email, and
 tasks from a transcript. Demonstrates AI grounding — refusing to
 fabricate content without source material.
 
-1. Send the Exercise 3 prompt: 
+1. Send the prompt: 
     ```
     "From the Steering Committee Review
     meeting's transcript/notes: (1) write a crisp summary with decisions
