@@ -288,6 +288,10 @@ In this task, you will upload sample folders and files to OneDrive, then create 
 
    ![](media/29.png)
 
+1. If you see a popup asking for permission to upload the files then click on **Upload**.
+
+   ![](media/29(1).png)
+
    >**Note**: Repeat this process and upload all the remaining folders into Lab Files except the **Project Orion Files** folder.
 
 9. Once done uploading, verify that all four folders are visible, then click on **Create or upload (1)** and select **Files upload (2)**.
@@ -309,6 +313,10 @@ In this task, you will upload sample folders and files to OneDrive, then create 
 13. Navigate to the path ```C:\LabFiles\lab file``` **(1)**, select **Project Orion Files (2)**, and click **Upload (3)**.
 
     ![](media/34.png)
+
+1. If you see a popup asking for permission to upload the files then click on **Upload**.
+
+   ![](media/34(1).png)
 
 14. Verify that the **Project Orion Files** folder appears in the list.
 

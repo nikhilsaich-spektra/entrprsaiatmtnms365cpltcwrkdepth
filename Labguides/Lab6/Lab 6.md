@@ -98,6 +98,42 @@ Open Microsoft 365 Copilot Cowork
 
 1. Save the notes for reference during the remaining exercises.
 
+>**Note:** Use the sample answers below as a reference if you are unable to complete the notepad entries independently.
+
+```
+What should this skill do?
+
+Generate concise leadership update messages from project, operational, or business input provided by the user. The skill should create executive-ready updates focused on key accomplishments, risks, decisions, next steps, and overall status.
+
+What does it need to read?
+
+User-provided project updates, status notes, milestones, risks, business updates, meeting summaries, or task completion details.
+
+Does it write or change anything?
+
+No. The skill only generates communication content and does not modify files, messages, or data sources.
+
+What should the output look like?
+
+A professional leadership update with:
+- Executive Summary
+- Key Accomplishments
+- Risks and Issues
+- Next Steps
+- Overall Status
+
+Is there a variable that might change?
+
+Yes.
+- Project name
+- Reporting period
+- Audience
+- Business unit
+- Status details
+- Risks and action items
+
+```
+
 1. Keep the Notepad window open and accessible while working through the lab.
 
 1. In the existing **Notepad** document, scroll below the planning questions and responses entered in the previous task.
@@ -125,6 +161,56 @@ Open Microsoft 365 Copilot Cowork
 1. Verify the Skill Specification contains all required information.
 
     ![](./media/m6t3s1.png)
+
+    >**Note:** Use the sample Skill Specification template provided below as a reference if you are unable to complete the notepad entries independently.
+
+   ```
+   Skill Name:
+
+    Leadership Update
+
+   Trigger Phrase:
+
+    Create a leadership update
+
+   Generate an executive status update
+
+    Prepare a leadership summary
+
+   Parameters:
+
+    - Project Name
+    - Reporting Period
+    - Key Accomplishments
+    - Risks and Issues
+    - Next Steps
+    - Overall Status
+    - Audience
+
+   Apps It May Read:
+
+    - Microsoft Teams
+    - Microsoft Word
+    - OneNote
+    - Outlook Emails
+    - SharePoint Documents
+
+   Apps It May Write:
+
+    None
+
+   Output Format:
+
+    Professional leadership communication including:
+    - Title
+    - Executive Summary
+    - Key Achievements
+    - Risks and Mitigations
+    - Upcoming Activities
+    - Status Indicator (Green/Amber/Red)
+
+   Output should be concise, executive-friendly, and suitable for email, Teams, or leadership review.    
+   ```
 
 1. Review the Skill Specification and confirm the following details are documented:
 
@@ -237,9 +323,25 @@ Open Microsoft 365 Copilot Cowork
 
 1. Select **Leadership / executive update**.
 
-     ![](./media/m6e2s4.png)
+     ![](./media/m6e2s4(1).png)
 
-    Leadership / executive update option reviewed before selection.
+    >**Note:** If the option is not available paste the below prompt in the customize section and click Submit.
+
+    ```
+    Leadership / exec update
+    Concise status and asks for senior leaders — progress, risks, decisions needed. Skimmable, outcome-first.
+    ```
+
+     ![](./media/m6e2s4(1).png)
+
+    >**Note:** If the option is not available paste the below prompt in the customize section and click Submit.
+
+    ```
+    Leadership / exec update
+    Concise status and asks for senior leaders — progress, risks, decisions needed. Skimmable, outcome-first.
+    ```
+
+    ![](./media/m6e2s4.png)
 
 1. Verify the **Leadership / executive update** option is selected.
 
@@ -590,7 +692,7 @@ natural-language instruction.
 1. In the task input box, enter the following instruction:
 
     ```text
-    send the updates to Sandbox AI Labs 1012 > General
+    send the updates to Retail > General
     ```
 
     Teams posting instruction entered and ready to submit.
@@ -601,7 +703,13 @@ natural-language instruction.
 
 1. When the **Post to channel** dialog appears, review the posting details.
 
-    ![](./media/m6e2t8s3.png)
+    ![](./media/m6e2t8s3(1).png)
+
+   Teams posting confirmation dialog displayed.
+
+1. Review how Cowork has started processing the request.
+
+   ![](./media/m6e2t8s4(2).png)
 
 1. Verify the following details are correct:
 
@@ -614,7 +722,7 @@ natural-language instruction.
 
 1. Review the final confirmation message.
 
-    ![](./media/m6e2t8s4.png)
+    ![](./media/m6e2t8s4(1).png)
 
     Teams posting completed successfully.
 
@@ -626,7 +734,7 @@ natural-language instruction.
 
 1. Verify the Project Status Brief message is available in the channel conversation.
 
-    ![](./media/m6e2t8s5.png)
+    ![](./media/m6e2t8s5(1).png)
 
 1. Confirm the posting activity completed successfully before proceeding to the next task.
 
@@ -646,10 +754,6 @@ natural-language instruction.
     - Teams post created
     - Message delivered to the selected channel
 
-      ![](./media/m6e2t8s6.png)
-
-1. Confirm the Project Status Brief is available in Microsoft Teams before completing the exercise.
-
 ## Task 9: Inspect, Edit, Download, and Delete Skills
 
 The final exercise shows you how to review a skill’s full instructions,
@@ -664,6 +768,8 @@ manage it, and understand the Download and Delete management options.
 1. Verify the **project-status-brief-1** skill is available in the Skills library.
 
 1. Select the **project-status-brief** skill to open the skill details page.
+
+    ![](./media/m6e2t9s1(1).png)
 
     ![](./media/m6e2t9s1.png)
 
