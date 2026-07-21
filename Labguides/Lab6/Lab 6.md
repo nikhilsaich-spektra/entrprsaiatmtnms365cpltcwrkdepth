@@ -316,7 +316,7 @@ correctly.
     - Risks and Blockers
     - Asks / Next Steps
 
-    ![](./media/m6e2t4s3.png)
+        ![](./media/m6e2t4s3.png)
 
 1. Review the content generated within each section.
 
