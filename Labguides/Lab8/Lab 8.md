@@ -330,6 +330,22 @@ ready for plugin development.
 
    ![](./media/n21.png)
 
+   >**Note:** If the plugin deployment does not complete successfully through the Microsoft 365 Admin Center, you can still enable the plugin manually from Microsoft 365 Copilot. Follow the below steps.
+
+   1. Navigate to Customize → Plugins, search for **Financial Research (1)** and click on the **plugin (2)**.
+
+      ![](./media/n21(1).png)
+
+   2. Click on **Install**.
+
+      ![](./media/n21(2).png)
+
+   3. After the installation is complete, toggle the plugin to enable it for use in Cowork.
+
+      ![](./media/n21(3).png)
+
+
+
 ## Task 4 - Enable and Test Plugin in Cowork
 
 1. Navigate back to **Microsoft 365 Copilot** using the URL
@@ -387,8 +403,3 @@ You then published the plugin through the Microsoft 365 Admin Center, making it 
 You have successfully built, validated, deployed, and tested a custom Microsoft 365 Copilot Cowork plugin, gaining practical experience in extending Microsoft 365 Copilot with enterprise-grade plugins powered by the Model Context Protocol (MCP).
 
 ## You have successfully completed the Lab!
-
-Now, click on **Next >>** from the lower right corner to move on to the next page.
-
-![Image](./media/nxtd1.png)
-
