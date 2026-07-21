@@ -1,6 +1,6 @@
 # Lab 8: Build and Publish a Custom Microsoft 365 Copilot Cowork Plugin
 
-### Estimated Duration: 60 minutes
+## Estimated Duration: 60 Minutes
 
 ## Overview
 Organizations can extend Microsoft 365 Copilot beyond its built-in capabilities by developing custom plugins that integrate enterprise knowledge, business processes, and external services. Using Copilot Cowork Plugins and the Model Context Protocol (MCP), developers can securely connect Microsoft 365 Copilot to external data sources, enabling users to retrieve live information and perform specialized tasks through natural language.
@@ -20,8 +20,7 @@ After completing this lab, you will be able to:
 
 ## Task 1 - Review Plugins and Skills in Cowork
 
-Verify that Microsoft 365 Copilot and Copilot Cowork are available and
-ready for plugin development.
+In this task, you will explore the Plugins and Skills available in Microsoft Copilot Cowork, review the built-in capabilities, and verify that your environment is ready for custom plugin development.
 
 1. Click the **Cowork (1)** tab, then click **New task (2)**.
 
@@ -40,6 +39,8 @@ ready for plugin development.
    ![](./media/n4.png)
 
 ## Task 2 - Generate the Plugin Using Cowork
+
+In this task, you will use Microsoft Copilot Cowork to generate a complete Financial Research plugin package from a structured AI prompt. You will review the generated plugin assets, including the manifest, skills, connector configuration, icons, and deployment package.
 
 1. From the Cowork interface, navigate to New Chat to start a new chat session.
 
@@ -288,6 +289,8 @@ ready for plugin development.
 
 ## Task 3 - Publish the Plugin
 
+In this task, you will publish the generated Financial Research plugin through the Microsoft 365 Admin Center, making it available for Microsoft 365 Copilot users across your organization.
+
 1. Navigate to the Microsoft 365 Admin Center using the URL.
 
      ```
@@ -347,6 +350,8 @@ ready for plugin development.
 
 
 ## Task 4 - Enable and Test Plugin in Cowork
+
+In this task, you will enable the published Financial Research plugin in Microsoft Copilot Cowork and validate its functionality by executing natural-language financial research queries powered by the SEC EDGAR Remote MCP Server.
 
 1. Navigate back to **Microsoft 365 Copilot** using the URL
 
