@@ -72,68 +72,28 @@ In this task, you will sign in to Microsoft 365, review how Copilot Cowork diffe
 
 ## Task 2: Generate Sample Emails in Outlook
 
-In this task, you will use Cowork to generate and send 20 sample training emails to your own Outlook inbox for use in later labs.
+In this task, you will use Cowork to generate and send 5 sample training emails to your own Outlook inbox for use in later labs.
 
 1. In the Cowork pane, enter the below prompt **(1)** and click the **send (2)** button:
 
      ```
-     I need you to seed my Outlook inbox with 20 sample training emails for a Copilot Cowork demo environment (Contoso Electronics / Project Orion ERP modernization scenario). Send each one individually to my own email address so it lands as a received message in my Inbox. You have my approval to send all 20 without pausing for individual confirmation — just send them one after another and give me a final summary list when done.
+     I need you to seed my Outlook inbox with 5 sample training emails for a Copilot Cowork demo environment (Contoso Electronics / Project Orion ERP modernization scenario). Send each individually to my own email address so it lands as a received message in my Inbox. You have my approval to send all 5 without pausing for individual confirmation - send them one after another, then give me a final summary list (subject + time sent).
 
-     For every email: write a proper business email (greeting, 2–4 short paragraphs or bullet points as noted, professional sign-off with the sender name and title/company given below). Prefix each Subject line with the source tag shown in brackets. Do not literally attach files — if an email references an attachment, just mention it in the body text as an attachment would be described in real reply threads.
+    For every email: proper business email (greeting, 2–3 short paragraphs or bullets, professional sign-off with sender name/title/company). Prefix the Subject line with the source tag in brackets. Do not literally attach files - mention any referenced attachment in the body text only.
 
-     Send these 20, in this order:
+    Send these 5, in order:
 
-     ## Customer & Sales
+    1. [Northwind Retail] Subject: "Final Contract Review - Payment Milestone Clarification." From: Priya Desai, Procurement Lead, Northwind Retail. Reviewing the ERP contract, needs clarification on the payment milestone schedule before signing. Polite, slightly urgent - wants this resolved this week.
 
-     1. **[Northwind Retail]** Subject: *"Final Contract Review – Payment Milestone Clarification."* From: Priya Desai, Procurement Lead, Northwind Retail. She's reviewing the ERP contract and needs clarification on the payment milestone schedule before she can sign. Polite, slightly urgent — she wants this resolved this week.
+    2. [Fabrikam Industries] Subject: "Feature Request - Barcode Scanning & Warehouse Integration." From: Marcus Webb, IT Director, Fabrikam Industries. Requests barcode scanning and warehouse-management integration be added to the ERP build; needed for their distribution centers. Leave this request open/unresolved in tone.
 
-     2. **[Fabrikam Industries]** Subject: *"Feature Request – Barcode Scanning & Warehouse Integration."* From: Marcus Webb, IT Director, Fabrikam Industries. Requests that barcode scanning and warehouse-management integration be added to the ERP build, explains it's needed for their distribution centers.
+    3. [Tailspin Toys] Subject: "URGENT: Production Issue Affecting Order Processing." From: David Chen, IT Support Lead, Tailspin Toys. Urgent tone - a production issue is blocking order processing right now, needs immediate attention, asks for a callback ASAP. Leave this issue open/unresolved in tone.
 
-     3. **[Adventure Works]** Subject: *"Go-Live Schedule Confirmed – Training Schedule Needed."* From: Elena Torres, Operations Manager, Adventure Works. Confirms she's fine with the proposed go-live date, but asks when end-user training sessions will be scheduled.
+    4. [PMO] Subject: "Invitation – Steering Committee Meeting." Short agenda (3–4 bullet points covering Project Orion milestones, budget status, go/no-go checkpoints), a list of expected attendees (by role, not real people — e.g., Steering Committee members, Project Sponsor, PMO), a placeholder Teams link, and a note that a deck is attached.
 
-     4. **[Tailspin Toys]** Subject: *"URGENT: Production Issue Affecting Order Processing."* From: David Chen, IT Support Lead, Tailspin Toys. Urgent tone — a production issue is blocking order processing right now, needs immediate attention, asks for a callback ASAP.
+    5. [PMO – Risk Management] Subject: "Risk Review Meeting – Follow-Up Notes." Summarizes 3 decisions made in a recent risk review, each with an owner name and a due date.
 
-     5. **[Fourth Coffee]** Subject: *"Invitation – Quarterly Business Review."* From: the Fourth Coffee Account Team. Invites the recipient to a QBR next week, mentions an agenda and a presentation deck are attached, asks to confirm attendance.
-
-     ## Internal Project
-
-     6. **[Project Orion – PMO]** Subject: *"Weekly Status Update – Project Orion."* From: Rajesh Kumar, Project Manager. Structured with four short sections: Completed This Week, Delays, Upcoming Milestones, Risks. Include 2–3 concrete action items with owners.
-
-     7. **[Architecture Team]** Subject: *"Architecture Review Outcomes."* From: Sandra Liu, Technical Architect. Documents 3 design decisions made in a recent architecture review (e.g., integration pattern, data model choice, API approach) and the reasoning for each.
-
-     8. **[QA Team]** Subject: *"Testing Completion Report – Sprint Review."* From: Amit Verma, QA Lead. Reports number of tests passed/failed, lists 2–3 open bugs with severity, and gives a clear release recommendation (go / no-go / go-with-conditions).
-
-     9. **[Security Team]** Subject: *"Security Assessment Findings – Action Required."* From the Infosec team. Reports a number of high-risk vulnerabilities and medium findings found during assessment, and lists required remediation steps with an owner and deadline.
-
-     10. **[Infrastructure Team]** Subject: *"Deployment Readiness Checklist – Status Confirmed."* From the Infrastructure team. Confirms status (ready/pending) across servers, backup, disaster recovery, and monitoring ahead of go-live.
-
-     ## Executive Communications
-
-     11. **[Office of the CIO]** Subject: *"CIO Monthly Update – AI Adoption & Priorities."* Company-wide tone, covers progress on AI adoption initiatives and strategic priorities for the quarter.
-
-     12. **[Office of the CEO]** Subject: *"Town Hall Announcement – Organizational Updates."* Announces an upcoming town hall, references organizational changes and quarterly goals to be discussed, invites all staff to attend.
-
-     13. **[Finance Department]** Subject: *"Budget Approved – Project Orion Additional Funding."* From the Finance Director. Confirms additional budget has been approved for Project Orion, states it requires an acknowledgement reply from the recipient.
-
-     14. **[HR / Learning & Development]** Subject: *"Action Required – Register for Copilot Training."* Announces mandatory Copilot training sessions, gives a registration deadline, states attendance is mandatory for all employees.
-
-     ## Vendor Communications
-
-     15. **[Licensing Account Team]** Subject: *"Reminder – Microsoft 365 License Renewal."* Renewal reminder for Microsoft 365 licenses, references a pricing summary, gives a renewal deadline.
-
-     16. **[Dell Hardware Logistics]** Subject: *"Shipment Delay Notice – Hardware Order."* Notifies that a hardware shipment is delayed by one week, gives a revised delivery date, notes the impact on the deployment timeline.
-
-     17. **[Network Services Provider]** Subject: *"Scheduled Maintenance Notice – This Weekend."* Notifies of a weekend maintenance window with a potential service interruption, no action needed from the recipient.
-
-     ## Meeting-Related
-
-     18. **[PMO]** Subject: *"Invitation – Steering Committee Meeting."* Includes a short agenda (3–4 bullet points), a list of expected attendees (roles, not real people), a placeholder Teams link, and a note that a deck is attached.
-
-     19. **[PMO – Risk Management]** Subject: *"Risk Review Meeting – Follow-Up Notes."* Summarizes 3 decisions made in a recent risk review, each with an owner name and a due date.
-
-     20. **[Executive Sponsor]** Subject: *"Go-Live Readiness Review – Executive Meeting Invite."* Summarizes overall project health, references the deployment readiness checklist, and lists 2–3 approval items needed from executives before go-live.
-
-     Once all 20 are sent, give me a confirmation list showing each subject line and the time it was sent.
+    Once all 5 are sent, give me a confirmation list showing each subject line and the time it was sent.
      ```
 
      ![](media/8(1).png)
@@ -150,9 +110,9 @@ In this task, you will use Cowork to generate and send 20 sample training emails
 
    ![](media/11.png)
 
-   >**Note**: Repeat the same steps and approve all the remaining 18 emails generated by Cowork.
+   >**Note**: Repeat the same steps and approve all the remaining 3 emails generated by Cowork.
 
-5. Review the output generated with all 20 email details listed.
+5. Review the output generated with all 5 email details listed.
 
    ![](media/12.png)
 
@@ -170,64 +130,38 @@ In this task, you will use Cowork to generate and send 20 sample training emails
 
 ## Task 3: Generate Sample Calendar Events in Outlook
 
-In this task, you will use Cowork to create 10 sample calendar events in Outlook to build out a realistic project calendar.
+In this task, you will use Cowork to create 3 sample calendar events in Outlook to build out a realistic project calendar.
 
 1. Go back to Microsoft 365 Copilot portal and in the Cowork pane, enter the below prompt **(1)** and click the **send (2)** button:
 
     ```
-    I need you to create 10 sample calendar events on my Outlook calendar for a Copilot Cowork demo environment (Contoso Electronics / Project Orion ERP modernization scenario). Create all 10 without pausing for individual confirmation, then give me a summary table at the end (event title, date, time) once done.
+    I need you to create 3 sample calendar events on my Outlook calendar for a Copilot Cowork demo environment (Contoso Electronics / Project Orion ERP modernization scenario). Create all 3 without pausing for individual confirmation, then give me a summary table at the end (event title, date, time) once done.
 
     ## Rules for every event
 
-    - I am the only attendee/organizer — do NOT invite or add any other person's email address to any of these events, even if a name or company is mentioned. Any attendee names or companies mentioned below should appear as plain text inside the event description only.
-    - Add a Microsoft Teams meeting link to each event (standard "Teams meeting" toggle).
-    - Schedule them on 10 consecutive business days starting tomorrow (skip weekends), one event per business day, in the exact order listed below, at the specific time given.
-    - If any of these times conflict with something already on my calendar, shift only that one event by 30 minutes and note it in your summary — don't skip it.
-    - Two of these events should have NO description/agenda at all (marked below) — leave them as bare title + time. Every other event should get the short agenda text given.
+    - I am the only attendee/organizer — do NOT invite or add any other person's email address, even if a name or company is mentioned. Any names/companies mentioned should appear as plain text in the description only.
+    - Add a Microsoft Teams meeting link to each event.
+    - Schedule them on the next 3 consecutive business days starting tomorrow (skip weekends), one per business day, in the order below.
+    - If any time conflicts with something already on my calendar, shift only that one event by 30 minutes and note it in your summary.
 
-    ## The 10 events
+    ## The 3 events
 
-    **Business day 1 — 9:30–9:45 AM**
-    Title: Weekly Project Stand-up
-    Description: (leave blank — no agenda)
-
-    **Business day 2 — 2:00–3:00 PM**
+    Business day 1 — 2:00–3:00 PM
     Title: Steering Committee Review
-    Description: Agenda: review of Project Orion milestones, budget status, and go/no-go checkpoints. Attendees (for reference only, do not invite): Steering Committee members, Project Sponsor, PMO.
+    Description: Agenda: review of Project Orion milestones, budget status, and go/no-go checkpoints. 
+    Attendees (for reference only, do not invite): Steering Committee members, Project Sponsor, PMO.
 
-    **Business day 3 — 11:00 AM–12:00 PM**
-    Title: Architecture Review
-    Description: Agenda: review of integration pattern, data model, and API design decisions from the recent architecture review. Attendees (reference only): Technical Architect, Lead Developers, Solution Architect.
-
-    **Business day 4 — 10:00–11:00 AM**
+    Business day 2 — 10:00–11:00 AM
     Title: Security Assessment Meeting
-    Description: Agenda: review of vulnerability assessment findings (high-risk and medium findings) and required remediation plan. Attendees (reference only): Security Team, Compliance Officer, IT Director.
+    Description: Agenda: review of vulnerability assessment findings (high-risk and medium findings) and required remediation plan. 
+    Attendees (reference only): Security Team, Compliance Officer, IT Director.
 
-    **Business day 5 — 3:00–3:45 PM**
-    Title: Customer Demo – Northwind
-    Description: Agenda: live demo of ERP sales and procurement modules for Northwind Retail stakeholders. Attendees (reference only): Northwind Retail Procurement Team, Sales Engineer, Account Manager.
-
-    **Business day 6 — 1:00–2:00 PM**
-    Title: Executive Budget Review
-    Description: Agenda: review of Project Orion budget utilization and approval of additional funding request. Attendees (reference only): CFO, Finance Director, Project Sponsor.
-
-    **Business day 7 — 4:00–4:30 PM**
-    Title: Vendor Status Call
-    Description: (leave blank — no agenda)
-
-    **Business day 8 — 10:00–11:30 AM**
+    Business day 3 — 10:00–11:30 AM
     Title: Go-Live Readiness Review
-    Description: Agenda: walkthrough of the deployment readiness checklist (servers, backup, disaster recovery, monitoring), outstanding approval items, and the go-live decision. Attendees (reference only): Executive Sponsor, Infrastructure Lead, PMO, QA Lead.
+    Description: Agenda: walkthrough of the deployment readiness checklist (servers, backup, disaster recovery, monitoring), outstanding approval items, and the go-live decision. 
+    Attendees (reference only): Executive Sponsor, Infrastructure Lead, PMO, QA Lead.
 
-    **Business day 9 — 2:00–3:00 PM**
-    Title: Quarterly Business Review
-    Description: Agenda: review of quarterly sales performance, regional analysis, and recommendations for next quarter. Attendees (reference only): Sales Leadership, Regional Managers, Executive Sponsor.
-
-    **Business day 10 — 1:00–3:00 PM**
-    Title: AI Adoption Workshop
-    Description: Agenda: hands-on workshop covering the company's AI adoption strategy and Copilot training rollout. Attendees (reference only): All Staff, HR L&D Team, CIO Office.
-
-    Once all 10 are created, confirm each one's final date/time (noting any that were shifted due to conflicts) in a clean summary table.
+    Once all 3 are created, confirm each one's final date/time (noting any that were shifted due to conflicts) in a clean summary table.
     ```
 
     ![](media/16.png)
@@ -240,7 +174,7 @@ In this task, you will use Cowork to create 10 sample calendar events in Outlook
 
    ![](media/18.png)
 
-   >**Note**: Repeat the same steps and approve the remaining 9 events generated by Cowork.
+   >**Note**: Repeat the same steps and approve the remaining 2 events generated by Cowork.
 
 4. Review the output generated with all 10 event details listed.
 
@@ -391,18 +325,6 @@ In this task you will learn the three ways to give Cowork an instruction: starte
 7. Review the output where Cowork has summarized the emails and listed the ones that need a response.
 
    ![](media/53.png)
-
-8. Click the **microphone icon** on the right side of the task bar.
-
-   ![](media/54.png)
-
-9. Speak a simple instruction: ```Show me my meetings for tomorrow``` **(1)** and click **Send (2)**.
-
-   ![](media/55.png)
-
-10. Review the output generated and continue.
-
-    ![](media/56.png)
 
 ## Task 6: Use the + Menu to Add Context to a Task
 

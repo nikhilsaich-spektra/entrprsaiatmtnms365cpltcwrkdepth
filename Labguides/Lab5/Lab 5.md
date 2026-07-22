@@ -14,8 +14,7 @@ In this lab, you will perform the following:
 - Task 1: Automated File Classification and Renaming
 - Task 2: OneDrive and SharePoint Governance Audit
 - Task 3: AI-Generated Excel Tracking and Teams Reporting
-- Task 4: Project Orion Documents Reorganisation
-- Task 5: Reorganize the Project Orion Folder into Department-Based Subfolders
+- Task 4: Reorganize the Project Orion Folder into Department-Based Subfolders
 
 ## Task 1: Open Copilot Cowork and Submit Classification Prompt
 
@@ -64,7 +63,7 @@ In this lab, you will perform the following:
 1. In the message box, enter the following prompt:
 
     ```text
-    Proceed with suggesting renaming and create new folder for all latest renamed files
+    Proceed with the suggested renaming, create a new folder for all latest renamed files, then also create subfolders by topic within it and move the files accordingly.
     ```
 
 1. Click **Submit** to approve the proposed rename operation and continue to the next step.
@@ -98,23 +97,6 @@ In this lab, you will perform the following:
     ![](./media/m5e1t3s5.png)
 
     >Note: Create Topic Subfolders and Verify in OneDrive
-
-1. In the **Message Cowork** box, enter the following prompt:
-
-    ```text
-    Create subfolders by topic and move files accordingly
-    ```
-
-1. Click **Send** to submit the request.
-
-    ![](./media/m5e1t4s1.png)
-
-1. Verify the **Workspace** pane displays the following activities:
-
-    - Creating topic subfolders
-    - Moving files into topic subfolders
-
-        ![](./media/m5e1t4s2.png)
 
 1. When prompted, review the folder creation request.
 
@@ -166,8 +148,6 @@ In this lab, you will perform the following:
 
 ## Task 2 – OneDrive and SharePoint Governance Audit
 
-Duration: 6 minutes | Difficulty: Intermediate
-
 Audit the Lab Files folder for governance issues — duplicate files,
 stale content, external sharing risks, and ownership gaps. Produce a
 structured audit report with recommendations, then execute one approved
@@ -194,8 +174,6 @@ Submit the Governance Audit Prompt
 
         ![](./media/m5e2t1s2.png)
 
-        Governance audit initiated and additional audit steps added to the Workspace.
-
 1. Review the response from Copilot Cowork and verify that previously collected file inventory, metadata, and hash information are reused for the audit process.
 
 1. Monitor the Workspace pane while sharing and permission analysis is performed.
@@ -206,13 +184,9 @@ Submit the Governance Audit Prompt
 
     ![](./media/m5e2t1s4.png)
 
-   Governance audit analysis running and audit report being generated.
-
 1. Verify the sharing analysis completes successfully and confirm that no files are modified during the audit process.
 
     ![](./media/m5e2t1s5.png)
-
-    Sharing audit completed and file permissions verified.
 
     >Note: Review the Governance Audit Report
 
@@ -221,8 +195,6 @@ Submit the Governance Audit Prompt
 1. Verify the report identifies exact duplicate files and near-duplicate file versions across the Lab Files repository.
 
     ![](./media/m5e2t2s1.png)
-
-    Duplicate file analysis showing exact and near-duplicate file findings.
 
 1. Review the **Stale Files** section of the report.
 
@@ -257,8 +229,6 @@ Submit the Governance Audit Prompt
     ![](./media/m5e2t3s1.png)
 
     ![](./media/m5e2t3s2.png)
-
-    Governance action #2 approved for execution.
 
 1. Verify Copilot Cowork executes only the selected governance action and leaves the remaining recommendations pending.
 
@@ -303,10 +273,8 @@ Submit the Governance Audit Prompt
 
 ## Task 3 – AI-Generated Excel Tracking and Teams Reporting
 
-Duration: 6 minutes | Difficulty: Intermediate
-
 Generate an Excel governance tracker with one row per file, then post a
-3-line summary to Teams with a workbook link — demonstrating OneDrive →
+3-line summary to Teams with a workbook link - demonstrating OneDrive →
 Excel → Teams cross-app workflow orchestration from a single
 instruction.
 
@@ -342,8 +310,6 @@ Generate an Excel Governance Tracker and Teams Summary
 
     ![](./media/m5e3t1s4.png)
 
-    Teams post review dialog displaying governance summary and AI attribution.
-
 1. Click **Send** to publish the governance summary to the selected Teams channel.
 
     ![](./media/m5e3t1s5.png)
@@ -369,8 +335,6 @@ Generate an Excel Governance Tracker and Teams Summary
 
     ![](./media/m5e3t2s2.png)
 
-   Teams posting workflow and workbook output available in the Workspace.
-
 1. Verify the workbook generation process and Teams posting activity have completed successfully.
 
 1. Open Microsoft Teams and navigate to the target **Team** and **General** channel.
@@ -379,19 +343,13 @@ Generate an Excel Governance Tracker and Teams Summary
 
     ![](./media/m5e3t2s3.png)
 
-    Governance summary posted to the Teams channel.
-
 1. Review the published post and verify the governance summary content is displayed correctly.
 
     ![](./media/m5e3t2s4.png)
 
-    Governance summary details displayed in Teams.
-
 1. Verify the Teams post is available as a permanent conversation record.
 
     ![](./media/m5e3t2s5.png)
-
-    Governance post available for follow-up discussion.
 
 1. Select the workbook or Lab Files hyperlink contained in the Teams post and verify it opens the appropriate location.
 
@@ -399,11 +357,7 @@ Generate an Excel Governance Tracker and Teams Summary
 
     ![](./media/m5e3t2s6.png)
 
-   Teams channel available for user responses and collaboration.
-
-## Task 4 – Project Orion Documents Reorganisation
-
-Duration: 8 minutes | Difficulty: Intermediate–Advanced
+## Task 4 – Reorganize the Project Orion Folder into Department-Based Subfolders
 
 Classify Project Orion files by business function, reorganise the
 Project Orion folder into 5 department-aware subfolders using a
@@ -426,8 +380,8 @@ Review the Project Orion Folder and Submit the Classification Prompt
 
 1. In the **Message Cowork** box, enter the following prompt:
 
-    ```text
-    Analyze all files in my Project Orion Documents folder. Categorize documents into Sales, Finance, Procurement, Security, and Executive. Rename files using the format YYYY-MM-DD_Department_DocumentType and create subfolders for each category. Show the proposed changes before making any modifications.
+    ```
+    Analyze all files in my Project Orion Documents folder. Categorize documents into Sales, Procurement, Security, and Executive. Rename files using the format YYYY-MM-DD_Department_DocumentType and create subfolders for each category. Show me the proposed changes before making any modifications.
     ```
 
 1. Review the prompt and click **Send**.
@@ -446,8 +400,6 @@ Review the Project Orion Folder and Submit the Classification Prompt
 
         ![](./media/m5e4t1s3.png)
 
-        Business function classification results generated for Project Orion files.
-
 1. Continue reviewing the classification recommendations and proposed file organization plan.
 
     ![](./media/m5e4t1s4.png)
@@ -456,12 +408,10 @@ Review the Project Orion Folder and Submit the Classification Prompt
 
     ![](./media/m5e4t1s6.png)
 
-    Additional classification details and user options displayed.
-
 1. When prompted, enter the following instruction:
 
-    ```text
-    add a Business Function column to the File Governance Tracker workbook
+    ```
+    Add a Business Function column to the File Governance Tracker workbook using this classification, then proceed with the file renaming and folder reorganization above.
     ```
 
 1. Click **Send** to update the governance workbook.
@@ -495,68 +445,6 @@ Review the Project Orion Folder and Submit the Classification Prompt
     ![](./media/m5e4t1s12.png)
 
 1. Verify both workbook versions are available in the Workspace output before proceeding to the next task.
-
-## Task 5 - Reorganize the Project Orion Folder into Department-Based Subfolders
-
-1. In the existing **Copilot Cowork** session, enter the Project Orion reorganization prompt.
-
-    ```text
-    Analyze all files in my Project Orion Documents folder. Categorize documents into Sales, Procurement, Security, and Executive. Rename files using the format YYYY-MM-DD_Department_DocumentType and create subfolders for each category. Show the proposed changes before making any modifications.
-    ```
-
-1. Review the prompt and click **Send**.
-
-    ![](./media/m5e4t2s1.png)
-
-    Project Orion reorganization prompt using the YYYY-MM-DD_Department_DocumentType naming convention.
-
-1. Wait for Copilot Cowork to locate the Project Orion folder.
-
-1. Monitor the Workspace pane while the folder discovery process is running.
-
-    ![](./media/m5e4t2s2.png)
-
-1. Review the proposed file categorization and rename plan generated by Copilot Cowork.
-
-1. Verify the files are mapped to the appropriate department categories.
-
-    ![](./media/m5e4t2s3.png)
-
-    Proposed Project Orion categorization and rename plan.
-
-1. After reviewing the proposed changes, enter the following approval:
-
-    ```text
-    proceed
-    ```
-
-1. Submit the approval request.
-
-    ![](./media/m5e4t2s4.png)
-
-    ![](./media/m5e4t2s5.png)
-
-1. Wait for all rename and move operations to complete.
-
-    ![](./media/m5e4t2s6.png)
-
-1. Open OneDrive and navigate to the Project Orion folder.
-
-1. Verify the following department folders have been created:
-
-    - Sales
-    - Procurement
-    - Security
-    - Executive
-
-1. Confirm the files have been renamed using the following naming convention:
-
-    ```text
-    YYYY-MM-DD_Department_DocumentType
-    ```
-
-1. Verify the files have been placed in the appropriate department folders before completing the lab.
-
 
 ## Review
 

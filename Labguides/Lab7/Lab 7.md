@@ -69,97 +69,31 @@ In this task, you will use Microsoft Copilot Cowork to generate a personalized H
     ```
     Build me a personal work dashboard as a single HTML file at output/dashboard.html.
 
-    Gather fresh data in parallel from across my Microsoft Graph:
+    Gather data in parallel from across my Microsoft Graph:
 
-    1. Calendar — today's remaining events and the next 7 days, including response status, organizer, and online-meeting status
-
+    1. Calendar — today's remaining events and the next 7 days, including response status and organizer
     2. Inbox — unread, flagged, and high-importance messages from the last few days
-
     3. Teams — unread chats with last-message previews
-
     4. OneDrive — recently modified folders in my personal drive
-
     5. Search M365 for any action-required emails (access renewals, expense reminders, training notices)
 
-    Infer my top 5–8 active projects by clustering recurring meetings, email threads, and customer names. Surface a "Next" action for each.
+    Infer my top 3–5 active projects by clustering recurring meetings and email threads. Surface a "Next" action for each.
 
     Render a single-page HTML dashboard with this layout:
 
-    - Header: greeting with today's date, last-refresh timestamp (Pacific time), "Click any item to open it" hint
-
-    - KPI strip (6 tiles): overdue actions, unread emails, meetings tomorrow, Teams unread, active projects, OOF this week. Color the urgent ones red, warnings amber, healthy ones green.
-
-    - Urgent banner (red-bordered): items that need attention today
-
-    - Tomorrow's Schedule card: every event with time chip, title, response badge, organizer, conflict markers
-
-    - Prep Notes card: short crib sheets for meetings that need prep
-
-    - Top Projects card: inferred projects with a "Next" line each
-
-    - Week Calendar Load: pure CSS bar chart of meeting counts per day for the upcoming week (flex-aligned `<div>` bars with `linear-gradient` fills and inline `style="height: NN%"`)
-
-    - Time Allocation: pure CSS doughnut chart splitting the week by category (`<div>` with `conic-gradient` background and a `::after` hole, paired with a static legend)
-
-    - Emails Needing a Reply card: the few messages that actually want a response — filter out newsletters, alerts, external pitches
-
-    - Long-Term Action Items card: overdue tasks, weekly deadlines, upcoming milestones
-
+    - Header: greeting with today's date and last-refresh timestamp
+    - KPI strip (4 tiles): overdue actions, unread emails, meetings tomorrow, active projects — color urgent ones red, healthy ones green
+    - Urgent banner: items that need attention today
+    - Tomorrow's Schedule card: every event with time, title, and organizer
     - Training & Learning card: upcoming training sessions
 
-    - OOF Radar card: teammates out this week & next, with a heads-up if any organize a meeting I'm attending
+    Visual style: soft blue gradient background, rounded white cards with subtle shadow, 'Segoe UI' font, Microsoft accent #0078d4.
 
-    - People to Follow Up With card: name + one-line context
+    PORTABILITY REQUIREMENT — zero external network requests, zero JavaScript. No CDN scripts, no charting libraries, no external fonts.
 
-    - Unread Teams Chats card: top chats with one-line previews
+    Every item must be clickable — link calendar events, emails, and Teams chats to their real webLink/webUrl via Microsoft Graph.
 
-    - Recent Files in Flight card: most recently modified OneDrive folders
-
-    - Footer: refresh schedule note
-
-    Visual style: soft blue gradient background (#f5f7fa to #e8edf3), rounded white cards with subtle shadow, 'Segoe UI' font, Microsoft accent #0078d4, color-coded badges (green #dcfce7/166534 = accepted, amber #fef3c7/92400e = tentative, red #fee2e2/991b1b = no response or overdue, purple #ede9fe/5b21b6 = organizer). Use a 2-column grid for the main sections, 3-column for the smaller cards, collapsing to single column under 1024px.
-
-    PORTABILITY REQUIREMENT — the file must render correctly with zero external network requests and zero JavaScript executing. No `<script src="...">` to any CDN. No Chart.js, D3, or other charting libraries. No external fonts (use the system 'Segoe UI' stack). All charts must be built from HTML + CSS only: bar chart = flex-aligned gradient `<div>` bars; doughnut = `conic-gradient` background with a `::after` pseudo-element hole. All KPI tiles must render their final value directly in the HTML — never start at `0` and rely on JS to fill in the number. Any animation or interactivity (slide-up entry, pulse dot, dark mode toggle) is allowed but must be additive: CSS-driven where possible, and any inline script must gracefully no-op if blocked (e.g. wrap `localStorage` access in `try/catch`). The dashboard will be opened in sandboxed previews, email-attachment viewers, and locked-down browsers where scripts and CDNs frequently do not run.
-
-    Premium touches to include (all must work without JavaScript or external requests):
-
-    - Dark mode toggle in the header (pill button with sun/moon icon, CSS-variable theming). Persist preference via `localStorage` wrapped in `try/catch` so it gracefully no-ops where storage is blocked. The page must render correctly in light mode by default even if the toggle script never runs.
-
-    - KPI tiles render their final value directly in the HTML (e.g. `<div class="kpi-value">22</div>`). Optional polish: a CSS-only entry animation (e.g. `@keyframes` opacity/translate). Do not start the tile text at `0` and rely on JS to count it up — that breaks in any context where scripts don't execute.
-
-    - Slide-up entrance animation on KPI tiles and cards via pure CSS `@keyframes`.
-
-    - 3-color header gradient (#0078d4 → #00bcf2 → #5e60ce) with radial-gradient overlay highlights.
-
-    - Pulse dot animation on the "Last refreshed" timestamp via pure CSS `@keyframes`.
-
-    - CSS bar chart for Week Calendar Load — `<div>` columns whose heights are inline `style="height: NN%"` percentages. Fill classes: `.heavy` (red `linear-gradient` when count ≥ 7), `.light` (gray when = 2), `.normal` (blue otherwise). Number labels sit at the top of each bar in white text.
-
-    - CSS doughnut for Time Allocation — `<div class="donut">` with `conic-gradient(...)` background, segment angles computed at build time from the percentages, and a `::after` pseudo-element using the card background color to punch out the center hole. Render the legend as static HTML next to it.
-
-    - Project health dots next to each project name — red (hot), green (active), amber (watch), with a soft box-shadow glow.
-
-    - Avatar initials circles on the People card (avatar-1 through avatar-5 with gradient backgrounds).
-
-    - Decorative ⚠ watermark in the urgent banner using a `::before` pseudo-element.
-
-    CRITICAL — every item must be clickable. Wrap every event, email, chat, file, project card, training item, action item, and person in an <a href="..." target="_blank"> anchor tag:
-
-    - Calendar events → fetch via QueryGraph on /me/calendarView with $select including webLink; use the event's webLink
-
-    - Emails → fetch via QueryGraph on /me/messages with $select including webLink; use the message's webLink
-
-    - Teams chats → fetch via QueryGraph on /me/chats with $select including webUrl; use the chat's webUrl
-
-    - OneDrive folders → use the item's webUrl
-
-    - People → mailto:<email> for email follow-ups, or the 1:1 chat webUrl for Teams follow-ups
-
-    - Project cards / training items without a canonical link → use an Outlook inbox search URL like https://outlook.office.com/mail/inbox?searchquery=<keyword>
-
-    Style anchors with class names so they look like regular cards (color: inherit; text-decoration: none; display: block or flex; subtle hover background).
-
-    Save to output/dashboard.html. After writing, confirm the file exists in output/.
+    Save to output/dashboard.html. After writing, confirm the file exists.
     ```
 1. Observe that **Copilot Cowork** is processing the request, gathering data across your **calendar**, **inbox**, **Teams**, and **OneDrive** in parallel, as shown under the **Steps** panel on the right.
 
@@ -188,33 +122,32 @@ In this task, you will configure a recurring Cowork task to automatically refres
     ![](./media/n12.png)
 
     ```
-    Set up a scheduled task that refreshes output/dashboard.html every weekday at :55 past the hour, from 6:55 AM through 5:55 PM Pacific time - auto-detect this from the device/browser's local timezone rather than the account's configured IST setting, and don't ask me to confirm it. If the device timezone can't be detected, default to America/Los_Angeles and proceed without asking.
-    Use the same data-gathering and rendering instructions from the dashboard we just built - capture webLink/webUrl for every item so links stay clickable on every refresh.
-    At the 9 AM Pacific run only (and no other hour), also send me an email:
+    Set up a scheduled task that refreshes output/dashboard.html once daily at 8:00 AM Pacific time, and don't ask me to confirm it.
+    Use the same data-gathering and rendering instructions from the dashboard we just built.
 
-    To: <inject key="AzureAdUserEmail"></inject>
+    Each run, also send me an email:
+
+    To: my own email address
     Subject: "Your Daily Work Dashboard - [today's date in M/D format]"
-    Body: brief greeting noting the dashboard is attached, every item is clickable, and the in-session version refreshes hourly
+    Body: brief greeting noting the dashboard is attached and clickable
     Attachment: output/dashboard.html
 
-    For all other hours, refresh the file silently - no email.
-    Handle daylight saving automatically by re-deriving the Pacific offset at each run rather than hardcoding it, so the :55 anchor never drifts.
-    Name the task "Refresh work dashboard (hourly at 9 AM, email at 9 AM)"
+    Name the task "Daily work dashboard refresh"
     ```
 
 1. On the **Create recurring task?** prompt, review the **Name**, **Repeat**, **Run in**, and **Description** details, ensure **Run once now** is checked, then click **Always allow Setup scheduled prompt**.
 
    ![](./media/n31.png)
 
-1. Confirm that the message **"Done — your scheduled task is now active"** is displayed, verifying that the **Refresh work dashboard** task has been scheduled successfully.
+1. Confirm that the message **"Done — your scheduled task is now active"** is displayed, verifying that the **Daily work dashboard refresh** task has been scheduled successfully.
 
    ![](./media/n32.png)
 
-1. Under **Workspace**, verify that the **Refresh work dashboard** task is listed under **Scheduled task**, running **Every week on Monday, Tuesday**, and click on it to open the task.
+1. Under **Workspace**, verify that the **Daily work dashboard refresh** task is listed under **Scheduled task**, running **Daily at 8:00 AM**, and click on it to open the task.
 
    ![](./media/n33.png)
 
-1. On the **Refresh work dashboard** blade, verify that the task status is **Active**.
+1. On the **Daily work dashboard refresh** blade, verify that the task status is **Active**.
 
    ![](./media/n16.png)
 
@@ -238,19 +171,11 @@ In this task, you will configure a recurring Cowork task to automatically refres
 
 In this task, you will review the generated dashboard, explore its interactive sections, customize its appearance and content, and save your preferred layout for future dashboard generations.
 
-1. Go through the **dashboard.html** file and review all the sections available, including **Overview**, **Needs your attention today**, **Tomorrow's Schedule**, **Prep Notes**.**Week Calendar Load** and **Time Allocation**.
+1. Go through the dashboard.html file and review all the sections available, including the KPI overview, Needs your attention today, Tomorrow's Schedule, and Training & Learning.
 
    ![](./media/n22.png)
 
    ![](./media/n23.png)
-
-1. On the **dashboard.html** file, click on **Theme** to toggle between light and dark mode.
-
-   ![](./media/n25.png)
-
-1. Verify that the **dashboard.html** file switches to **dark mode**.
-
-   ![](./media/n24.png)
 
 1. Navigate back to the **Cowork** chat, then in the message box, enter **"Lock this dashboard format in for all future ones" (1)** and click **Submit (2)**.
 
