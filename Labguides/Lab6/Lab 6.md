@@ -19,13 +19,6 @@ In this lab, you will perform the following:
 - Task 7: Post the Project Status Brief to a Teams Channel
 - Task 8: Inspect, Edit, Download, and Delete Skills
 
-# Before You Start: What Is a Custom Skill?
-
-A Custom Skill is a saved workflow Cowork follows whenever you call it
-by name. You describe what you want once, Cowork builds and saves it,
-and from then on one sentence triggers the full workflow automatically.
-
-
 ## Task 1: Design Your Skill on Paper First
 
 Open Microsoft 365 Copilot Cowork
@@ -224,8 +217,7 @@ Yes.
 
 ## Task 2: Build the Leadership Update Skill
 
-> [!IMPORTANT]
-> Earlier versions of this lab described a manual form with fields such as **Name**, **Description**, and **Scope**. The current **Copilot Cowork Skill Builder** no longer uses this form. Instead, the entire skill creation experience is **fully conversational**—Copilot Cowork asks a series of questions, gathers the required information, and generates the skill automatically, as demonstrated in the screenshots throughout this lab.
+In this task you will understand how Copilot Cowork asks a series of questions, gathers the required information, and generates the skill automatically, as demonstrated in the screenshots throughout this lab.
 
 
 1. On the **Copilot Cowork** home page, click the **+** icon located beside the prompt bar.
@@ -250,8 +242,6 @@ Yes.
 
       ![](./media/m6e2s2.png)
 
-      Skills management page displaying built-in skills and skill creation options.
-
 1. Verify the built-in skills are available:
 
     - PDF
@@ -259,8 +249,6 @@ Yes.
     - Excel
 
 1. Locate the **Add** button in the upper-right corner of the page.
-
-    Create a New Skill
 
 1. On the **Skills** page, click the **Add** button located in the upper-right corner.
 
@@ -317,15 +305,6 @@ Yes.
 1. Review the description for **Leadership / executive update**.
 
 1. Select **Leadership / executive update**.
-
-     ![](./media/m6e2s4(1).png)
-
-    >**Note:** If the option is not available paste the below prompt in the customize section and click Submit.
-
-    ```
-    Leadership / exec update
-    Concise status and asks for senior leaders — progress, risks, decisions needed. Skimmable, outcome-first.
-    ```
 
      ![](./media/m6e2s4(1).png)
 
@@ -610,8 +589,6 @@ answers to Cowork’s questions change.
 
     ![](./media/m6e2t8s3(1).png)
 
-   Teams posting confirmation dialog displayed.
-
 1. Review how Cowork has started processing the request.
 
    ![](./media/m6e2t8s4(2).png)
@@ -628,8 +605,6 @@ answers to Cowork’s questions change.
 1. Review the final confirmation message.
 
     ![](./media/m6e2t8s4(1).png)
-
-    Teams posting completed successfully.
 
 1. Verify the confirmation indicates the Project Status Brief was posted to the target Teams channel.
 
@@ -659,7 +634,7 @@ answers to Cowork’s questions change.
     - Teams post created
     - Message delivered to the selected channel
 
-## Task 9: Inspect, Edit, Download, and Delete Skills
+## Task 8: Inspect, Edit, Download, and Delete Skills
 
 The final exercise shows you how to review a skill’s full instructions,
 manage it, and understand the Download and Delete management options.
@@ -691,8 +666,6 @@ manage it, and understand the Download and Delete management options.
     - When Not to Use
 
       ![](./media/m6e2t9s2.png)
-
-      Project Status Brief skill details page displayed.
 
 1. Review the **When Not to Use** section.
 

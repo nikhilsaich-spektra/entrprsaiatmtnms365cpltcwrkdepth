@@ -285,10 +285,8 @@ Submit the Governance Audit Prompt
 
 ## Task 3 – AI-Generated Excel Tracking and Teams Reporting
 
-Duration: 6 minutes | Difficulty: Intermediate
-
 Generate an Excel governance tracker with one row per file, then post a
-3-line summary to Teams with a workbook link — demonstrating OneDrive →
+3-line summary to Teams with a workbook link - demonstrating OneDrive →
 Excel → Teams cross-app workflow orchestration from a single
 instruction.
 
@@ -361,19 +359,13 @@ Generate an Excel Governance Tracker and Teams Summary
 
     ![](./media/m5e3t2s3.png)
 
-    Governance summary posted to the Teams channel.
-
 1. Review the published post and verify the governance summary content is displayed correctly.
 
     ![](./media/m5e3t2s4.png)
 
-    Governance summary details displayed in Teams.
-
 1. Verify the Teams post is available as a permanent conversation record.
 
     ![](./media/m5e3t2s5.png)
-
-    Governance post available for follow-up discussion.
 
 1. Select the workbook or Lab Files hyperlink contained in the Teams post and verify it opens the appropriate location.
 
@@ -381,11 +373,7 @@ Generate an Excel Governance Tracker and Teams Summary
 
     ![](./media/m5e3t2s6.png)
 
-   Teams channel available for user responses and collaboration.
-
 ## Task 4 – Reorganize the Project Orion Folder into Department-Based Subfolders
-
-Duration: 8 minutes | Difficulty: Intermediate–Advanced
 
 Classify Project Orion files by business function, reorganise the
 Project Orion folder into 5 department-aware subfolders using a
@@ -428,8 +416,6 @@ Review the Project Orion Folder and Submit the Classification Prompt
 
         ![](./media/m5e4t1s3.png)
 
-        Business function classification results generated for Project Orion files.
-
 1. Continue reviewing the classification recommendations and proposed file organization plan.
 
     ![](./media/m5e4t1s4.png)
@@ -437,8 +423,6 @@ Review the Project Orion Folder and Submit the Classification Prompt
     ![](./media/m5e4t1s5.png)
 
     ![](./media/m5e4t1s6.png)
-
-    Additional classification details and user options displayed.
 
 1. When prompted, enter the following instruction:
 
