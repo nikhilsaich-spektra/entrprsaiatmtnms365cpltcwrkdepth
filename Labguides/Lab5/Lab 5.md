@@ -148,8 +148,6 @@ In this lab, you will perform the following:
 
 ## Task 2 – OneDrive and SharePoint Governance Audit
 
-Duration: 6 minutes | Difficulty: Intermediate
-
 Audit the Lab Files folder for governance issues — duplicate files,
 stale content, external sharing risks, and ownership gaps. Produce a
 structured audit report with recommendations, then execute one approved
@@ -176,8 +174,6 @@ Submit the Governance Audit Prompt
 
         ![](./media/m5e2t1s2.png)
 
-        Governance audit initiated and additional audit steps added to the Workspace.
-
 1. Review the response from Copilot Cowork and verify that previously collected file inventory, metadata, and hash information are reused for the audit process.
 
 1. Monitor the Workspace pane while sharing and permission analysis is performed.
@@ -188,13 +184,9 @@ Submit the Governance Audit Prompt
 
     ![](./media/m5e2t1s4.png)
 
-   Governance audit analysis running and audit report being generated.
-
 1. Verify the sharing analysis completes successfully and confirm that no files are modified during the audit process.
 
     ![](./media/m5e2t1s5.png)
-
-    Sharing audit completed and file permissions verified.
 
     >Note: Review the Governance Audit Report
 
@@ -203,8 +195,6 @@ Submit the Governance Audit Prompt
 1. Verify the report identifies exact duplicate files and near-duplicate file versions across the Lab Files repository.
 
     ![](./media/m5e2t2s1.png)
-
-    Duplicate file analysis showing exact and near-duplicate file findings.
 
 1. Review the **Stale Files** section of the report.
 
@@ -239,8 +229,6 @@ Submit the Governance Audit Prompt
     ![](./media/m5e2t3s1.png)
 
     ![](./media/m5e2t3s2.png)
-
-    Governance action #2 approved for execution.
 
 1. Verify Copilot Cowork executes only the selected governance action and leaves the remaining recommendations pending.
 
@@ -322,8 +310,6 @@ Generate an Excel Governance Tracker and Teams Summary
 
     ![](./media/m5e3t1s4.png)
 
-    Teams post review dialog displaying governance summary and AI attribution.
-
 1. Click **Send** to publish the governance summary to the selected Teams channel.
 
     ![](./media/m5e3t1s5.png)
@@ -348,8 +334,6 @@ Generate an Excel Governance Tracker and Teams Summary
 1. Review the Teams posting workflow and verify the workbook output is available.
 
     ![](./media/m5e3t2s2.png)
-
-   Teams posting workflow and workbook output available in the Workspace.
 
 1. Verify the workbook generation process and Teams posting activity have completed successfully.
 
