@@ -86,41 +86,41 @@ Open Microsoft 365 Copilot Cowork
 
 1. Save the notes for reference during the remaining exercises.
 
->**Note:** Use the sample answers below as a reference if you are unable to complete the notepad entries independently.
+   >**Note:** Use the sample answers below as a reference if you are unable to complete the notepad entries independently.
 
-```
-What should this skill do?
+   ```
+   What should this skill do?
 
-Generate concise leadership update messages from project, operational, or business input provided by the user. The skill should create executive-ready updates focused on key accomplishments, risks, decisions, next steps, and overall status.
+   Generate concise leadership update messages from project, operational, or business input provided by the user. The skill should create executive-ready updates focused on key accomplishments, risks, decisions, next steps, and overall status.
 
-What does it need to read?
+   What does it need to read?
 
-User-provided project updates, status notes, milestones, risks, business updates, meeting summaries, or task completion details.
+   User-provided project updates, status notes, milestones, risks, business updates, meeting summaries, or task completion details.
 
-Does it write or change anything?
+   Does it write or change anything?
 
-No. The skill only generates communication content and does not modify files, messages, or data sources.
+   No. The skill only generates communication content and does not modify files, messages, or data sources.
 
-What should the output look like?
+   What should the output look like?
 
-A professional leadership update with:
-- Executive Summary
-- Key Accomplishments
-- Risks and Issues
-- Next Steps
-- Overall Status
+   A professional leadership update with:
+   - Executive Summary
+   - Key Accomplishments
+   - Risks and Issues  
+   - Next Steps
+   - Overall Status
 
-Is there a variable that might change?
+   Is there a variable that might change?
 
-Yes.
-- Project name
-- Reporting period
-- Audience
-- Business unit
-- Status details
-- Risks and action items
+   Yes.
+   - Project name
+   - Reporting period
+   - Audience
+   - Business unit
+   - Status details
+   - Risks and action items
 
-```
+   ```
 
 1. Keep the Notepad window open and accessible while working through the lab.
 
