@@ -1,6 +1,6 @@
 # Enterprise AI Automation with Microsoft 365 Copilot Cowork
 
-## Overall Estimated Duration: 8 Hours
+## Overall Estimated Duration: 4 Hours
 
 ## Overview
 

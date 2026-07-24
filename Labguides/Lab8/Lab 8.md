@@ -1,13 +1,13 @@
 # Lab 8: Build and Publish a Custom Microsoft 365 Copilot Cowork Plugin (Read Only)
 
-## Estimated Duration: 60 Minutes
+### Estimated Duration: 20 Minutes
 
 ## Overview
 Organizations can extend Microsoft 365 Copilot beyond its built-in capabilities by developing custom plugins that integrate enterprise knowledge, business processes, and external services. Using Copilot Cowork Plugins and the Model Context Protocol (MCP), developers can securely connect Microsoft 365 Copilot to external data sources, enabling users to retrieve live information and perform specialized tasks through natural language.
 
 In this lab, you will use Microsoft Copilot Cowork to generate a complete Financial Research plugin package using a structured AI prompt. The plugin extends Microsoft 365 Copilot with financial research capabilities by connecting to the SEC EDGAR public repository through a Remote MCP Server. You will review the generated plugin components, validate the deployment package, publish the plugin through the Microsoft 365 Admin Center, and test its functionality within Copilot Cowork using natural-language financial queries. By the end of the lab, you will understand the end-to-end process of building, deploying, and using custom Copilot Cowork plugins.
 
->**Note:** This is a read-only lab intended to introduce key concepts, capabilities, and best practices of publishing and deploying custom Microsoft 365 Copilot Cowork plugins through the Microsoft 365 Admin Center. No hands-on activities are performed in this exercise, as publishing a plugin requires the AI Administrator role, which is not assigned to participants in this workshop. Participants will gain the foundational knowledge required to understand how custom Cowork plugins are generated, validated, and published
+>**Note:** This is a read-only lab intended to introduce the key concepts of publishing custom Microsoft 365 Copilot Cowork plugins through the Microsoft 365 Admin Center. No hands-on activities are performed, as this requires the AI Administrator role, which is not assigned to participants. Participants will gain the foundational knowledge needed to understand how plugins are generated, validated, and published.
 
 ## Objectives
 After completing this lab, you will be able to:

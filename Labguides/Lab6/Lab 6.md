@@ -1,10 +1,12 @@
-# Lab 6 – Building Custom Cowork Skills
+# Lab 6 – Building Custom Cowork Skills (Read Only)
 
-### Estimated Duration: 90 minutes
+### Estimated Duration: 30 minutes
 
 ## Overview
 
 In this hands-on lab, you will use Copilot Cowork's conversational AI Skill Builder to create two reusable custom skills. Rather than filling out forms or writing code, you will describe each skill in plain language and answer a series of follow-up questions while Cowork generates the skill automatically. You will plan a skill specification on paper, build a Leadership Update skill and test it against a sample input, build a second Project Status Brief skill with a full specification, download and review the generated skill definition file, invoke the skill using its trigger phrase, and publish its output directly to a Microsoft Teams channel with human approval at the write step. Finally, you will inspect a skill's details and review its management options, including Download, Edit Instructions, and Delete.
+
+>**Note:** This is a read-only lab intended to introduce the key concepts and capabilities of building custom skills in Microsoft 365 Copilot Cowork. No hands-on activities are performed in this exercise, in order to manage credit consumption for the workshop. Participants will gain the foundational knowledge needed to understand how custom skills are created, tested, and used.
 
 ## Objectives
 
@@ -21,48 +23,11 @@ In this lab, you will perform the following:
 
 ## Task 1: Design Your Skill on Paper First
 
-Open Microsoft 365 Copilot Cowork
+In this task, you will plan the Leadership Update skill on paper before building it - capturing what it should do, what it needs to read, and what its output should look like in a Skill Specification.
 
-1. Open a web browser.
-
-1. In the address bar, enter the following URL and press **Enter**:
-
-    ```text
-    https://m365.cloud.microsoft
-    ```
-
-1. Sign in using the provided lab credentials.
-
-1. After signing in, select **Cowork** from the left navigation pane.
-
-1. Verify the **Cowork** home page opens successfully.
-
-    ![](./media/m6t1s1.png)
-
-    Microsoft 365 Copilot Cowork home page.
-
-1. Verify the following components are available:
-
-    - **New task**
-    - **My tasks**
-    - **Scheduled**
-    - **Customize**
-    - **Recent task history**
-    - **Cowork prompt box**
-
-1. Confirm the **Cowork** tab is selected before proceeding to the next task.
-
-    Open Notepad and Capture Planning Requirements
-
-1. Open the **Start** menu.
-
-1. Search for **Notepad** and select the application from the search results.
+1. Open the **Start** menu, search for **Notepad** and select the application from the search results.
 
     ![](./media/m6t2s1.png)
-
-    Notepad application located from the Windows search results.
-
-1. Open **Notepad** and resize the window so it is visible alongside the browser window.
 
 1. In Notepad, enter the following planning questions:
 
@@ -121,9 +86,7 @@ Open Microsoft 365 Copilot Cowork
    - Risks and action items
 
    ```
-
-1. Keep the Notepad window open and accessible while working through the lab.
-
+   
 1. In the existing **Notepad** document, scroll below the planning questions and responses entered in the previous task.
 
 1. Add a new section for the skill specification.
@@ -211,50 +174,35 @@ Open Microsoft 365 Copilot Cowork
 
 1. Save the Notepad document.
 
-1. Keep the Skill Specification available for reference during the remaining exercises.
+1. Keep the Skill Specification available for reference during the remaining tasks.
 
 1. Do not paste the Skill Specification into Copilot Cowork unless instructed later in the lab.
 
 ## Task 2: Build the Leadership Update Skill
 
-In this task you will understand how Copilot Cowork asks a series of questions, gathers the required information, and generates the skill automatically, as demonstrated in the screenshots throughout this lab.
+In this task, you will open the Skills area in Customize and start building the Leadership Update skill using Cowork's conversational Skill Builder, which asks a series of questions and generates the skill automatically.
 
+1. On the **Copilot Cowork** home page, click the **"+" (1)** icon located beside the prompt bar.
 
-1. On the **Copilot Cowork** home page, click the **+** icon located beside the prompt bar.
-
-1. Review the available options displayed in the menu.
-
-1. Select **Customize**.
+1. Review the available options displayed in the menu and select **Customize (2)**.
 
     ![](./media/m6e2s1.png)
 
-1. Verify the **Customize** page opens successfully.
-
-1. Review the available tabs on the Customize page.
-
-1. Select the **Skills** tab.
+1. Review the available tabs on the Customize page and select the **Skills (1)** tab.
 
 1. Review the Skills page and confirm the following sections are available:
 
-    - Your skills
-    - Built-in Skills
-    - Add button
+    - **Your skills (2)**
+    - **Built-in Skills (3)**
+    - **Add button (4)**
 
       ![](./media/m6e2s2.png)
 
-1. Verify the built-in skills are available:
-
-    - PDF
-    - Word
-    - Excel
-
-1. Locate the **Add** button in the upper-right corner of the page.
-
-1. On the **Skills** page, click the **Add** button located in the upper-right corner.
+1. Click the **Add (1)** button located in the upper-right corner.
 
 1. Review the available options in the dropdown menu.
 
-1. Select **+ Create new** to start creating a new personal skill.
+1. Select **+ Create new (2)** to start creating a new personal skill.
 
    ![](./media/m6e2s5.png)
 
@@ -271,6 +219,8 @@ In this task you will understand how Copilot Cowork asks a series of questions, 
 1. Do not enter any responses until the skill definition prompts have finished loading.
 
 ## Task 3: Select the Skill Purpose
+
+In this task, you will answer Cowork's follow-up questions about the skill's purpose and message type, then review the Leadership Update skill it generates.
 
 1. Review the skill creation response generated by Copilot Cowork.
 
@@ -308,7 +258,7 @@ In this task you will understand how Copilot Cowork asks a series of questions, 
 
      ![](./media/m6e2s4(1).png)
 
-    >**Note:** If the option is not available paste the below prompt in the customize section and click Submit.
+    >**Note:** If the option is not available paste the below **prompt (1)** in the customize section and click **Submit (2)**.
 
     ```
     Leadership / exec update
@@ -316,8 +266,6 @@ In this task you will understand how Copilot Cowork asks a series of questions, 
     ```
 
     ![](./media/m6e2s4.png)
-
-1. Verify the **Leadership / executive update** option is selected.
 
 1. After submitting the message type selection, monitor the **Workspace** pane while Copilot Cowork begins creating the skill.
 
@@ -346,9 +294,7 @@ In this task you will understand how Copilot Cowork asks a series of questions, 
 
 ## Task 4: Test the Leadership Update Skill
 
-A skill is only useful if it runs when you call it. This exercise tests
-the skill with a sample input and confirms the Workspace panel activates
-correctly.
+In this task, you will test the Leadership Update skill with a sample input and confirm it activates correctly and is registered under Your Skills.
 
 1. In the left navigation pane, select **New task**.
 
@@ -412,21 +358,9 @@ correctly.
 
 1. Confirm the skill displays under **Your Skills** and is available for future use.
 
-1. Verify the built-in skills remain available:
-
-    - PDF
-    - Word
-    - Excel
-
-1. Review the task history in the left navigation pane and verify the skill creation and testing activities are listed.
-
-1. Confirm the custom skill remains registered and available for activation.
-
 ## Task 5: Build the Project Status Brief Skill
 
-Now apply the exact same conversational pattern to a Project Orion
-operations scenario. The process is identical to Exercise 2 — only your
-answers to Cowork’s questions change.
+In this task, you will build a second skill, the Project Status Brief, using the same conversational Skill Builder pattern as Task 2 - this time from a full written specification.
 
 1. In the left navigation pane, select **Customize**.
 
@@ -535,17 +469,17 @@ answers to Cowork’s questions change.
 
 ## Task 6: Run the Project Status Brief and Post to a Teams Channel
 
-1. In the left navigation pane, select **New task**.
+In this task, you will invoke the Project Status Brief skill using its trigger phrase and review the generated briefing.
 
-1. In the task input box, enter the following trigger phrase:
+1. In the left navigation pane, select **New task (1)**.
+
+1. In the task input box, enter the following **trigger phrase (2)** and click **Send (3)** to submit the request.
 
     ```text
     give me the project status brief
     ```
 
     ![](./media/m6e2t7s4.png)
-
-1. Click **Send** or press **Enter** to submit the request.
 
 1. Review the left navigation pane and verify a new Project Status Brief task is created.
 
@@ -569,9 +503,9 @@ answers to Cowork’s questions change.
 
     ![](./media/m6e2t7s8.png)
 
-    Additional Project Status Brief details and summary information.
-
 ## Task 7: Post the Project Status Brief to a Teams Channel
+
+In this task, you will direct Cowork to post the generated Project Status Brief to a Microsoft Teams channel and confirm it was delivered.
 
 1. In the task input box, enter the following instruction:
 
@@ -585,22 +519,13 @@ answers to Cowork’s questions change.
 
 1. Review the Teams activities and confirm Copilot Cowork identifies the Project Orion team.
 
-1. When the **Post to channel** dialog appears, review the posting details.
+1. When the **Post to channel** dialog appears, review the details and click on **Send**.
 
     ![](./media/m6e2t8s3(1).png)
 
 1. Review how Cowork has started processing the request.
 
    ![](./media/m6e2t8s4(2).png)
-
-1. Verify the following details are correct:
-
-    - Team name
-    - Channel name
-    - Subject or title
-    - Message preview
-
-1. Click **Send** to approve the Teams post.
 
 1. Review the final confirmation message.
 
@@ -618,14 +543,6 @@ answers to Cowork’s questions change.
 
 1. Confirm the posting activity completed successfully before proceeding to the next task.
 
-1. Verify the posted message includes:
-
-    - Project Status Brief title
-    - Generated status summary
-    - Project updates
-    - Risks and watch items
-    - Additional briefing details
-
 1. Confirm the message appears in the channel conversation successfully.
 
 1. Verify the end-to-end workflow completed successfully:
@@ -636,8 +553,7 @@ answers to Cowork’s questions change.
 
 ## Task 8: Inspect, Edit, Download, and Delete Skills
 
-The final exercise shows you how to review a skill’s full instructions,
-manage it, and understand the Download and Delete management options.
+In this task, you will inspect a skill's full details and review its management options, including Download, Edit Instructions, and Delete.
 
 1. In the left navigation pane, select **Customize**.
 
@@ -647,7 +563,7 @@ manage it, and understand the Download and Delete management options.
 
 1. Verify the **project-status-brief-1** skill is available in the Skills library.
 
-1. Select the **project-status-brief** skill to open the skill details page.
+1. Select the **project-status-brief-1** skill to open the skill details page.
 
     ![](./media/m6e2t9s1(1).png)
 
@@ -659,19 +575,7 @@ manage it, and understand the Download and Delete management options.
 
 1. Review the skill details page.
 
-1. Verify the skill information includes:
-
-    - Overview
-    - When to Use
-    - When Not to Use
-
       ![](./media/m6e2t9s2.png)
-
-1. Review the **When Not to Use** section.
-
-1. Verify the skill guidance includes scenarios that should be handled by other skills.
-
-1. Review the usage recommendations and guardrails before making any changes.
 
 1. Locate the actions available in the upper-right corner of the skill details page.
 

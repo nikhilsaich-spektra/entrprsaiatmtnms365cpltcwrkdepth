@@ -1,6 +1,6 @@
 # Lab 3: AI-Powered Calendar Optimization
 
-### Estimated Duration: 60 minutes
+### Estimated Duration: 35 minutes
 
 ## Overview
 In this hands-on lab, you will use Copilot Cowork - the agentic layer of Microsoft 365 Copilot - to take control of your calendar. Rather than manually hunting for scheduling conflicts or remembering which meetings need agendas, you will instruct Cowork in plain language and let it handle the work across Outlook Calendar and Microsoft Teams. You will detect and resolve real calendar conflicts, schedule a meeting that satisfies multiple constraints at once, test how Cowork handles an impossible request, apply executive-style standing rules across an entire week, and automate a full out-of-office vacation handoff, including a recurring scheduled check that runs automatically going forward. Throughout the lab, watch the Workspace panel on the right, where Cowork proposes its plan and waits for your approval before making any calendar or email changes - a human-in-the-loop design that matters most for bulk edits.

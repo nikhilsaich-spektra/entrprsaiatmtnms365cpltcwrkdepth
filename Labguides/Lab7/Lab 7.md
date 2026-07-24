@@ -1,11 +1,13 @@
-# Lab 7: Building a Personal Work Dashboard with Microsoft Copilot Cowork
+# Lab 7: Building a Personal Work Dashboard with Microsoft Copilot Cowork (Read Only)
 
-### Estimated Duration: 60 minutes
+### Estimated Duration: 30 minutes
 
 ## Overview
 Modern knowledge workers spend a significant amount of time switching between Outlook, Teams, Calendar, and OneDrive to identify priorities and track ongoing work. Microsoft Copilot Cowork enables users to automate these repetitive activities by orchestrating Microsoft Graph data, generating personalized outputs, and scheduling recurring tasks that continuously refresh with the latest information.
 
 In this lab, you will use Microsoft Copilot Cowork to build a personalized HTML work dashboard that consolidates important information from Microsoft 365 services into a single, interactive view. You will configure Cowork to gather data from Outlook, Teams, Calendar, OneDrive, and Microsoft Search, generate a visually rich dashboard with actionable insights, schedule automatic refreshes, and customize the dashboard to suit your preferences. By the end of the lab, you will have an automated work dashboard that provides a centralized view of your daily priorities while demonstrating how Copilot Cowork can streamline personal productivity workflows.
+
+>**Note:** This is a read-only lab intended to introduce the key concepts and capabilities of building automated dashboards in Microsoft 365 Copilot Cowork. No hands-on activities are performed in this exercise, in order to manage credit consumption for the workshop. Participants will gain the foundational knowledge needed to understand how dashboards are built, customized, and scheduled to refresh.
 
 ## Objectives
 After completing this lab, you will be able to:
