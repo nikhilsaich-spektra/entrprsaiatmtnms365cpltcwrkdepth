@@ -1,4 +1,4 @@
-# Lab 6 – Building Custom Cowork Skills (Read Only)
+# Lab 6: Building Custom Cowork Skills (Read Only)
 
 ### Estimated Duration: 30 minutes
 
@@ -391,7 +391,7 @@ In this task, you will build a second skill, the Project Status Brief, using the
 
 1. Review the available skill purpose options presented by Copilot Cowork.
 
-1. In the **Describe another option** field, enter the Project Status Brief skill specification.
+1. In the **Describe another option** field, enter the **Project Status Brief skill specification (1)** and click **Submit (2)** to continue.
 
     ```
     Name: Project Status Brief
@@ -427,10 +427,6 @@ In this task, you will build a second skill, the Project Status Brief, using the
     Generate a project update
     Summarize project progress
     ```
-
-1. Review the entered specification and verify all required details are included.
-
-1. Click **Submit** to continue.
 
     ![](./media/m6e2t5s3.png)
 
@@ -512,8 +508,6 @@ In this task, you will direct Cowork to post the generated Project Status Brief 
     ```text
     send the updates to Retail > General
     ```
-
-    Teams posting instruction entered and ready to submit.
 
 1. Click **Send** or press **Enter** to submit the request.
 
@@ -599,7 +593,7 @@ In this task, you will inspect a skill's full details and review its management 
 In this lab, you completed the following:
 
 
-- Learned what a Custom Skill is and planned a skill specification on paper — capturing purpose, inputs, outputs, and trigger phrases — before using the builder
+- Learned what a Custom Skill is and planned a skill specification on paper - capturing purpose, inputs, outputs, and trigger phrases - before using the builder
 - Built the Leadership Update skill (team-status-update) using Copilot Cowork's fully conversational Skill Builder, selecting a skill purpose and a message type rather than filling out a manual form
 - Tested the Leadership Update skill with a sample input and confirmed it generated a structured update with Headline, Progress, Risks and Blockers, and Asks/Next Steps sections
 - Verified the custom skill was registered under Your Skills in the Skills library alongside the built-in PDF, Word, and Excel skills
@@ -607,7 +601,7 @@ In this lab, you completed the following:
 - Reviewed the generated SKILL.md definition file and skill-quality-report.html, then downloaded the skill definition file for reuse
 - Re-uploaded the downloaded skill definition and invoked the Project Status Brief skill using its trigger phrase
 - Directed Copilot Cowork to post the generated Project Status Brief to a Microsoft Teams channel, reviewing and approving the post before it was sent
-- Inspected a skill's details — Overview, When to Use, and When Not to Use — and reviewed its management options: Download, Edit Instructions, and Delete
+- Inspected a skill's details - Overview, When to Use, and When Not to Use - and reviewed its management options: Download, Edit Instructions, and Delete
 
 
 ## You have successfully completed the Lab!

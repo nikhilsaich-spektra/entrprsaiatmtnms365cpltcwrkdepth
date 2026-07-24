@@ -1,4 +1,4 @@
-# Lab 4 - Executive Meeting Coordinator
+# Lab 4: Executive Meeting Coordinator
 
 ### Estimated Duration: 25 minutes
 
@@ -17,15 +17,13 @@ In this lab, you will perform the following:
 
 ## Task 1: AI-Generated Meeting Preparation
 
-In this task you will build a cross-app meeting prep brief as a Word document saved to
-OneDrive Lab Files. Data gathered from Calendar, Email,
-OneDrive/SharePoint, and Teams in parallel.
+In this task you will build a cross-app meeting prep brief as a Word document saved to OneDrive Lab Files. Data gathered from Calendar, Email, OneDrive/SharePoint, and Teams in parallel.
 
 1.  Go to the Cowork tab.
 
     ![](media/m4e1s1.png)
 
-2.  In the prompt bar, type the prompt and press Enter:
+2.  In the prompt bar, enter the below **prompt (1)** and click the **Send (2)** button:
 
     ```
     Prepare me for my Steering Committee Review meeting for Project Orion. Gather everything related in one pass - attendee history, related email threads, files, Teams messages, open tasks, and open action items from the Risk Review Meeting Follow-up - and produce two things from that same gather:
@@ -110,7 +108,7 @@ In this task you will generate a meeting summary, action items, follow-up email,
 tasks from a transcript. Demonstrates AI grounding - refusing to
 fabricate content without source material.
 
-1. Enter the below prompt (1) and click the send (2) button: 
+1. Enter the below **prompt (1)** and click the **send (2)** button: 
 
     ```
     "From the Steering Committee Review
@@ -123,9 +121,7 @@ fabricate content without source material.
 
     ![](media/m4e3s1.png)
 
-1. Correction pre-registered — honest state disclosure
-
-    In the **Describe another option** box, enter the following prompt and click **Submit**:
+1. Enter the below **prompt (1)** in the **Describe another option** box and click **Submit (2)**:
 
     ```
     Correction: the website task belongs to Priya, not me.
@@ -134,9 +130,6 @@ fabricate content without source material.
     ![](media/m4e3s4.png)
 
     ![](media/m4e3s5.png)
-
-    >**Note:** As Cowork uses AI to generate responses, the number and type of follow-up prompts may vary from the examples shown above.
- 
 
 ## Review
 
